@@ -17,6 +17,9 @@ type Peptide = {
 };
 
 export default class PeptideStackVis {
+	/**
+	 * Builds a visualization for stacking peptides as lines on an amino acid sequence scale
+	 */
 	proteins: Array<Protein>;		
 	peptides: Array<Peptide>;										//Datasets
 	mainSvgId: string;												//id of svg in parent
