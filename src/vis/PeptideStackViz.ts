@@ -50,7 +50,7 @@ export default class PeptideStackVis {
 			.attr("height", this.svgHeight);
 	}
 
-	buildAxis(protein: string) {
+	buildSplitAxes(protein: string) {
 		let prot = this.proteins.find((p: Protein) => {
 			return p.Entry === protein;
 		});
