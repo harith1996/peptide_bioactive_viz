@@ -35,7 +35,7 @@ export default class PeptideStackVis {
 		proteins: Array<Protein>,
 		peptides: Array<Peptide>,
 		mainSvgId: string,
-		width = 1000,
+		width = 1600,
 			height = 2000
 	) {
 		this.proteins = proteins;
