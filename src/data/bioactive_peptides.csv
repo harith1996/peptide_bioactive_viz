@@ -1,0 +1,888 @@
+﻿proteinID,peptide,category,function,secondary_function
+P01966,KLLSHSL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 42,51 µM         "
+P01966,KLLSHSL,Dairy,Antimicrobial,MIC (Agar Diffusion) E. coli - 78.4 L. innocua - 39.2 K. luteus A270 - 39.2 S. aureus - 39.2     
+P01966,LDDLPGALSELSDLHAHKLRVDPVNFKLLSHSL,Dairy,Antimicrobial,MIC (Agar Diffusion) E. coli - 171.18 L. innocua - 42.79 K. luteus A270 - 42.79      
+P01966,LLSHSL,Dairy,Antimicrobial,MIC (Agar Diffusion) E. coli - 46.79 L. innocua - 181.71 K. luteus A270 - 46.78      
+P01966,TKAVEHLDDLPGALSELSDLHAHKLRVDPVNFKLLSHSLL,Dairy,Antimicrobial,MIC (Agar Diffusion) E. coli - 35.27 L. innocua - 35.27 K. luteus A270 - 141.08      
+P02662,AP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 21 µM         
+P02662,AY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 40 µM         
+P02662,AYFYPE,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 106 µM         
+P02662,AYFYPEL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 6,58 µM         "
+P02662,DAYPSGAW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 98 µM         
+P18626,ENLLRF,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 82,4 µM         "
+P02662,ENLLRFFVAPFPEVFG,Dairy,ACE-inhibitory,FAPGG Kit 250 µM         
+P02662,FFVAP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 6 µM         
+P02662,FFVAPFPEVFGK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 18 µM         
+P02662,FP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 205 µM         
+P02662,FPEVFGK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 140 µM         
+P02662,FVAPFPEVFG,Dairy,ACE-inhibitory,FAPGG Kit 650 µM         
+P02662,FYPEL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 80,6 µM         "
+P02662,GAW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 240 µM         
+P02662,GTQYTDAPSFSDIPNPIGSENSEKTTMPLW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 346 µM         
+P02662,IGSENSEKTTMP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 773,1 µM         "
+P02662,IVP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 49,7 µM         "
+P04653,KKYNVPQ,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 716,9 µM         "
+P04653,KKYNVPQL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 77,1 µM         "
+P02662,LAYFYP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 65 µM         
+P02662,LGY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 21,46 µM         "
+P02662,LNENLLRFFVAPFPEVFG,Dairy,ACE-inhibitory,FAPGG Kit 280 µM         
+P02662,LRFF,Dairy,ACE-inhibitory,"N/A 116,9 µM         "
+P02662,LW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 50 µM         
+P02662,NENLLRFFVAPFPEVFG,Dairy,ACE-inhibitory,FAPGG Kit 55 µM         
+P04653,PFP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 144,4 µM         "
+P02662,PKHP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 709,1 µM         "
+P18626,RPK,Dairy,ACE-inhibitory,"Holmquist, Bunning, and Riordan (1979) 91,8 µM         "
+P04653,RPKHPI,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 40,3 µM         "
+P02662,RPKHPIKHQ,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 13,4 µM         "
+P02662,RY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 54,43 µM         "
+P02662,RYL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 106,64 µM         "
+P02662,RYLG,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 224,69 µM         "
+P02662,RYLGY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 0,71 µM         "
+P02662,TTMP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 51 µM         
+P02662,TTMPLW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 16 µM         
+P04653,VPSERY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 706,1 µM         "
+P04653,VPSERYL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 249,5 µM         "
+P02662,YKVPQL,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 22 µM         
+P02662,YL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 122,1 µM         "
+P02662,YLGY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 41,86 µM         "
+P02662,YP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 720 µM         
+P02662,YY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 9 µM         
+P02662,LKK,Dairy,Anticancer,Cytotoxic for leukemic T and B cells           
+P02662,RPK,Dairy,Anticancer,Cytotoxic for leukemic T and B cells           
+P02662,RYLGYL,Dairy,Anticancer,decreased breastcancer cell proliferation           
+P02662,RYLGYLE,Dairy,Anticancer,decreased breastcancer cell proliferation           
+P02662,YK,Dairy,Anticancer,Cytotoxic for leukemic T and B cells           
+P47710,YVPFP,Dairy,Anticancer,Inhibits TR7D breast cancer cell proliferation           
+P09115,FHLGHLK,Dairy,Antimicrobial,log(N0/Nf) B. subtilis        
+P02662,HIQKEDVPSERYLGYLEQLLRLK,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - 292 E. coli NEB 5µ - 292 E. coli ATCC 25922 - 584      
+P02662,HIQKEDVPSERYLGYLEQLLRLKK,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - 186 E. coli NEB 5µ - NA E. coli ATCC 25922 - NA      
+P02662,HIQKEDVPSERYLGYLEQLLRLKKYK,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - 42.4 E. coli NEB 5µ - 169 E. coli ATCC 25922 - NA      
+P02662,IKHQGLPQE,Dairy,Antimicrobial,MIC (96 Well) C. sakazakii C. muytjensii        
+P02662,IKHQGLPQEV,Dairy,Antimicrobial,  MIC (96 Well) E. coli B. subtilis       
+P02662,LEQLLRLKKY,Dairy,Antimicrobial,  MIC (96 Well) B. subtilis - 1266 E. coli NEB 5µ - NA E. coli ATCC 25922 - 633      
+P02662,LGYLEQLLRL,Dairy,Antimicrobial,  MIC (96 Well) B. subtilis - NA E. coli NEB 5µ - NA E. coli ATCC 25922 - 1356      
+P02662,LRLKKYKVPQLá,Dairy,Antimicrobial, 9 µM         
+P02662,RPKHPIK,Dairy,Antimicrobial,           
+P02662,RPKHPIKHQGLPQEVLNENLLRF,Dairy,Antimicrobial,MIC (96 Well) E. coli - 0.2 C. sakazakii - 0.5       
+P02662,RPKHPIKHQGLPQEVLNENLLRFF,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - 23.6 E. coli NEB 5µ - 47.2 E. coli ATCC 25922 - 189      
+P02662,RPKHPIKHQGLPQEVLNENLLRFFVAPFPEVFGK,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - 31.4 E. coli NEB 5µ - 31.4 E. coli ATCC 25922 - 31.4      
+P02662,RPKHPIKHQGLPQEVLNENLLRFFVAPFPEVFGKEK,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - 59 E. coli NEB 5µ - 59 E. coli ATCC 25922 - 59      
+P02662,RPKHPIKHQGLPQEVLNENLLRFFVAPFPEVFGKEKV,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - 29 E. coli NEB 5µ - 58 E. coli ATCC 25922 - 58      
+P02662,SDIPNPIGSENSEK,Dairy,Antimicrobial,"MIC (Agar Diffusion, 96 Well) L. innocua        "
+P02662,TTMPLW,Dairy,Antimicrobial,MIC (96 Well) E. coli S. aureus M. luteus C. albicans     
+P02662,VLNENLLR,Dairy,Antimicrobial,MIC (96 Well) C. sakazakii C. muytjensii        
+P02662,YLEQLLR,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - 53.6 E. coli NEB 5µ - 241 E. coli ATCC 25922 - 40.2      
+P02662,AYFYPE,Dairy,Antioxidant," 4,16 µmol Trolox per µmol peptide         "
+P02662,AYFYPEL,Dairy,Antioxidant," 3,216 µmol Trolox per µmol peptide         "
+P02662,EL,Dairy,Antioxidant,"DPPH Scavenging 63,1 µM         "
+P02662,FYPEL,Dairy,Antioxidant,"DPPH Scavenging 127,5 µM         "
+P02662,LGY,Dairy,Antioxidant," 2,306 µmol Trolox per µmol peptide         "
+P02662,PEL,Dairy,Antioxidant,DPPH Scavenging 306 µM         
+P02662,RY,Dairy,Antioxidant," 1,944 µmol Trolox per µmol peptide         "
+P02662,RYL,Dairy,Antioxidant," 1,746 µmol Trolox per µmol peptide         "
+P02662,RYLG,Dairy,Antioxidant," 1,669 µmol Trolox per µmol peptide         "
+P02662,RYLGY,Dairy,Antioxidant," 2,829 µmol Trolox per µmol peptide         "
+P02662,YFYPEL,Dairy,Antioxidant,"DPPH Scavenging 79,2 µM         "
+P02662,YLG,Dairy,Antioxidant," 1,378 µmol Trolox per µmol peptide         "
+P02662,YLGY,Dairy,Antioxidant," 1,456 µmol Trolox per µmol peptide         "
+P02662,YPEL,Dairy,Antioxidant,"DPPH Scavenging 189,3 µM         "
+P02662,YLGYLEQ,Dairy,Anxiolytic,In vivo (Rats)           
+P02662,YLGYLEQLLR,Dairy,Anxiolytic,           
+P18626,HPINHR,Dairy,DPP-IV Inhibitor,"452,2"
+P02662,IP,Dairy,DPP-IV Inhibitor," 149,6 µM         "
+P02662,LP,Dairy,DPP-IV Inhibitor," 712,5 µM         "
+P02662,YP,Dairy,DPP-IV Inhibitor," 658,1 µM         "
+P02662,DIPNPI,Dairy,Growth-promoting,Streptococcus thermophilus (St) and Lactobacillus delbrueckii subsp. bulgaricus (Lb)           
+P02662,AYFYPEL,Dairy,increase MUC5AC expression,           
+P02662,YFYPEL,Dairy,increase MUC5AC expression,           
+P02662,RFFVAPFPEVFGKEKVNEL,Dairy,induce macedocin biosynthesis,           
+P02662,AYFYPEL,Dairy,Opioid,stimulate mucin secretion           
+P02662,RYLGY,Dairy,Opioid,stimulate mucin secretion           
+P02662,RYLGYL,Dairy,Opioid,           
+P02662,YFYPE,Dairy,Opioid,           
+P02662,YFYPEL,Dairy,Opioid,           
+P02668,YIPIQYVLSR,Dairy,Opioid,Opioid antagonist           
+P02662,YLGYLE,Dairy,Opioid,           
+P47710,YVPFP,Dairy,Opioid,           
+P02663,ALNEINQFY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 219 µM         
+P02663,ALNEINQFYQK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 264 µM         
+P02663,AMKPW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 580 µM         
+P02663,AMKPWIQPK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 600 µM         
+P02663,FALPQY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 4,3 µM         "
+P02663,FALPQYLK,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 4,3 µM         "
+P02663,FPQY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 300,74 µM         "
+P02663,FPQYLQY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 14 µM         
+P02663,INP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 71,2 µM         "
+P04654,IPY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 206 µM         
+P02663,IQP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 106,7 µM         "
+P02663,ITP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 14,9 µM         "
+P33049,KFAWPQ,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 177,1 µM         "
+P02663,LY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 44 µM         
+P02663,MKP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 0,43 µM         "
+P02663,MKPWIQPK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 300 µM         
+P02663,NMAINPSK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 60 µM         
+P04654,PRKEKLCTTS,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 142 µM         
+P33049,PYVRYL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 2,4 µM         "
+P02663,TKVIP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 400 µM         
+P33049,TVDQHQ,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 210,5 µM         "
+P02663,TVY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 15 µM         
+P02663,TYKQE,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 18,6 µM         "
+P02663,VIP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 26,1 µM         "
+P04654,VRYL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 24,1 µM         "
+P02663,VY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 11 µM         
+P02663,WIQP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 14,2 µM         "
+P02663,YQK,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 312,23 µM         "
+P02663,YQKFPQY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 20,08 µM         "
+P02663,ALPQYLKTVYQHQKAMKPWIQPKTKVIPYVRYL,Dairy,Antimicrobial,MIC (96 Well) B. subtilis L. innocua L. monocytogenes 2310 S. typhimirium     
+P02663,IQPKTKVIPYVR,Dairy,Antimicrobial,MIC (96 Well) E. coli B. subtilis       
+P02663,IVLNPWDQVK,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - 1363 E. coli NEB 5µ - 681 E. coli ATCC 25922 - 1363      
+P02663,KAMKPW,Dairy,Antimicrobial,MIC (96 Well) E. coli B. subtilis       
+P02663,KAMKPWIQPKTKVIP,Dairy,Antimicrobial,MIC (Agar Diffusion) C. sakazakii L. monocytogenes       
+P02663,KAMKPWIQPKTKVIPYVRYL,Dairy,Antimicrobial,MIC (Agar Diffusion) C. sakazakii L. monocytogenes       
+P02663,KKISQRYQKFALPQYLKTVYQHQK,Dairy,Antimicrobial,MIC (96 Well) E. coli B. subtilis       
+P02663,KTKLTEEEKNRLNFLKKISQRYQKFALPQYLKTVYQHQK,Dairy,Antimicrobial,MIC (Agar Diffusion) E. coli S. carnosus       
+P02663,KTVYQHQKAMKPWIQPKTKVIPYVRYL,Dairy,Antimicrobial,MIC (96 Well) B. subtilis L. innocua L. monocytogenes 2310 S. typhimirium     
+P04654,LKKISQ,Dairy,Antimicrobial,log(N0/Nf) E. coli - 0.33 S. maracescens - 0 St. carnosus - >6 St. epidermis - 3.6 Ea. faecalis - 0 L. innocua - 1.11   
+P02663,LKKISQRYQKFALPQY,Dairy,Antimicrobial,MIC (96 Well) E. coli L. innocua B. ceres M. flavus St. thermophilus    
+P02663,LKKISQRYQKFALPQYLKTVYQHQKAMKPWIQPKTKVIPYVRYL,Dairy,Antimicrobial,MIC (96 Well) B. subtilis L. innocua L. monocytogenes 2310      
+P04654,LKKISQYYQKFAWPQYL,Dairy,Antimicrobial,log(N0/Nf) E. coli - 4.63 S. maracescens - 0.33 St. carnosus - >6 St. epidermis - >6 Ea. faecalis - 3.32 L. innocua - >6   
+P02663,LKTVYQHQKAMKPWIQPKTKVIPYVRYL,Dairy,Antimicrobial,Bacillus cereus Bacillus subtilis Listeria innocua      
+P04654,PYVRYL,Dairy,Antimicrobial,log(N0/Nf) E. coli - 0.27 S. maracescens - 0 St. carnosus - 2.23 St. epidermis - 2.06 Ea. faecalis - 0 L. innocua - 1.13   
+P02663,QKALNEINQF,Dairy,Antimicrobial,MIC (Plate Pour) B. cereus S. aureus L. monocytogenes H. pylori     
+P02663,QKFALPQYLKTVYQHQKAMKPWIQPKTKVIPYVRYL,Dairy,Antimicrobial,Bacillus subtilis Listeria innocua       
+P02663,TKKTKLTEEEKNRL,Dairy,Antimicrobial,MIC (Plate Pour) B. cereus S. aureus L. monocytogenes      
+P02663,TKLTEEEKNRLNFLKKISQRYQKFALPQYLK,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - 4.0 E. coli NEB 5µ - 16.2 E. coli ATCC 25922 - 16.2      
+P02663,TKVIPYVRYL,Dairy,Antimicrobial,MIC (Agar Diffusion) C. sakazakii L. monocytogenes       
+P02663,TVYQHQKAMKPWIQPKTKVIPYVRYL,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - 2.7 E. coli NEB 5µ - 21.4 E. coli ATCC 25922 - 172      
+P04654,VDQHQKAMKPWTQPKTNAIPYVRYL,Dairy,Antimicrobial,log(N0/Nf) E. coli - 0.07 S. maracescens - 0 St. carnosus - >6 St. epidermis - 0.61 Ea. faecalis - 0 L. innocua - 1.71   
+P02663,VYQHQKAMKPWIQPKTKVIPYVRYL,Dairy,Antimicrobial,MIC (Agar Diffusion) C. sakazakii L. monocytogenes       
+P02663,VYQHQKAMKPWIQPKTKVIPYVRYLá,Dairy,Antimicrobial,MIC (96 Well) B. subtilis L. innocua L. monocytogenes C. freundii E. coli S. enteritidis S. typhmirium  
+P02663,WIQPKTKVIPYVRYL,Dairy,Antimicrobial,MIC (Agar Diffusion) C. sakazakii L. monocytogenes       
+P02663,FALPQYLK,Dairy,Antioxidant,           
+P02663,FPQY,Dairy,Antioxidant,"1,741 µmol Trolox per µmol peptide         "
+P02663,PYVRYL,Dairy,Antioxidant,           
+P02663,YQK,Dairy,Antioxidant,"1,819 µmol Trolox per µmol peptide         "
+P02663,YQKFPQY,Dairy,Antioxidant,"2,033 µmol Trolox per µmol peptide         "
+P02663,VPITPT,Dairy,DPP-IV Inhibitor,130
+P02663,VPITPTL,Dairy,DPP-IV Inhibitor,110
+P02663,WIQP,Dairy,DPP-IV Inhibitor,"237,3 µM         "
+P02663,NPSKENL,Dairy,Growth-promoting,Streptococcus thermophilus (St) and Lactobacillus delbrueckii subsp. bulgaricus (Lb)           
+P02663,PIVLNP,Dairy,Growth-promoting,Streptococcus thermophilus (St) and Lactobacillus delbrueckii subsp. bulgaricus (Lb)           
+P02663,NPWDQ,Dairy,immunomodulatory,inhibiting allergen intestinal permeation           
+P00711,DKVGINY,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 104,22 µM         "
+P00711,DKVGINYW,Dairy,ACE-inhibitory,In vivo (Rats)           
+P00711,GVSLPEW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 30 µM         
+P00711,GYGGVSLPEW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 2 µM         
+P00711,IW,Dairy,ACE-inhibitory,"in vivo (humans) 0,7 µM         "
+P00711,KGYGGVSL,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 325,2 µM         "
+P00711,KGYGGVSLPEW,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 0,71 µM         "
+P00711,LAHKAL,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 621 µM         
+P00711,LF,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 349,1 µM         "
+P00711,LKGYGGVSLPEW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 83 µM         
+P00711,VGINYWLAHK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 327 µM         
+P00711,VSLPEW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 57 µM         
+P00711,WL,Dairy,ACE-inhibitory,in vivo (humans) 10 µM         
+P00711,WLAHK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 77 µM         
+P00711,WLAHKAL,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 29 µM         
+P00711,YGGVSLPEW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 16 µM         
+P00711,YGL,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 409 µM         
+P00711,YGLF,Dairy,ACE-inhibitory,in vivo (rats)           
+P00711,DQWL,Dairy,Anti-inflammatory,           
+P00711,WLA,Dairy,Anti-inflammatory,           
+P00711,EQLTK,Dairy,Antimicrobial,log(N0/Nf) B. subtilis S. lentus       
+P00711,WLAHK,Dairy,Cytotoxic,mice splenocyte           
+P00711,ILDKVGINY,Dairy,DPP-IV Inhibitor,263 µM         
+P00711,IVQNNDSTEYGLF,Dairy,DPP-IV Inhibitor,337 µM         
+P00711,LAHKALCSEKL,Dairy,DPP-IV Inhibitor,165 µM         
+P00711,LCSEKLDQ,Dairy,DPP-IV Inhibitor,186 µM         
+P00711,LKGYGGVSLPE,Dairy,DPP-IV Inhibitor,486 µM         
+P00711,TKCEVFRE,Dairy,DPP-IV Inhibitor,166 µM         
+P00711,WL,Dairy,DPP-IV Inhibitor,"43,6 µM         "
+P00711,WLAHKAL,Dairy,DPP-IV Inhibitor,286 µM         
+P00711,WLAHKALCSEKLDQ,Dairy,DPP-IV Inhibitor,141 µM         
+P00711,YGLF,Dairy,Opioid,DPP-IV Inhibitor     
+P00711,RELKDLK,Dairy,stimulates proliferation,mice splenocyte           
+P05814,ALPP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 280 µM         
+P02666,AQTQSLVYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 76 µM         
+P02666,AVPYP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 80 µM         
+P02666,AVPYPQR,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 274 µM         
+P02666,DELQDKIHPFAQTQSLVYPFPGPIPNS,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 4 µM         
+P02666,DKIHP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 113,1 µM         "
+P02666,DKIHPF,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 256,8 µM         "
+P05814,DKIYPSFQPQPLIYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 107 µM         
+P02666,EMPFPK,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 565,58 µM         "
+P05814,ENLHLPLP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 155 µM         
+P02666,ENLHLPLPLL,Dairy,ACE-inhibitory,FAPGG Kit 250 µM         
+P05814,EPIPYGFLP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 180 µM         
+P02666,EPVLGPVRGPFP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 790 µM         
+P05814,EVPKA,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 324,77 µM         "
+P02666,FA,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 487,1 µM         "
+P02666,FAQTQSLVYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 25 µM         
+P02666,FLQP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 68,7 µM         "
+P05814,FQPQPLIYP,Dairy,ACE-inhibitory,"Kasahara and Ashihara (1981) 1,8 µM         "
+P02666,GP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 252,6 µM         "
+P33048,GPFPILV,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 424 µM         
+P05814,GRVMP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 250 µM         
+P33048,GVPKVKETMVPK,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 376,1 µM         "
+P33048,GVPKVKETMVPKH,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 223,2 µM         "
+P02666,HLPLP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 21 µM         
+P33048,HPFAQ,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 465 µM         
+P02666,HPFAQTQSLVYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 26 µM         
+P05814,HQIYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 110 µM         
+P05814,HQIYPV,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 414 µM         
+P02666,HQP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 134,7 µM         "
+P02666,IHPFAQTQSLVYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 19 µM         
+P05814,ILP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 270 µM         
+P02666,IP,Dairy,ACE-inhibitory,Sentandreu and Toldra (2006) 130 µM         
+P02666,IPP,Dairy,ACE-inhibitory,In vivo (human)           
+P02666,IQA,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 32,9 µM         "
+P05814,IYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 61 µM         
+P05814,IYPSFQPQPLIYP,Dairy,ACE-inhibitory,"Kasahara and Ashihara (1981) 7,6 µM         "
+P33048,KIHPFAQAQ,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 132,6 µM         "
+P02666,KIHPFAQTQSLVYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 39 µM         
+P05814,KIYPSFQPQPLIYP,Dairy,ACE-inhibitory,"Kasahara and Ashihara (1981) 8,6 µM         "
+P02666,KVLILA,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 20,85 µM         "
+P02666,KVLPVP,Dairy,ACE-inhibitory,in vivo (rats)           
+P02666,KVLPVPQ,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 1000 µM         
+P02666,KYP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 363,9 µM         "
+P02666,KYPVEPFTESQSLTL,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 93 µM         
+P05814,LALPP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 290 µM         
+P05814,LENLHLPLP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 86 µM         
+P05814,LHLP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 210 µM         
+P02666,LHLPLP,Dairy,ACE-inhibitory,"in vivo (rats) 5,4 µM         "
+P02666,LHLPLPL,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 425 µM         
+P05814,LIYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 10 µM         
+P02666,LLYQEPVLGPVRGPFPIIV,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 21 µM         
+P02666,LNVPGEIVE,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 300,1 µM         "
+P02666,LPLP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 750 µM         
+P02666,LPP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 9,6 µM         "
+P05814,LPQNILP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 46 µM         
+P02666,LPQNIPPLTQTPVVVPPFLQPEVMGVSK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 144 µM         
+P02666,LQP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 3,4 µM         "
+P02666,LQSW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 500 µM         
+P02666,LVYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 170 µM         
+P02666,LVYPFPá,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 132 µM         
+P02666,LVYPFPGP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 147 µM         
+P02666,LVYPFPGPI,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 183 µM         
+P02666,LVYPFPGPIP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 89 µM         
+P02666,LVYPFPGPIPNSLPQ,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 18 µM         
+P02666,LVYPFPGPIPNSLPQN,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 71 µM         
+P02666,LVYPFPGPIPNSLPQNIPP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 5,2 µM         "
+P33048,LVYPFTGPIPN,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 27,9 µM         "
+P02666,MAP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 0,8 µM         "
+P02666,MPFPKYPVEP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 83 µM         
+P05814,NILP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 560 µM         
+P02666,NIPPLTQTPV,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 173,3 µM         "
+P02666,NIPPLTQTPVVVPPFLQ,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 450 µM         
+P05814,NLHLP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 420 µM         
+P05814,NLHLPLP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 51 µM         
+P02666,NLHLPLPLL,Dairy,ACE-inhibitory,FAPGG Kit 15 µM         
+P02666,NSLP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 755,1 µM         "
+P05814,PAVVLP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 45 µM         
+P05814,PFFDPQIP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 410 µM         
+P05814,PLAQPA,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 940 µM         
+P05814,PLIYP,Dairy,ACE-inhibitory,"Kasahara and Ashihara (1981) 4,4 µM         "
+P05814,PLP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 430 µM         
+L8I8G5,PLPLL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 453,13 µM         "
+P02666,PPQSVLSLSQSKVLPVPQ,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 25 µM         
+P05814,PQNILP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 440 µM         
+P05814,PQPIP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 340 µM         
+P05814,PQPLIYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 3 µM         
+P05814,PQTLALP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 110 µM         
+P05814,PSFQP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 73 µM         
+P05814,PSFQPQPLIYP,Dairy,ACE-inhibitory,"Kasahara and Ashihara (1981) 2,7 µM         "
+P05814,PVPQP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 110 µM         
+P02666,QEPVLGPVRGPFPIIV,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 600 µM         
+P02666,QP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 598,1 µM         "
+P05814,QPIP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 860 µM         
+P05814,QPLIYP,Dairy,ACE-inhibitory,"Kasahara and Ashihara (1981) 3,6 µM         "
+P05814,QPQPLIYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 4 µM         
+P02666,QSLVYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 41 µM         
+P02666,QTQSLVYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 73 µM         
+P05814,QVPQPIP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 660 µM         
+P02666,RDMPIQAF,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 209 µM         
+P02666,RINKK,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 18,32 µM         "
+P05814,SFQPQPLIYP,Dairy,ACE-inhibitory,"Kasahara and Ashihara (1981) 1,4 µM         "
+P02666,SKVLPVPQ,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 39 µM         
+P33048,SLPQ,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 330 µM         
+P02666,SLPQN,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 9,49 µM         "
+P02666,SLVYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 40 µM         
+P33048,SQPK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 354 µM         
+P02666,SQSKVLPVPQ,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 92 µM         
+Q9TVD0,TF,Dairy,ACE-inhibitory,"Holmquist, Bunning, and Riordan (1979) 18 µM         "
+P33048,TGPIPN,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 316 µM         
+P02666,TPVVVPPFLQP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 749 µM         
+P02666,TQSLVYP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 64 µM         
+P05814,TVYTKGRVMP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 38 µM         
+P86273,VAPFPQPVVP,Dairy,ACE-inhibitory,Sentandreu and Toldra (2006) 273 µM         
+P02666,VENLHLPLPLL,Dairy,ACE-inhibitory,FAPGG Kit 175 µM         
+P02666,VEP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 63,7 µM         "
+P02666,VLGP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 153,5 µM         "
+P02666,VLGPVRGPFP,Dairy,ACE-inhibitory,in vivo (rats)           
+P05814,VLPIP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 31 µM         
+Q9TSI0,VLPVPQK,Dairy,ACE-inhibitory,N/A 15 µM         
+P05814,VMP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 29 µM         
+P02666,VP,Dairy,ACE-inhibitory,Sentandreu and Toldra (2006) 420 µM         
+P33048,VPKVK,Dairy,ACE-inhibitory,"Holmquist, Bunning, and Riordan (1979) 4,3 µM         "
+P02666,VPP,Dairy,ACE-inhibitory,In vivo (human)           
+P05814,VPQPIP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 290 µM         
+P02666,VRGP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 179,7 µM         "
+P11839,VRGPFP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 592 µM         
+P02666,VRGPFPIIV,Dairy,ACE-inhibitory,in vivo (rats)           
+P02666,VVPP,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 258,21 µM         "
+Q9TVD0,VYá,Dairy,ACE-inhibitory,"Holmquist, Bunning, and Riordan (1979) 7,1 µM         "
+P02666,VYP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 288 µM         
+P02666,VYPFPG,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 221 µM         
+P02666,VYPFPGPIPN,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 325 µM         
+P02666,VYPFPGPIPNSLPQNIPP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 87 µM         
+P05814,WSVPQPK,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 667,96 µM         "
+P05814,YGFLP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 268 µM         
+P02666,YPFPGPI,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 500 µM         
+P02666,YPFPGPIPN,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 14,8 µM         "
+P05814,YPSFQPQPLIYP,Dairy,ACE-inhibitory,"Kasahara and Ashihara (1981) 4,8 µM         "
+P11839,YQEP,Dairy,ACE-inhibitory,"Holmquist, Bunning, and Riordan (1979) 317,17 µM         "
+P02666,YQEPVL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 8,14 µM         "
+P33048,YQEPVLGP,Dairy,ACE-inhibitory,"Holmquist, Bunning, and Riordan (1979) 725,03 µM         "
+P02666,YQEPVLGPVR,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 300 µM         
+P11839,YQEPVLGPVRG,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 412 µM         
+P02666,YQEPVLGPVRGPFPIIV,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 101 µM         
+P02666,INKKI,Dairy,Anticancer,Cytoxic for B16F10 melanoma cells           
+P02666,PGPIPN,Dairy,Anticancer,Inhibits SKOV3 ovarian cancer cell growth           
+P02666,YPFP,Dairy,Anticancer,decreased breastcancer cell proliferation           
+P02666,YPFPGPI,Dairy,Anticancer,decreased breastcancer cell proliferation           
+P05814,YPFVEPI,Dairy,Anticancer,decreased breastcancer cell proliferation           
+P02666,DMPIQAFLLYQEPVLGPVRá,Dairy,Anti-inflammatory,           
+P02666,IPP,Dairy,Anti-inflammatory,           
+P02666,VPP,Dairy,Anti-inflammatory,in vivo (mice)           
+P02666,AVPYPQR,Dairy,Antimicrobial,Gram negative           
+P02666,EAMAPK,Dairy,Antimicrobial,Gram negative           
+P02666,EAMAPKHK,Dairy,Antimicrobial,Gram negative           
+P02666,EMPFPK,Dairy,Antimicrobial,Gram negative           
+P02666,HKEMPFPK,Dairy,Antimicrobial,Gram negative           
+P09116,HVEQLLR,Dairy,Antimicrobial,log(N0/Nf) B. subtilis        
+P09116,ILPFIQSLFPFAER,Dairy,Antimicrobial,log(N0/Nf) B. subtilis E. coli       
+P33048,KETMVPK,Dairy,Antimicrobial,% Colonies Inhibited E. coli        
+P33048,MHQPPQPL,Dairy,Antimicrobial,% Colonies Inhibited E. coli        
+P33048,PFTGPIPNSLPQ,Dairy,Antimicrobial,% Colonies Inhibited E. coli B. cereus       
+P33048,PVVVPPFLQPE,Dairy,Antimicrobial,% Colonies Inhibited E. coli        
+P05814,QELLLNPTHQIYPVTQPLAPVHNPISV,Dairy,Antimicrobial,MIC (Agar Diffusion) L. bulgaricus L. casei L. sanfranciscensis E. faecium L. lactis B. megaterium E. coli L. innocua S. aureus
+P33048,REQEELNV,Dairy,Antimicrobial,% Colonies Inhibited E. coli B. cereus       
+P02666,RINKK,Dairy,Antimicrobial,log(N0/Nf) E. coli        
+P33048,TEDELQDKIHPF,Dairy,Antimicrobial,% Colonies Inhibited E. coli B. cereus       
+P02666,VKEAMAPK,Dairy,Antimicrobial,Gram negative           
+P02666,VLPVPQK,Dairy,Antimicrobial,Gram negative           
+P02666,VLPVPQKAVPYPQR,Dairy,Antimicrobial,Gram negative           
+P02666,VPYPQRDMPIQAFL,Dairy,Antimicrobial,MIC (96 Well) B. subtilis - NA E. coli NEB 5µ - 493 E. coli ATCC 25922 - NA      
+P02666,YQEPVLGPVRGPFPI,Dairy,Antimicrobial,MIC (96 Well) E. coli - 0.5        
+P02666,YQEPVLGPVRGPFPIIVá,Dairy,Antimicrobial,MIC (96 Well) E. coli - 0.5        
+P02666,AVPYPQR,Dairy,Antioxidant,           
+P05814,HNPI,Dairy,Antioxidant, 55 µM TE/mM         
+P05814,HQIYPV,Dairy,Antioxidant," 0,416 µmol Trolox equiv per µmol peptide (TEAC)         "
+P05814,IYPF,Dairy,Antioxidant," 0,309 µmol Trolox equiv per µmol peptide (TEAC)         "
+P02666,KVLPVPQK,Dairy,Antioxidant,           
+P05814,PYPQ,Dairy,Antioxidant," 0,323 µmol Trolox equiv per µmol peptide (TEAC)         "
+P05814,QVVPYPQ,Dairy,Antioxidant," 0,931 µmol Trolox equiv per µmol peptide (TEAC)         "
+P02666,TQTPVVVPPFLQPE,Dairy,Antioxidant,           
+P02666,VKEAMAPK,Dairy,Antioxidant,           
+P02666,VLPVPQK,Dairy,Antioxidant,           
+P11839,VPKVK,Dairy,Antioxidant," 0,079 TEAC (mM)         "
+P05814,VPYPQ,Dairy,Antioxidant, 2500 µM TE/mM         
+P02666,VYPFPGPIPN,Dairy,Antioxidant," 6,2 µM         "
+P05814,WSVPQPK,Dairy,Antioxidant, 1297 µmol Trolox equiv per µmol peptide (TEAC)         
+P33048,YQEP,Dairy,Antioxidant," 0,072 TEAC (mM)         "
+P33048,YQEPVLGP,Dairy,Antioxidant," 0,191 TEAC (mM)         "
+P02666,YQEPVLGPVRGPFPIIV,Dairy,antithrombin," 4,6 %/peptide concentration (µg per mL)         "
+P02666,YPFPGPI,Dairy,Anxiolytic,           
+P02666,EMPFPK,Dairy,Bradykinin-Potentiating,           
+P02666,YPVEPFTE,Dairy,Bradykinin-Potentiating,           
+P02666,RELEELNVPGEIVESLSSSEESITR,Dairy,Caseinophosphopeptide ,           
+P02666,GPFPI,Dairy,Cathepsin B Inhibitory,           
+P02666,PFPGPI,Dairy,Cathepsin B Inhibitory,           
+P02666,EPVLGPVRGP,Dairy,Cytomodulatory,           
+P02666,FLQP,Dairy,DPP-IV Inhibitor," 65,3 µM         "
+P02666,FPGPIPN,Dairy,DPP-IV Inhibitor,260
+P33048,GPFPILV,Dairy,DPP-IV Inhibitor,163
+P02666,IPPLTQT,Dairy,DPP-IV Inhibitor," 465,1 µM         "
+P02666,LPL,Dairy,DPP-IV Inhibitor," 241,4 µM         "
+P02666,LPLPL,Dairy,DPP-IV Inhibitor, 325 µM         
+P02666,LPLPLL,Dairy,DPP-IV Inhibitor," 371,5 µM         "
+P02666,LPQ,Dairy,DPP-IV Inhibitor,82
+P02666,LPQNIPP,Dairy,DPP-IV Inhibitor,160
+P02666,LPQNIPPLT,Dairy,DPP-IV Inhibitor," 205,2 µM         "
+P02666,LPVPQ,Dairy,DPP-IV Inhibitor," 43,8 µM         "
+P33048,MHQPPQPL,Dairy,DPP-IV Inhibitor, 350 µM         
+P02666,PGPIPNS,Dairy,DPP-IV Inhibitor,1000
+P02666,PQNIPPL,Dairy,DPP-IV Inhibitor,1500
+P33048,SPTVMFPPQSVL,Dairy,DPP-IV Inhibitor, 676 µM         
+P02666,VLGP,Dairy,DPP-IV Inhibitor," 580,4 µM         "
+P02666,VPGEIVE,Dairy,DPP-IV Inhibitor," 224,5 µM         "
+P02666,VR,Dairy,DPP-IV Inhibitor," 826,1 µM         "
+P02666,YPFPGP,Dairy,DPP-IV Inhibitor," 749,2 µM         "
+P02666,YPFPGPIPN,Dairy,DPP-IV Inhibitor,670
+P02666,YPVEPF,Dairy,DPP-IV Inhibitor," 124,7 µM         "
+P05814,GFL,Dairy,immunomodulatory,           
+P02666,PGPIPN,Dairy,immunomodulatory,           
+P02666,QEPV,Dairy,immunomodulatory,           
+P02666,QEPVL,Dairy,immunomodulatory,           
+P02666,YPFPG,Dairy,immunomodulatory,induce inflammatory immune response in gut           
+P02666,YPFPGPI,Dairy,immunomodulatory,induce inflammatory immune response in gut           
+P02666,YQEPVLGPVRGPFPIIV,Dairy,immunomodulatory,Bone Marrow-Derived Macrophages           
+P02666,YPFPG,Dairy,improves learning and memory,in vivo (mice)            
+P02666,GVSKVKEAMAPKHKEMPFPKYPVEPFTESQ,Dairy,Increase MUC2 expression,           
+P02666,EMPFPK,Dairy,Increase MUC4 expression,           
+P02666,YPVEPF,Dairy,Increase MUC4 expression,           
+P02666,GVSKVKEAMAPKHKEMPFPKYPVEPFTESQ,Dairy,increase small intestinal goblet cell density, In vivo          
+P02666,YPFPG,Dairy,increases intestinal motility,           
+P02666,YPFPGPI,Dairy,Increases jejunal mucus secretion,           
+P02666,GVSKVKEAMAPKHKEMPFPKYPVEPFTESQ,Dairy,increases mMuc4 expression, In vivo          
+P02666,YPFPGPI,Dairy,Increases MUC2 expression,rat DHE cells           
+P02666,YPFPGPI,Dairy,Increases MUC3 expression,rat DHE cells           
+P02666,YPFPGPI,Dairy,Increases MUC5A expression,human HT29-MTX cells           
+P02666,GVSKVKEAMAPKHKEMPFPKYPVEPFTESQ,Dairy,Opioid,Increases mucin secretion in vitro          
+P02666,YPFP,Dairy,Opioid,           
+P02666,YPFPG,Dairy,Opioid,           
+P02666,YPFPGP,Dairy,Opioid,           
+P02666,YPFPGPI,Dairy,Opioid,induce jejunum mucus discharge            
+P05814,YPFVE,Dairy,Opioid,stimulate mucin secretion           
+P05814,YPFVEPI,Dairy,Opioid,           
+P02666,YPVEPF,Dairy,Opioid,           
+P02666,IHPFAQTQ,Dairy,PEP-inhibitory, 150 µM         
+P02666,VYPFPGPI,Dairy,PEP-inhibitory, 110 µM         
+P02666,VYPFPGPIP,Dairy,PEP-inhibitory, 50 µM         
+P02666,IHPFAQTQ,Dairy,prolyl endopeptidase-inhibitory ,           
+P02666,VYPFPGPI,Dairy,prolyl endopeptidase-inhibitory ,           
+P02666,VYPFPGPIP,Dairy,prolyl endopeptidase-inhibitory ,           
+P02666,YPFPG,Dairy,promote neurite outgrowth ,           
+P02666,GVSKVKEAMAPKHKEMPFPKYPVEPFTESQ,Dairy,protective effects in indomethacin-induced enteritis through preservation of goblet cells and improvement in wound healing,           
+P02666,VPP,Dairy,reduces bone loss,in vivo (rats)           
+P02666,YPFPGPI,Dairy,reduces pancreas MDA level,in vivo (diabetic rats)           
+P02666,YPFPGPI,Dairy,satiety,induces CCK-8 (satiety)           
+P02666,IPP,Dairy,stimulates proliferation,osteoblast           
+P05814,SPTIPFFDPQIPK,Dairy,stimulates proliferation,DNA synthesis           
+P02666,IPP,Dairy,stimulates trabecular bone growth,in vivo (rats)           
+P02666,VPP,Dairy,stimulates trabecular bone growth,in vivo (rats)           
+P02754,ALPM,Dairy,ACE-inhibitory,N/A 928 µM         
+P02754,ALPMH,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 521 µM         
+P02754,ALPMHIR,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 42,6 µM         "
+P02754,CMENSA,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 788 µM         
+P02754,DAQSAPLRVY,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 11,62 µM         "
+P02754,GLDIQK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 580 µM         
+P02754,GTW,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 464,4 µM         "
+P02754,HIR,Dairy,ACE-inhibitory,N/A 953 µM         
+P02754,IIAEK,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 63,7 µM         "
+P02754,IPA,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 141 µM         
+P02754,IPAVFK,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 144,8 µM         "
+P02754,IQKVAGTW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 51 µM         
+P02754,IR,Dairy,ACE-inhibitory,N/A 695 µM         
+P67976,KALPMHIRLAF,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 11 µM         
+P02754,LAMA,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 556 µM         
+P02754,LDAQSAPLR,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 635 µM         
+P02754,LDIQK,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 27,6 µM         "
+P02755,LDIQKVAGTW,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 21 µM         
+P02754,LDTDY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 121 µM         
+P02754,LKALPMH,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 11 µM         
+P02754,LL,Dairy,ACE-inhibitory,Cushman and Cheung (1971)           
+P02754,LLF,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 79,8 µM         "
+P02754,LQKW,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 34,7 µM         "
+P02754,LSFNPTQ,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 106 µM         
+P02754,MKG,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 71,8 µM         "
+P02754,VAGTWY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 767,5 µM         "
+P02754,VLDTDY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 128 µM         
+P02754,VLDTDYK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 946 µM         
+P02754,WY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 38,3 µM         "
+P02754,WYSL,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 90,4 µM         "
+P02754,WYSLA,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 86,9 µM         "
+P02754,WYSLAM,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 56,3 µM         "
+P02754,WYSLAMA,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 59,9 µM         "
+P02754,YLLF,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 172 µM         
+P02754,IIAEK,Dairy,Antihypertensive,Hypocholesterolemic           
+P02754,AVF,Dairy,Anti-inflammatory,           
+P02754,DYKKY,Dairy,Anti-inflammatory,           
+P02754,GTWY,Dairy,Anti-inflammatory,           
+P02754,LF,Dairy,Anti-inflammatory,           
+P02754,WYSL,Dairy,Anti-inflammatory,           
+P02754,AASDISLLDAQSAPLR,Dairy,Antimicrobial,log(N0/Nf) B. subtilis S. lentus S. zooepidemicus      
+P02756,DAQSAPLR,Dairy,Antimicrobial,% Colonies Inhibited E. coli        
+P02756,GLDIQKVAGT,Dairy,Antimicrobial,% Colonies Inhibited E. coli        
+P02754,IDALNENK,Dairy,Antimicrobial,           
+P02756,IIAEKTKIPAVF,Dairy,Antimicrobial,% Colonies Inhibited E. coli        
+P02756,IIVTQTMK,Dairy,Antimicrobial,  % Colonies Inhibited E. coli        
+P02754,IPAVFK,Dairy,Antimicrobial,           
+P02754,IRL,Dairy,Antimicrobial,  log(N0/Nf) L ivanovii E. coli       
+P02756,LAFNPTQLEGQ,Dairy,Antimicrobial,  % Colonies Inhibited E. coli        
+P02756,SLAMAASDISLL,Dairy,Antimicrobial,  % Colonies Inhibited E. coli        
+P02754,TPEVDDEALEK,Dairy,Antimicrobial,  log(N0/Nf) L. monocytogenes S. aureus       
+P02756,TPEVDKEALE,Dairy,Antimicrobial,  % Colonies Inhibited E. coli        
+P02754,VAGTWY,Dairy,Antimicrobial,  log(N0/Nf) B. subtilis        
+P02756,VEELKPTPEGNLE,Dairy,Antimicrobial,  % Colonies Inhibited E. coli        
+P02754,VLVLDTDYK,Dairy,Antimicrobial,  log(N0/Nf) B. subtilis        
+P02754,VAGTWY,Dairy,Antioxidant," 5,63 µmol TE/ mol         "
+P02754,WYSLAMAASDI,Dairy,Antioxidant,           
+P02754,HIRL,Dairy,Anxiolytic,in vivo (mice)           
+P02754,LIVTQTMK,Dairy,Cytotoxic,mice splenocyte           
+P02754,YLLF,Dairy,Cytotoxic,mice splenocyte           
+P02754,IPA,Dairy,DPP-IV Inhibitor, 49 µM         
+P02754,IPAVF,Dairy,DPP-IV Inhibitor," 44,7 µM         "
+P02754,IPAVFK,Dairy,DPP-IV Inhibitor," 149,1 µM         "
+P02754,IPAVFKIDA,Dairy,DPP-IV Inhibitor, 191 µM         
+P02754,IQKVAGTW,Dairy,DPP-IV Inhibitor, 329 µM         
+P02754,LKALPMH,Dairy,DPP-IV Inhibitor, 193 µM         
+P02754,LKPTPEGDL,Dairy,DPP-IV Inhibitor, 45 µM         
+P02754,LKPTPEGDLE,Dairy,DPP-IV Inhibitor, 45 µM         
+P02754,LKPTPEGDLEIL,Dairy,DPP-IV Inhibitor, 57 µM         
+P02754,TPEVDDEALEK,Dairy,DPP-IV Inhibitor," 578,7 µM         "
+P02754,VA,Dairy,DPP-IV Inhibitor," 168,2 µM         "
+P02754,VAGTWY,Dairy,DPP-IV Inhibitor," 74,9 µM         "
+P02754,VL,Dairy,DPP-IV Inhibitor, 74 µM         
+P02754,VLDTDY,Dairy,DPP-IV Inhibitor, 471 µM         
+P02754,VLVLDTDYK,Dairy,DPP-IV Inhibitor," 424,4 µM         "
+P02754,ALPMH,Dairy,Hypocholesterolemic,           
+P02754,GLDIQK,Dairy,Hypocholesterolemic,           
+P02754,IIAEK,Dairy,Hypocholesterolemic,           
+P02754,VYVEELKPTPEGDLEILLQK,Dairy,Hypocholesterolemic,           
+P02754,YLLF,Dairy,Opioid,           
+P02754,ALPMHIR,Dairy,Reduced vasoconstrictorendothelin-1 release,áendothelial cells           
+P02754,ALKALPMHIR,Dairy,stimulates proliferation,mice splenocyte           
+P02754,ALPMHIR,Dairy,stimulates proliferation,mice splenocyte           
+P02754,EILLQK,Dairy,stimulates proliferation,mice splenocyte           
+P02754,IDALNENK,Dairy,stimulates proliferation,mice splenocyte           
+P02754,IPAVFK,Dairy,stimulates proliferation,mice splenocyte           
+P02754,VAGTWY,Dairy,stimulates proliferation,mice splenocyte           
+P02754,VLVLDTDYKKYLLF,Dairy,stimulates proliferation,mice splenocyte           
+P02668,AIPPKKNQD,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 19,9 µM         "
+P07498,ANPAVVRP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 25 µM         
+P02668,ARHPH,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 15,15 µM         "
+P07498,AVVRP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 74 µM         
+P02668,DERF,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 37,08 µM         "
+P02669,EKDERF,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 14,3 µM         "
+P02668,FSDKIAK,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 113,6 µM         "
+P02669,HPHPHLSF,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 28,9 µM         "
+P07498,IAIP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 470 µM         
+P07498,IAIPP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 600 µM         
+P02669,IAK,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 15,7 µM         "
+P02668,IQY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 70,4 µM         "
+P02669,KDERF,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 848 µM         
+P07498,KTAP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 37 µM         
+P02669,LPYPY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 28,9 µM         "
+P02668,MAIPPKK,Dairy,ACE-inhibitory,in vivo (rats)           
+P02668,MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV,Dairy,ACE-inhibitory,in vivo (rats)           
+I6UFY2,PPEIN,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 510 µM         
+P07498,PTPAP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 33 µM         
+P07498,QKTAP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 30 µM         
+P02668,RYPSYG,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 65,71 µM         "
+P02668,SY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 41 µM         
+P07498,VAV,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 260 µM         
+P02668,VLSRYP,Dairy,ACE-inhibitory,"N/A 36,7 µM         "
+P02669,VR,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 52,8 µM         "
+P07498,VVRP,Dairy,ACE-inhibitory,Kasahara and Ashihara (1981) 81 µM         
+P02669,WQVLPNAVPAK,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 10 µM         
+P02669,YAKPVA,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 14,3 µM         "
+P07498,YANPAVVRP,Dairy,ACE-inhibitory,"Kasahara and Ashihara (1981) 7,8 µM         "
+P02669,YIPIQY,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 10 µM         
+P02668,YPYY,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 90,9 µM         "
+P02669,YQQRPVA,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 14,3 µM         "
+P02668,FFSDK,Dairy,Anticancer,Cytotoxic for leukemic cells           
+P02670,ASAEPTVH,Dairy,Antimicrobial,  % Colonies Inhibited E. coli B. cereus L. monocytogenes      
+P02668,AVESTVATLEDSPEVIESPPE,Dairy,Antimicrobial,  MIC (96 Well) S. mutans        
+P02668,EIPT,Dairy,Antimicrobial,  log(N0/Nf) E. coli S. maracescens       
+P02668,FFSDK,Dairy,Antimicrobial,  MIC E. coli S. aureus L. casei L. acidophilus     
+P02668,FSDKIAK,Dairy,Antimicrobial,  log(N0/Nf) E. coli L. innocua S. carnosus      
+P02668,IAK,Dairy,Antimicrobial,  MIC E. coli S. aureus L. casei L. acidophilus     
+P02668,IQY,Dairy,Antimicrobial,  log(N0/Nf) E. coli        
+P02670,IVNTVDNPEASSE,Dairy,Antimicrobial,  % Colonies Inhibited E. coli B. cereus       
+P02670,MAIPPKKDQDKTEVPAINT,Dairy,Antimicrobial,  % Colonies Inhibited E. coli B. cereus L. monocytogenes      
+P02668,MAIPPKKNQDKTEIPTINT,Dairy,Antimicrobial,   E. coliá        
+P02668,MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV,Dairy,Antimicrobial,  MIC (96 Well) S. mutans        
+P02668,MMK,Dairy,Antimicrobial,Gram-positive bacteria  MIC E. coli S. aureus L. casei L. acidophilus     
+P02668,PAAVRSPAQILQ,Dairy,Antimicrobial,  log(N0/Nf) E. coli        
+P02670,PPKKDQDKTEVPA,Dairy,Antimicrobial,  % Colonies Inhibited E. coli B. cereus L. monocytogenes      
+P02670,PTVHSTPTTE,Dairy,Antimicrobial,  % Colonies Inhibited E. coli B. cereus L. monocytogenes      
+P02668,STVATL,Dairy,Antimicrobial,   E.coli L. innocua S. carnosus      
+P02668,TEAVESTVATL,Dairy,Antimicrobial,  MIC (96 Well) E. coli B. subtilis       
+P02668,VESTVATL,Dairy,Antimicrobial,  log(N0/Nf) E. coli L. innocua S. carnosus      
+P02668,VQVTSTAV,Dairy,Antimicrobial,  log(N0/Nf) L. innocua S. carnosus       
+P07498,YQRRPAIAINNPYVPRTYYANPAVVRPHAQIPQRQYLPNSHPPTVVRRPNLHPSF,Dairy,Antimicrobial,  MIC (Agar Diffusion) E. coli        
+P02668,YVL,Dairy,Antimicrobial,  log(N0/Nf) S. maracescens L. innocua S. carnosus      
+P02668,YYQQKPVA,Dairy,Antimicrobial,  log(N0/Nf) E. coli S. carnosus       
+P02668,IQY,Dairy,Antioxidant,           
+P07498,NPYVPR,Dairy,Antioxidant, 2600 µM TE/mM         
+P07498,VPNSYP,Dairy,Antioxidant, 2500 µM TE/mM         
+P02668,YVL,Dairy,Antioxidant,           
+P02668,MAIPPKK,Dairy,antithrombin,           
+P02668,YIPIQYVLSR,Dairy,C3a Receptors agonist,           
+P02670,INNQFLPYPY,Dairy,DPP-IV Inhibitor," 40,08 µM         "
+P02668,IPI,Dairy,DPP-IV Inhibitor," 4,9 µM         "
+P02668,IPIQY,Dairy,DPP-IV Inhibitor," 35,2 µM         "
+P02668,LPYPY,Dairy,DPP-IV Inhibitor," 108,3 µM         "
+P02668,YPY,Dairy,DPP-IV Inhibitor," 243,7 µM         "
+P02668,YPYY,Dairy,DPP-IV Inhibitor," 194,4 µM         "
+P02668,MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV,Dairy,immunomodulatory,           
+P02668,SRYPSY,Dairy,Opioid,           
+P02668,YPSYGLN,Dairy,Opioid,           
+P02668,YPSYGLNY,Dairy,Opioid,Opioid antagonist           
+P02668,YPYY,Dairy,Opioid,Opioid antagonist           
+P02668,MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV,Dairy,stimulates exocrine pancreatic secretion,in vivo (rats)           
+P24627,CRRWQWR,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 2,3 µM         "
+P24627,DPYKLRP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 30,5 µM         "
+P24627,FKCRRW,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 26,7 µM         "
+P24627,FKCRRWQW,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 10,5 µM         "
+P24627,FKCRRWQWR,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 2,9 µM         "
+P24627,FKCRRWQWRMKKLGA,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 25,5 µM         "
+P24627,FKCRRWQWRMKKLGAP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 11 µM         
+P24627,GILRP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 90,7 µM         "
+P24627,KCRRWQWR,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 5,8 µM         "
+P24627,KLRP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 91,6 µM         "
+P24627,LIWKL,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 0,47 µM         "
+P24627,LNNSRAP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 105,3 µM         "
+P24627,LRP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 0,35 µM         "
+P24627,LRPVAA,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 4,14 µM         "
+P24627,PYKLRP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 10,2 µM         "
+P24627,RPYL,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 56,5 µM         "
+P24627,RRWQWR,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 32 µM         
+P24627,YKLRP,Dairy,ACE-inhibitory,"Sentandreu and Toldra (2006) 16,5 µM         "
+P24627,FKCRRWQWRMKKLGAPSITCVR,Dairy,Anticancer,Cytotoxic for neuroblastoma cell lines           
+P24627,FKCRRWQWRMKKLGAPSITCVRRAF,Dairy,Anticancer,Cytotoxic for leukemic cells           
+P24627,ADRDQYELL,Dairy,Antimicrobial,Antiviral   HSV-1        
+P24627,APRKNVRWCTI,Dairy,Antimicrobial,HIV-1 Reverse Transcriptase-inhibitory           
+P24627,APRKNVRWCTISQPEWFKCR,Dairy,Antimicrobial,  MIC (96 Well) E. coli B. subtilis       
+P24627,APRKNVRWCTISQPEWFKCRRWQWRMKKLGAPSITCVRRAFALECIRAIAEKKADAVTLDGGMVFEAGRDPYKLRPVAAEIYGTKESPQTHYYAVAVVKKGSNFQLDQLQGRKSCHTGLGRSAGWIIPMGILRPYLSWTESLEPLQGAVAKFFSASCVPCIDRQAYPNLCQLCKGEGENQCACSSREPYFGYSGAFKCLQDGAGDVAFVKETTVFENLPEKADRDQYELLCLNNSRAPVDAFKECHLAQVPSHAVVARSVDGKEDLIWKLLSKAQEKFGKNKSRSFQLFGSPPGQRDLLFKDSALGFLRIPSKVDSALYLGSRYLTTLKNLRE,Dairy,Antimicrobial,  MIC S. aureus        
+P24627,APRKNVRWCTISQPEWFKCRRWQWRMKKLGAPSITCVRRAFALECIRAIAEKKADAVTLDGGMVFEAGRDPYKLRPVAAEIYGTKESPQTHYYAVAVVKKGSNFQLDQLQGRKSCHTGLGRSAGWIIPMGILRPYLSWTESLEPLQGAVAKFFSASCVPCIDRQAYPNLCQLCKGEGENQCACSSREPYFGYSGAFKCLQDGAGDVAFVKETTVFENLPEKADRDQYELLCLNNSRAPVDAFKECHLAQVPSHAVVARSVDGKEDLIWKLLSKAQEKFGKNKSRSFQLFGSPPGQRDLLFKDSALGFLRIPSKVDSALYLGSRYLTTLKNLRETAEEVKARYTR,Dairy,Antimicrobial,  MIC S. aureus        
+P02788,ATKCFQWQRNMRKVR,Dairy,Antimicrobial,  MMC99 (96 Well) E. faecalis S. epidermis S. aureus K. pneumoniae P. aeruginosa E. coli C. albicans  
+P02788,CFQWQRNMRKVR,Dairy,Antimicrobial,  MMC99 (96 Well) E. faecalis S. epidermis S. aureus K. pneumoniae P. aeruginosa E. coli C. albicans  
+P02788,CFQWQRNMRKVRGPPVSCI,Dairy,Antimicrobial,  MIC (96 Well) P. intermedia        
+P24627,CRRWQWRMKKLGA,Dairy,Antimicrobial,  MIC E. coli S. aureus       
+P24627,CRRWQWRMKKLGAPSITCV,Dairy,Antimicrobial,  MIC (96 Well) S. aureus S. mutans S. salivarius P. intermedia P. gingivalis F. nucleatum   
+P02788,DAIWNLLRQAQEKFGKDKSP,Dairy,Antimicrobial,Antifungal  MIC (96 Well) E. coli C. albicans S. sanguinis      
+P24627,DGKEDLIWKLLSKAQEKFGKNKSR,Dairy,Antimicrobial,  MIC (96 Well) C. albicans        
+P24627,DLIWKLLSKAQEKFGK,Dairy,Antimicrobial,  MIC (96 Well) C. albicans        
+P24627,DLIWKLLSKAQEKFGKNK,Dairy,Antimicrobial,  MIC (96 Well) C. albicans        
+P24627,DLIWKLLSKAQEKFGKNKSR,Dairy,Antimicrobial,Antiparasitical  MIC (96 Well) L. donovani L. pifanoi       
+P24627,DLIWKLLSKAQEKFGKNKSRSFQLFGSPPGQR,Dairy,Antimicrobial,  MIC (96 Well) E. coli C. albicans       
+P02788,EATKCFQWQRNMRKVR,Dairy,Antimicrobial,  MMC99 (96 Well) E. faecalis S. epidermis S. aureus E. coli     
+P02788,EATKCFQWQRNMRKVRGPPVSCIKR,Dairy,Antimicrobial,  MMC99 (96 Well) E. coli S. aureus C. albicans      
+P24627,EDLIWK,Dairy,Antimicrobial,Antiviral   HSV-1        
+P24627,EDLIWKLLSKAQEKFGKNKSR,Dairy,Antimicrobial,  MIC (96 Well) C. albicans        
+P02788,FFSASCVPGADKGQFPNLCRLCAGTGENKCA,Dairy,Antimicrobial,"Antibacterial, Antifungal  % Colonies inhibited C. albicans        "
+P24627,FKCRRWQWR,Dairy,Antimicrobial,  MIC (96 Well) L. monocytogenes E. coli B. cereus P. fluorescens     
+P24627,FKCRRWQWRM,Dairy,Antimicrobial,  % Colonies Inhibited C. albicans        
+P24627,FKCRRWQWRMK,Dairy,Antimicrobial,  MIC (96 Well) E. coli S. aureus       
+P24627,FKCRRWQWRMKKLG,Dairy,Antimicrobial,Antiparasitical  MIC (96 Well) L. donovani L. pifanoi       
+P24627,FKCRRWQWRMKKLGA,Dairy,Antimicrobial,E.coli S. Aureus          
+P24627,FKCRRWQWRMKKLGAPSITCVRRAF,Dairy,Antimicrobial,   Many types Many types       
+P24627,FKCRRWQWRMKKLGAPSITCVRRAFA,Dairy,Antimicrobial,  MIC (96 Well) L. monocytogenes E. coli B. cereus P. fluorescens S. aureus    
+P24627,FKCRRWQWRMKKLGAPSITCVRRAFAL,Dairy,Antimicrobial,           
+P24627,FKCRRWQWRMKKLGAPSITCVRRAFALECIRA,Dairy,Antimicrobial,           
+P02788,FQWQRNMRKVR,Dairy,Antimicrobial,  % Colonies inhibited E. coli        
+P02788,FQWQRNMRKVRGPPVS,Dairy,Antimicrobial,  % Colonies inhibited E. coli        
+P02788,GRRRS,Dairy,Antimicrobial,  MIC (96 Well) E. faecalis E. coli       
+P02788,GRRRSVQW,Dairy,Antimicrobial,  MIC (96 Well) E. faecalis L. lactis       
+P02788,GRRRSVQWCA,Dairy,Antimicrobial,  MIC S. aureus L. monocytogenes K. pneumoniae E. coli     
+P02788,KCFQWQRNMRKVR,Dairy,Antimicrobial,  MMC99 (96 Well) E. faecalis S. epidermis S. aureus K. pneumoniae P. aeruginosa E. coli C. albicans  
+P24627,KCRRWQWRMKKLGA,Dairy,Antimicrobial,  MIC E. coli S. aureus       
+P24627,KCRRWQWRMKKLGAPSITCV,Dairy,Antimicrobial,  % Colonies Inhibited E. coli S. aureus C. albicans      
+P24627,KEDLIWKLLSKAQEKFGKNKSR,Dairy,Antimicrobial,  MIC (96 Well) C. albicans        
+P24627,KKLGAPSITCVRRAFA,Dairy,Antimicrobial,  MIC (96 Well) L. monocytogenes E. coli       
+P24627,KLLSKAQEKFGKNKSRSFQL,Dairy,Antimicrobial,  MIC (96 Well) E. coli B. subtilis       
+P24627,LIWKLLSKAQEKFGKNKSR,Dairy,Antimicrobial,  MIC (96 Well) C. albicans        
+P24627,LLSKAQEKFGKNKSR,Dairy,Antimicrobial,  MIC (96 Well) C. albicans        
+Q29477,LRKAQEKFGKNKSQSFQL,Dairy,Antimicrobial,  MIC (Agar Diffusion) E. coli M. flavus       
+P02788,PEATKCFQWQRNMRKVR,Dairy,Antimicrobial,  MMC99 (96 Well) E. faecalis S. epidermis S. aureus      
+P24627,PEWFKCRRWQWRMKKLGA,Dairy,Antimicrobial,  MIC E. coli S. aureus       
+Q29477,PEWSKCYQWQRRMRKLGAPSITCIRRTSA,Dairy,Antimicrobial,  MIC (Agar Diffusion) E. coli M. flavus       
+P02788,QPEATKCFQWQRNMRKVR,Dairy,Antimicrobial,  MMC99 (96 Well) E. faecalis S. aureus       
+P14632,RQWQSKIRR,Dairy,Antimicrobial,  % Colonies Inhibited E. coli S. aureus C. albicans      
+P02788,RRRSVQWCA,Dairy,Antimicrobial,  MIC S. aureus L. monocytogenes K. pneumoniae E. coli     
+P02788,RRSVQWCA,Dairy,Antimicrobial,  MIC L. monocytogenes K. pneumoniae E. coli      
+P24627,RRWQWRMKK,Dairy,Antimicrobial,  % Colonies Inhibited E. coli S. aureus C. albicans      
+P24627,RRWQWRMKKLG,Dairy,Antimicrobial,  MIC (Absorbance) E. coli B. subtilis       
+P24627,RRWQWRMKKLGA,Dairy,Antimicrobial,  MIC E. coli S. aureus       
+Q29477,SKCYQWQRRMRKLGA,Dairy,Antimicrobial,  MIC E. coli        
+P24627,SVDGKEDLIWKLLSKAQEKFGKNKSR,Dairy,Antimicrobial,  MIC (96 Well) E. coli C. albicans       
+P02788,TKCFQWQRN,Dairy,Antimicrobial,  MIC (96 Well) E. faecalis E. faecium L. lactis S. aureus E. coli K. pneumoniae S. choleraesuis  
+P02788,TKCFQWQRNMRKVR,Dairy,Antimicrobial,  MMC99 (96 Well) E. faecalis S. epidermis S. aureus K. pneumoniae P. aeruginosa E. coli C. albicans  
+P02788,TKCFQWQRNMRKVRGPPVSCIKRDS,Dairy,Antimicrobial,   Human cytomegalovirus        
+P24627,TRVVWCAVG,Dairy,Antimicrobial,  MIC (96 Well) E. coli B. subtilis       
+P24627,WKLLSKAQEKFGKNKSR,Dairy,Antimicrobial,  MIC (96 Well) C. albicans        
+P02788,WNLLRQAQEKFGKDKSP,Dairy,Antimicrobial,Antifungal  MIC (96 Well) E. coli C. albicans S. sanguinis      
+P02788,WNLLRQAQEKFGKDKSPK,Dairy,Antimicrobial,HIV-1 Reverse Transcriptase-inhibitory           
+Q29477,WQRRMRKLGAPSIT,Dairy,Antimicrobial,  MIC (96 Well) E. coli        
+Q29477,YQWQRRMRKL,Dairy,Antimicrobial,  MIC E. coli        
+Q29477,YQWQRRMRKLGAPSIT,Dairy,Antimicrobial,  MIC (96 Well) E. coli        
+P02788,CFQWQRNMRKVRGPPVSCIKRD,Dairy,Cell Penetrating,           
+P24627,FKCRRWQWRMKKLGAPSITCVRRAF,Dairy,DNA repair,           
+P02788,IPM,Dairy,DPP-IV Inhibitor," 69,5 µM         "
+P24627,WI,Dairy,DPP-IV Inhibitor," 138,7 µM         "
+P02788,KYLGPQY,Dairy,Opioid,Opioid antagonist           
+P02788,RYYGY,Dairy,Opioid,Opioid antagonist           
+P02788,YLGSGY,Dairy,Opioid,Opioid antagonist           
+P24627,YLGSRY,Dairy,Opioid,           
+P24627,AEIYGTKESPQTHYY,Dairy,stimulates proliferation,t intestinal epithelial cell           
+P80195,NLENTVKETIKYLKSLFSHAFEVVKT,Dairy,Antimicrobial,           
+P14639,EGPKLVAS,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 19 µM         
+P14639,KVGTKCCAKP,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 30 µM         
+P14639,PKIDAMREKVLA,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 103 µM         
+P14639,QNALIVRYTR,Dairy,ACE-inhibitory,"Cushman and Cheung (1971) 4,6 µM         "
+P14639,REKVLASS,Dairy,ACE-inhibitory,Cushman and Cheung (1971) 32 µM         
+P02666,HL,Dairy,DPP-IV Inhibitor," 143,19 µM         "
+P00711,WV,Dairy,DPP-IV Inhibitor," 65,69 µM         "
+P02666,AL,Dairy,DPP-IV Inhibitor," 882,13 µM         "
+P02666,FL,Dairy,DPP-IV Inhibitor," 399,58 µM         "
+P02662,YLGYLE,Dairy,ACE-inhibitory,85.76 uM(IC50)
+P02662,YFYPEL,Dairy,ACE-inhibitory,8.82 uM(IC50)
+P02666,YPFPGPIP,Dairy,ACE-inhibitory,224.05 uM(IC50)
+P02666,YPFPGPIN,Dairy,ACE-inhibitory,378.65 uM(IC50)
+P02666,YPFVEP,Dairy,ACE-inhibitory,7.48 uM(IC50)
+P02666,YGFL,Dairy,ACE-inhibitory,292.53 uM(IC50)
+P02754,YLL,Dairy,ACE-inhibitory,518.54 uM(IC50)
+P02666,HQPHQPLPPTVMFPPQ,Dairy,ACE-inhibitory,
+P02666,HQPHQPLPPT,Dairy,ACE-inhibitory,
+P02666,WMHQPHQPLPPT,Dairy,ACE-inhibitory,
+P02666,LYQEPVLGPVR,Dairy,ACE-inhibitory,
+P02666,LDQWLCEK,Dairy,ACE-inhibitory,
+P02666,PGPIPN,Dairy,ACE-inhibitory,
+P02666,LLYQEPVLGPVR,Dairy,ACE-inhibitory,274 uM(IC50)
+P02754,IPAVF,Dairy,ACE-inhibitory,9.09 uM(IC50)
+P02754,MHI,Dairy,ACE-inhibitory,11.59 uM(IC50)
+P02754,IAEK,Dairy,ACE-inhibitory,25.08 uM(IC50)
+P00711,TTFHTSGY,Dairy,ACE-inhibitory,142 μM)
+P02662,"NMAINPSKENLCSTFCK,",Dairy,ACE-inhibitory,129.07 uM(IC50)
+P02663,YQKFPQYLQY,Dairy,ACE-inhibitory,
+P02666,PFPGPIPN,Dairy,ACE-inhibitory,
+P02666,LPLPLL,Dairy,ACE-inhibitory,
+P02756,PEQSLACQCL,Dairy,ACE-inhibitory,
+P02662,PFPEVFGK,Dairy,ACE-inhibitory,108 uM(IC50)
+P02668,IPPKKNQDKTE,Dairy,ameliorates insulin resistance,
+Q9TSI0,VLPVPQK,Dairy,anti-apoptotic effect,
+P02666,YP,Dairy,antihypertensive,
+P02666,IPP,Dairy,antihypertensive,
+P02662,RYLGY,Dairy,Antihypertensive,
+P02662,AYFYPEL,Dairy,Antihypertensive,
+P02668,MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV,Dairy,Anti-inflammatory,
+P02666,HQPHQPLPPTVMFPPQ,Dairy,Anti-inflammatory,
+P02666,WMHQPHQPLPPT,Dairy,Anti-inflammatory,
+P02666,LYQEPVLGPVR,Dairy,Anti-inflammatory,
+P02666,LDQWLCEK,Dairy,Anti-inflammatory,
+P02666,YP,Dairy,Anti-inflammatory,
+P02666,PGPIPN,Dairy,Anti-inflammatory,
+P02666,KVLPVPQ,Dairy,Anti-inflammatory,
+Q9TSI0,YQEPVLGPVR,Dairy,Anti-inflammatory,
+O62823,YFYPQL,Dairy,Anti-inflammatory,
+P02666,LLY,Dairy,Anti-inflammatory,
+P02754,IPAV,Dairy,Anti-inflammatory,
+P02663 ,KTVDMESTEVFTKKTKLTEEEKNRLNFLKK,Dairy,Antimicrobial,
+P05814 ,YPVTQPLAPVHNPIS,Dairy,Antimicrobial,
+P24627,FKCRRWQWRM KKLGAPSITCVRRAF,Dairy,Antimicrobial,
+P02666,YPVEPF,Dairy,Antimicrobial,
+P02662,LRLKKYKVPQL,Dairy,Antimicrobial,
+P05814,LLNQELLLNPTHQIYPV,Dairy,Antimicrobial,
+P02663 ,SSSEESII,Dairy,Antimicrobial,
+P02662,RYLGYLE,Dairy,Antioxidant,
+P02662,YLGYLE,Dairy,Antioxidant,
+P02666,YPFPGPI,Dairy,Antioxidant,
+P02666,YPFPGPIP,Dairy,Antioxidant,
+P02666,YPFPGPIN,Dairy,Antioxidant,
+P02666,YPFVE,Dairy,Antioxidant,
+P02666,YPFVEP,Dairy,Antioxidant,
+P02666,YGFL,Dairy,Antioxidant,
+P02666,YGFLP,Dairy,Antioxidant,
+P02666,YPVEPF,Dairy,Antioxidant,
+P00711,YGLF,Dairy,Antioxidant,
+P02754,YLL,Dairy,Antioxidant,
+P02754,YLLF,Dairy,Antioxidant,
+P02070,YPW,Dairy,Antioxidant,
+P02070,YPWT,Dairy,Antioxidant,
+P02070,PWT,Dairy,Antioxidant,
+P02666,RELEEL,Dairy,Antioxidant,
+P02668,QYVLSRYPSYGIN,Dairy,Antioxidant,
+P02668,KYIPIQYVLS,Dairy,Antioxidant,
+P02668,INNQFLPYPYYAKPA,Dairy,Antioxidant,
+P02668,DKTEIPTINTIASGEPT,Dairy,Antioxidant,
+P02668,AVRSPAQILQWQ,Dairy,Antioxidant,
+P02668,NTVPAKSCQAQPTTM,Dairy,Antioxidant,
+P02666,NVPGEIVESL,Dairy,Antioxidant,
+P02666,HKEMPFPKYPVEPFTESQ,Dairy,Antioxidant,
+P02666,SQSKVLPVPQKAVPYPQ,Dairy,Antioxidant,
+P02666,SWMHQPHQPLPPT,Dairy,Antioxidant,
+P02666,FPKYPVEPF,Dairy,Antioxidant,
+P02662,APSFSDIPNPIGSENSE,Dairy,Antioxidant,
+P02662,KHQGLPQEVLNENLL,Dairy,Antioxidant,
+P02662,PFPEVFGKE,Dairy,Antioxidant,
+O77698,SVDGKEDLIW,Dairy,Antioxidant,
+Q9TSI0,YQEPVLGPVR,Dairy,Antioxidant,
+P07498,YVPR,Dairy,Antioxidant,
+P02666,VPYPQR,Dairy,Antioxidant,
+P02668,RHPHPHLSFM,Dairy,Antioxidant,
+P02666,LLY,Dairy,Antioxidant,
+P02755,YVEELKPTPEGDL,Dairy,Antioxidant,
+P02666,KVLPVPEK,Dairy,Antioxidant,
+P02668 ,ARHPHPHLSFM,Dairy,Antioxidant,
+P02666,VPP,Dairy,Antioxidant,
+P02668,IPP,Dairy,Antioxidant,
+O62823,YFYPQL,Dairy,Antioxidant,
+P02666,YQEPVLGPVR,Dairy,Antithrombotic,
+P00711,LDQWLCEKL,Dairy,DPP-IV Inhibitory,59.6 uM(IC50)
+P00711,ILDKVGINYWLAHK,Dairy,DPP-IV Inhibitory,23.1 uM(IC50)
+P00711,VGINYWLAHK,Dairy,DPP-IV Inhibitory,13.8 uM(IC50)
+P00711,EQLTKCEVFR,Dairy,DPP-IV Inhibitory,12 uM(IC50)
+P00711,KILDKVGINYWLAHK,Dairy,DPP-IV Inhibitory,11.4 uM(IC50)
+P02666,VPYPQ,Dairy,DPP-IV Inhibitory,41.45 uM(IC50)
+P00710 ,ILDKEGIDY,Dairy,DPP-IV Inhibitory,347.8 uM(IC50)
+O97943,ILELA,Dairy,DPP-IV Inhibitory,721.1 uM(IC50)
+O97943,LLQLEAIR,Dairy,DPP-IV Inhibitory,177.8 uM(IC50)
+Q9TVD0,LPVP,Dairy,DPP-IV Inhibitory,87 uM(IC50)
+Q9TVD0,MPVQA,Dairy,DPP-IV Inhibitory,93.3 uM(IC50)
+Q9TVD0,SPVVPF,Dairy,DPP-IV Inhibitory,214.1 uM(IC50)
+Q9TVD0,YPVEPF,Dairy,DPP-IV Inhibitory,138 uM(IC50)
+P02754,LKPTPEGDL,Dairy,DPP-IV Inhibitory,
+P02668,LPYPY,Dairy,DPP-IV Inhibitory,
+P02668,IPIQY,Dairy,DPP-IV Inhibitory,
+P02668,IPI,Dairy,DPP-IV Inhibitory,
+P02668,IPP,Dairy,enhance insulin signaling,
+P02666,VPP,Dairy,enhance insulin signaling,
+P14632,KCRQWQSKIRRTNPIFCIRR),Dairy,Immunomodulatory,
+P02662,YLG,Dairy,improves cognitive decline,
+P02666,TDVEN,Dairy,Inhibition of cholesterol solubility,
+P02666,LQPE,Dairy,Inhibition of cholesterol solubility,
+P02662,VAPFPE,Dairy,Inhibition of cholesterol solubility,
+P02666,VLPVPQ,Dairy,Inhibition of cholesterol solubility,
+P02666,VPP,Dairy,Nitric oxide liberation,
+P02666,IPP,Dairy,Nitric oxide liberation,
+P02754,YVEEL,Dairy,Osteoanabolic,
+P02754,YLLF,Dairy,Osteoanabolic,
+P00711,WLAHK,Dairy,Osteoanabolic,
+P02666,VLPVPQK,Dairy,osteoanabolic action,
+P24627,FKSETKNLL,Dairy,Osteogenic activity,
+O62823,EDVPSER,Dairy,Osteogenic activity,
+Q9TSI0,VLPVPQK,Dairy,Osteogenic activity,
+P11840,HPHPHLSF,Dairy,Osteogenic activity,
+P02754,YVEEL,Dairy,osteo-protective,
+P02754,YLLF,Dairy,osteo-protective,
+P02668,MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV,Dairy,Prevents or reverses skin barrier damage,
+P47710,YPFVE,Dairy,promote beta-cell development,
+P47710,YPFVEPI,Dairy,promote beta-cell development,
+P02666,RELEELNVPGEIVESLSSSEESITR,Dairy,promotes calcium uptake,
+P02666,VLPVPQK,Dairy,Wound healing,
+P05814,GRVMPVLKSPTIPFFDPQIP,Dairy,immunomodulatory,BCCY-1 enhanced chemokine production and monocyte migration
+P02662,YQLD,Dairy,Antioxidant,
+P02662,FSDIPNPIGSEN,Dairy,Antioxidant,
+P02662,FSDIPNPIGSE,Dairy,Antioxidant,
+P02662,YFYP,Dairy,Antioxidant,
+P00711,LKDLKGYGG,Dairy,DPP-IV Inhibitory,IC50 value of 4.93 mM
+P02754,TPEVDKEALEK,Dairy,Antioxidant,
+P00711,VGINYWLAHK,Dairy,Antioxidant,
+P00711,IWCKDDQNPH,Dairy,Antioxidant,
+P24627,NLPEKADRD,Dairy,Antithrombin,
+P24627,NLPEKADRD,Dairy,ACE-inhibitory,
+P02666,ELNVPGEIVES,Dairy,Antimicrobial,
+P02666,SSSEESITRIN,Dairy,Antimicrobial,
+P02666,GVSKVKEAMAPKH,Dairy,Antimicrobial,
+P02666,DVENLHLPLPL,Dairy,Antimicrobial,
+P02754,PMHIR,Dairy,ACE-inhibitory,
+P02666,KVLPVPEK,Dairy,Anti-inflammatory,
+E9NZN2,KALNEINQF,Dairy,Antioxidant,
+P02662,LHSMK,Dairy,Antioxidant,
+P02666,YPFPGPIPNS,Dairy,anti-anxiety,
+P33049,FPQYLQYPY,Dairy,ACE-inhibitory,
+P02666,YPSYGL,Dairy,DPP-IV Inhibitory,
+P02668,HPHPHLSFMAIPP,Dairy,ACE-inhibitory,
+P02666,SLPQNIPPL,Dairy,DPP-IV Inhibitory,
