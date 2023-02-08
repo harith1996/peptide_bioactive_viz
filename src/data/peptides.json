@@ -1,0 +1,6211 @@
+[
+  {
+    "proteinID": "P01966",
+    "peptide": "KLLSHSL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 42,51 µM"
+  },
+  {
+    "proteinID": "P01966",
+    "peptide": "KLLSHSL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) E. coli - 78.4 L. innocua - 39.2 K. luteus A270 - 39.2 S. aureus - 39.2"
+  },
+  {
+    "proteinID": "P01966",
+    "peptide": "LDDLPGALSELSDLHAHKLRVDPVNFKLLSHSL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) E. coli - 171.18 L. innocua - 42.79 K. luteus A270 - 42.79"
+  },
+  {
+    "proteinID": "P01966",
+    "peptide": "LLSHSL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) E. coli - 46.79 L. innocua - 181.71 K. luteus A270 - 46.78"
+  },
+  {
+    "proteinID": "P01966",
+    "peptide": "TKAVEHLDDLPGALSELSDLHAHKLRVDPVNFKLLSHSLL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) E. coli - 35.27 L. innocua - 35.27 K. luteus A270 - 141.08"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "AP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 21 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "AY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 40 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "AYFYPE",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 106 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "AYFYPEL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 6,58 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "DAYPSGAW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 98 µM"
+  },
+  {
+    "proteinID": "P18626",
+    "peptide": "ENLLRF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 82,4 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "ENLLRFFVAPFPEVFG",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "FAPGG Kit 250 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "FFVAP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 6 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "FFVAPFPEVFGK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 18 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "FP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 205 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "FPEVFGK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 140 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "FVAPFPEVFG",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "FAPGG Kit 650 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "FYPEL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 80,6 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "GAW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 240 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "GTQYTDAPSFSDIPNPIGSENSEKTTMPLW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 346 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "IGSENSEKTTMP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 773,1 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "IVP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 49,7 µM"
+  },
+  {
+    "proteinID": "P04653",
+    "peptide": "KKYNVPQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 716,9 µM"
+  },
+  {
+    "proteinID": "P04653",
+    "peptide": "KKYNVPQL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 77,1 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LAYFYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 65 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LGY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 21,46 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LNENLLRFFVAPFPEVFG",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "FAPGG Kit 280 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LRFF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "N/A 116,9 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 50 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "NENLLRFFVAPFPEVFG",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "FAPGG Kit 55 µM"
+  },
+  {
+    "proteinID": "P04653",
+    "peptide": "PFP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 144,4 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "PKHP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 709,1 µM"
+  },
+  {
+    "proteinID": "P18626",
+    "peptide": "RPK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Holmquist, Bunning, and Riordan (1979) 91,8 µM"
+  },
+  {
+    "proteinID": "P04653",
+    "peptide": "RPKHPI",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 40,3 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RPKHPIKHQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 13,4 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 54,43 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 106,64 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYLG",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 224,69 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYLGY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 0,71 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "TTMP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 51 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "TTMPLW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 16 µM"
+  },
+  {
+    "proteinID": "P04653",
+    "peptide": "VPSERY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 706,1 µM"
+  },
+  {
+    "proteinID": "P04653",
+    "peptide": "VPSERYL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 249,5 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YKVPQL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 22 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 122,1 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YLGY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 41,86 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 720 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 9 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LKK",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "Cytotoxic for leukemic T and B cells"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RPK",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "Cytotoxic for leukemic T and B cells"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYLGYL",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "decreased breastcancer cell proliferation"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYLGYLE",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "decreased breastcancer cell proliferation"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YK",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "Cytotoxic for leukemic T and B cells"
+  },
+  {
+    "proteinID": "P47710",
+    "peptide": "YVPFP",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "Inhibits TR7D breast cancer cell proliferation"
+  },
+  {
+    "proteinID": "P09115",
+    "peptide": "FHLGHLK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) B. subtilis"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "HIQKEDVPSERYLGYLEQLLRLK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 292 E. coli NEB 5µ - 292 E. coli ATCC 25922 - 584"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "HIQKEDVPSERYLGYLEQLLRLKK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 186 E. coli NEB 5µ - NA E. coli ATCC 25922 - NA"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "HIQKEDVPSERYLGYLEQLLRLKKYK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 42.4 E. coli NEB 5µ - 169 E. coli ATCC 25922 - NA"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "IKHQGLPQE",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) C. sakazakii C. muytjensii"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "IKHQGLPQEV",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli B. subtilis"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LEQLLRLKKY",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 1266 E. coli NEB 5µ - NA E. coli ATCC 25922 - 633"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LGYLEQLLRL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - NA E. coli NEB 5µ - NA E. coli ATCC 25922 - 1356"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LRLKKYKVPQLá",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "9 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RPKHPIK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RPKHPIKHQGLPQEVLNENLLRF",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli - 0.2 C. sakazakii - 0.5"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RPKHPIKHQGLPQEVLNENLLRFF",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 23.6 E. coli NEB 5µ - 47.2 E. coli ATCC 25922 - 189"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RPKHPIKHQGLPQEVLNENLLRFFVAPFPEVFGK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 31.4 E. coli NEB 5µ - 31.4 E. coli ATCC 25922 - 31.4"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RPKHPIKHQGLPQEVLNENLLRFFVAPFPEVFGKEK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 59 E. coli NEB 5µ - 59 E. coli ATCC 25922 - 59"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RPKHPIKHQGLPQEVLNENLLRFFVAPFPEVFGKEKV",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 29 E. coli NEB 5µ - 58 E. coli ATCC 25922 - 58"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "SDIPNPIGSENSEK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion, 96 Well) L. innocua"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "TTMPLW",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli S. aureus M. luteus C. albicans"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "VLNENLLR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) C. sakazakii C. muytjensii"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YLEQLLR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 53.6 E. coli NEB 5µ - 241 E. coli ATCC 25922 - 40.2"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "AYFYPE",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "4,16 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "AYFYPEL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "3,216 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "EL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "DPPH Scavenging 63,1 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "FYPEL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "DPPH Scavenging 127,5 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LGY",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "2,306 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "PEL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "DPPH Scavenging 306 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RY",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "1,944 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "1,746 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYLG",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "1,669 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYLGY",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "2,829 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YFYPEL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "DPPH Scavenging 79,2 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YLG",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "1,378 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YLGY",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "1,456 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YPEL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "DPPH Scavenging 189,3 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YLGYLEQ",
+    "category": "Dairy",
+    "function": "Anxiolytic",
+    "secondary_function": "In vivo (Rats)"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YLGYLEQLLR",
+    "category": "Dairy",
+    "function": "Anxiolytic",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P18626",
+    "peptide": "HPINHR",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "452,2"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "IP",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "149,6 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LP",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "712,5 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YP",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "658,1 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "DIPNPI",
+    "category": "Dairy",
+    "function": "Growth-promoting",
+    "secondary_function": "Streptococcus thermophilus (St) and Lactobacillus delbrueckii subsp. bulgaricus (Lb)"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "AYFYPEL",
+    "category": "Dairy",
+    "function": "increase MUC5AC expression",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YFYPEL",
+    "category": "Dairy",
+    "function": "increase MUC5AC expression",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RFFVAPFPEVFGKEKVNEL",
+    "category": "Dairy",
+    "function": "induce macedocin biosynthesis",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "AYFYPEL",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "stimulate mucin secretion"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYLGY",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "stimulate mucin secretion"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYLGYL",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YFYPE",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YFYPEL",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "YIPIQYVLSR",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "Opioid antagonist"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YLGYLE",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P47710",
+    "peptide": "YVPFP",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "ALNEINQFY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 219 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "ALNEINQFYQK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 264 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "AMKPW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 580 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "AMKPWIQPK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 600 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "FALPQY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 4,3 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "FALPQYLK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 4,3 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "FPQY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 300,74 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "FPQYLQY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 14 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "INP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 71,2 µM"
+  },
+  {
+    "proteinID": "P04654",
+    "peptide": "IPY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 206 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "IQP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 106,7 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "ITP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 14,9 µM"
+  },
+  {
+    "proteinID": "P33049",
+    "peptide": "KFAWPQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 177,1 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "LY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 44 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "MKP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 0,43 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "MKPWIQPK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 300 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "NMAINPSK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 60 µM"
+  },
+  {
+    "proteinID": "P04654",
+    "peptide": "PRKEKLCTTS",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 142 µM"
+  },
+  {
+    "proteinID": "P33049",
+    "peptide": "PYVRYL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 2,4 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "TKVIP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 400 µM"
+  },
+  {
+    "proteinID": "P33049",
+    "peptide": "TVDQHQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 210,5 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "TVY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 15 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "TYKQE",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 18,6 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "VIP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 26,1 µM"
+  },
+  {
+    "proteinID": "P04654",
+    "peptide": "VRYL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 24,1 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "VY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 11 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "WIQP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 14,2 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "YQK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 312,23 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "YQKFPQY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 20,08 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "ALPQYLKTVYQHQKAMKPWIQPKTKVIPYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis L. innocua L. monocytogenes 2310 S. typhimirium"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "IQPKTKVIPYVR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli B. subtilis"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "IVLNPWDQVK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 1363 E. coli NEB 5µ - 681 E. coli ATCC 25922 - 1363"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "KAMKPW",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli B. subtilis"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "KAMKPWIQPKTKVIP",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) C. sakazakii L. monocytogenes"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "KAMKPWIQPKTKVIPYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) C. sakazakii L. monocytogenes"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "KKISQRYQKFALPQYLKTVYQHQK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli B. subtilis"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "KTKLTEEEKNRLNFLKKISQRYQKFALPQYLKTVYQHQK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) E. coli S. carnosus"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "KTVYQHQKAMKPWIQPKTKVIPYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis L. innocua L. monocytogenes 2310 S. typhimirium"
+  },
+  {
+    "proteinID": "P04654",
+    "peptide": "LKKISQ",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) E. coli - 0.33 S. maracescens - 0 St. carnosus - >6 St. epidermis - 3.6 Ea. faecalis - 0 L. innocua - 1.11"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "LKKISQRYQKFALPQY",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli L. innocua B. ceres M. flavus St. thermophilus"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "LKKISQRYQKFALPQYLKTVYQHQKAMKPWIQPKTKVIPYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis L. innocua L. monocytogenes 2310"
+  },
+  {
+    "proteinID": "P04654",
+    "peptide": "LKKISQYYQKFAWPQYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) E. coli - 4.63 S. maracescens - 0.33 St. carnosus - >6 St. epidermis - >6 Ea. faecalis - 3.32 L. innocua - >6"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "LKTVYQHQKAMKPWIQPKTKVIPYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Bacillus cereus Bacillus subtilis Listeria innocua"
+  },
+  {
+    "proteinID": "P04654",
+    "peptide": "PYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) E. coli - 0.27 S. maracescens - 0 St. carnosus - 2.23 St. epidermis - 2.06 Ea. faecalis - 0 L. innocua - 1.13"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "QKALNEINQF",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Plate Pour) B. cereus S. aureus L. monocytogenes H. pylori"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "QKFALPQYLKTVYQHQKAMKPWIQPKTKVIPYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Bacillus subtilis Listeria innocua"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "TKKTKLTEEEKNRL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Plate Pour) B. cereus S. aureus L. monocytogenes"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "TKLTEEEKNRLNFLKKISQRYQKFALPQYLK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 4.0 E. coli NEB 5µ - 16.2 E. coli ATCC 25922 - 16.2"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "TKVIPYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) C. sakazakii L. monocytogenes"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "TVYQHQKAMKPWIQPKTKVIPYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - 2.7 E. coli NEB 5µ - 21.4 E. coli ATCC 25922 - 172"
+  },
+  {
+    "proteinID": "P04654",
+    "peptide": "VDQHQKAMKPWTQPKTNAIPYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) E. coli - 0.07 S. maracescens - 0 St. carnosus - >6 St. epidermis - 0.61 Ea. faecalis - 0 L. innocua - 1.71"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "VYQHQKAMKPWIQPKTKVIPYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) C. sakazakii L. monocytogenes"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "VYQHQKAMKPWIQPKTKVIPYVRYLá",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis L. innocua L. monocytogenes C. freundii E. coli S. enteritidis S. typhmirium"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "WIQPKTKVIPYVRYL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) C. sakazakii L. monocytogenes"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "FALPQYLK",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "FPQY",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "1,741 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "PYVRYL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "YQK",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "1,819 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "YQKFPQY",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "2,033 µmol Trolox per µmol peptide"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "VPITPT",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": 130
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "VPITPTL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": 110
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "WIQP",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "237,3 µM"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "NPSKENL",
+    "category": "Dairy",
+    "function": "Growth-promoting",
+    "secondary_function": "Streptococcus thermophilus (St) and Lactobacillus delbrueckii subsp. bulgaricus (Lb)"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "PIVLNP",
+    "category": "Dairy",
+    "function": "Growth-promoting",
+    "secondary_function": "Streptococcus thermophilus (St) and Lactobacillus delbrueckii subsp. bulgaricus (Lb)"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "NPWDQ",
+    "category": "Dairy",
+    "function": "immunomodulatory",
+    "secondary_function": "inhibiting allergen intestinal permeation"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "DKVGINY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 104,22 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "DKVGINYW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "In vivo (Rats)"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "GVSLPEW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 30 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "GYGGVSLPEW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 2 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "IW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "in vivo (humans) 0,7 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "KGYGGVSL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 325,2 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "KGYGGVSLPEW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 0,71 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "LAHKAL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 621 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "LF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 349,1 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "LKGYGGVSLPEW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 83 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "VGINYWLAHK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 327 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "VSLPEW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 57 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "WL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "in vivo (humans) 10 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "WLAHK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 77 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "WLAHKAL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 29 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "YGGVSLPEW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 16 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "YGL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 409 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "YGLF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "in vivo (rats)"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "DQWL",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "WLA",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "EQLTK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) B. subtilis S. lentus"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "WLAHK",
+    "category": "Dairy",
+    "function": "Cytotoxic",
+    "secondary_function": "mice splenocyte"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "ILDKVGINY",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "263 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "IVQNNDSTEYGLF",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "337 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "LAHKALCSEKL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "165 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "LCSEKLDQ",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "186 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "LKGYGGVSLPE",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "486 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "TKCEVFRE",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "166 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "WL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "43,6 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "WLAHKAL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "286 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "WLAHKALCSEKLDQ",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "141 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "YGLF",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "DPP-IV Inhibitor"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "RELKDLK",
+    "category": "Dairy",
+    "function": "stimulates proliferation",
+    "secondary_function": "mice splenocyte"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "ALPP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 280 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "AQTQSLVYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 76 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "AVPYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 80 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "AVPYPQR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 274 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "DELQDKIHPFAQTQSLVYPFPGPIPNS",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 4 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "DKIHP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 113,1 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "DKIHPF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 256,8 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "DKIYPSFQPQPLIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 107 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "EMPFPK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 565,58 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "ENLHLPLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 155 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "ENLHLPLPLL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "FAPGG Kit 250 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "EPIPYGFLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 180 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "EPVLGPVRGPFP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 790 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "EVPKA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 324,77 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "FA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 487,1 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "FAQTQSLVYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 25 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "FLQP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 68,7 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "FQPQPLIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 1,8 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "GP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 252,6 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "GPFPILV",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 424 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "GRVMP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 250 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "GVPKVKETMVPK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 376,1 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "GVPKVKETMVPKH",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 223,2 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "HLPLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 21 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "HPFAQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 465 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "HPFAQTQSLVYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 26 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "HQIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 110 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "HQIYPV",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 414 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "HQP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 134,7 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IHPFAQTQSLVYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 19 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "ILP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 270 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 130 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IPP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "In vivo (human)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IQA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 32,9 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "IYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 61 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "IYPSFQPQPLIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 7,6 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "KIHPFAQAQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 132,6 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "KIHPFAQTQSLVYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 39 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "KIYPSFQPQPLIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 8,6 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "KVLILA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 20,85 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "KVLPVP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "in vivo (rats)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "KVLPVPQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 1000 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "KYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 363,9 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "KYPVEPFTESQSLTL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 93 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "LALPP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 290 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "LENLHLPLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 86 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "LHLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 210 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LHLPLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "in vivo (rats) 5,4 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LHLPLPL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 425 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "LIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 10 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LLYQEPVLGPVRGPFPIIV",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 21 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LNVPGEIVE",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 300,1 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LPLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 750 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LPP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 9,6 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "LPQNILP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 46 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LPQNIPPLTQTPVVVPPFLQPEVMGVSK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 144 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LQP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 3,4 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LQSW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 500 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LVYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 170 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LVYPFPá",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 132 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LVYPFPGP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 147 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LVYPFPGPI",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 183 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LVYPFPGPIP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 89 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LVYPFPGPIPNSLPQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 18 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LVYPFPGPIPNSLPQN",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 71 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LVYPFPGPIPNSLPQNIPP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 5,2 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "LVYPFTGPIPN",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 27,9 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "MAP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 0,8 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "MPFPKYPVEP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 83 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "NILP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 560 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "NIPPLTQTPV",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 173,3 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "NIPPLTQTPVVVPPFLQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 450 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "NLHLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 420 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "NLHLPLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 51 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "NLHLPLPLL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "FAPGG Kit 15 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "NSLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 755,1 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PAVVLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 45 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PFFDPQIP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 410 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PLAQPA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 940 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PLIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 4,4 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 430 µM"
+  },
+  {
+    "proteinID": "L8I8G5",
+    "peptide": "PLPLL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 453,13 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "PPQSVLSLSQSKVLPVPQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 25 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PQNILP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 440 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PQPIP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 340 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PQPLIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 3 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PQTLALP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 110 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PSFQP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 73 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PSFQPQPLIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 2,7 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PVPQP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 110 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "QEPVLGPVRGPFPIIV",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 600 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "QP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 598,1 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "QPIP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 860 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "QPLIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 3,6 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "QPQPLIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 4 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "QSLVYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 41 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "QTQSLVYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 73 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "QVPQPIP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 660 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "RDMPIQAF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 209 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "RINKK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 18,32 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "SFQPQPLIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 1,4 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "SKVLPVPQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 39 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "SLPQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 330 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "SLPQN",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 9,49 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "SLVYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 40 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "SQPK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 354 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "SQSKVLPVPQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 92 µM"
+  },
+  {
+    "proteinID": "Q9TVD0",
+    "peptide": "TF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Holmquist, Bunning, and Riordan (1979) 18 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "TGPIPN",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 316 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "TPVVVPPFLQP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 749 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "TQSLVYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 64 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "TVYTKGRVMP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 38 µM"
+  },
+  {
+    "proteinID": "P86273",
+    "peptide": "VAPFPQPVVP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 273 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VENLHLPLPLL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "FAPGG Kit 175 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VEP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 63,7 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VLGP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 153,5 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VLGPVRGPFP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "in vivo (rats)"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "VLPIP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 31 µM"
+  },
+  {
+    "proteinID": "Q9TSI0",
+    "peptide": "VLPVPQK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "N/A 15 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "VMP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 29 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 420 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "VPKVK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Holmquist, Bunning, and Riordan (1979) 4,3 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VPP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "In vivo (human)"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "VPQPIP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 290 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VRGP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 179,7 µM"
+  },
+  {
+    "proteinID": "P11839",
+    "peptide": "VRGPFP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 592 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VRGPFPIIV",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "in vivo (rats)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VVPP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 258,21 µM"
+  },
+  {
+    "proteinID": "Q9TVD0",
+    "peptide": "VYá",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Holmquist, Bunning, and Riordan (1979) 7,1 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 288 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VYPFPG",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 221 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VYPFPGPIPN",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 325 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VYPFPGPIPNSLPQNIPP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 87 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "WSVPQPK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 667,96 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "YGFLP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 268 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 500 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPIPN",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 14,8 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "YPSFQPQPLIYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 4,8 µM"
+  },
+  {
+    "proteinID": "P11839",
+    "peptide": "YQEP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Holmquist, Bunning, and Riordan (1979) 317,17 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YQEPVL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 8,14 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "YQEPVLGP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Holmquist, Bunning, and Riordan (1979) 725,03 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YQEPVLGPVR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 300 µM"
+  },
+  {
+    "proteinID": "P11839",
+    "peptide": "YQEPVLGPVRG",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 412 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YQEPVLGPVRGPFPIIV",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 101 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "INKKI",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "Cytoxic for B16F10 melanoma cells"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "PGPIPN",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "Inhibits SKOV3 ovarian cancer cell growth"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFP",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "decreased breastcancer cell proliferation"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "decreased breastcancer cell proliferation"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "YPFVEPI",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "decreased breastcancer cell proliferation"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "DMPIQAFLLYQEPVLGPVRá",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IPP",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VPP",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": "in vivo (mice)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "AVPYPQR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Gram negative"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "EAMAPK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Gram negative"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "EAMAPKHK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Gram negative"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "EMPFPK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Gram negative"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "HKEMPFPK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Gram negative"
+  },
+  {
+    "proteinID": "P09116",
+    "peptide": "HVEQLLR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) B. subtilis"
+  },
+  {
+    "proteinID": "P09116",
+    "peptide": "ILPFIQSLFPFAER",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) B. subtilis E. coli"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "KETMVPK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "MHQPPQPL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "PFTGPIPNSLPQ",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli B. cereus"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "PVVVPPFLQPE",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "QELLLNPTHQIYPVTQPLAPVHNPISV",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) L. bulgaricus L. casei L. sanfranciscensis E. faecium L. lactis B. megaterium E. coli L. innocua S. aureus"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "REQEELNV",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli B. cereus"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "RINKK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) E. coli"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "TEDELQDKIHPF",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli B. cereus"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VKEAMAPK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Gram negative"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VLPVPQK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Gram negative"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VLPVPQKAVPYPQR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Gram negative"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VPYPQRDMPIQAFL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) B. subtilis - NA E. coli NEB 5µ - 493 E. coli ATCC 25922 - NA"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YQEPVLGPVRGPFPI",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli - 0.5"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YQEPVLGPVRGPFPIIVá",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli - 0.5"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "AVPYPQR",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "HNPI",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "55 µM TE/mM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "HQIYPV",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "0,416 µmol Trolox equiv per µmol peptide (TEAC)"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "IYPF",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "0,309 µmol Trolox equiv per µmol peptide (TEAC)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "KVLPVPQK",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "PYPQ",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "0,323 µmol Trolox equiv per µmol peptide (TEAC)"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "QVVPYPQ",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "0,931 µmol Trolox equiv per µmol peptide (TEAC)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "TQTPVVVPPFLQPE",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VKEAMAPK",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VLPVPQK",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P11839",
+    "peptide": "VPKVK",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "0,079 TEAC (mM)"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "VPYPQ",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "2500 µM TE/mM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VYPFPGPIPN",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "6,2 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "WSVPQPK",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "1297 µmol Trolox equiv per µmol peptide (TEAC)"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "YQEP",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "0,072 TEAC (mM)"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "YQEPVLGP",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "0,191 TEAC (mM)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YQEPVLGPVRGPFPIIV",
+    "category": "Dairy",
+    "function": "antithrombin",
+    "secondary_function": "4,6 %/peptide concentration (µg per mL)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "Anxiolytic",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "EMPFPK",
+    "category": "Dairy",
+    "function": "Bradykinin-Potentiating",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPVEPFTE",
+    "category": "Dairy",
+    "function": "Bradykinin-Potentiating",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "RELEELNVPGEIVESLSSSEESITR",
+    "category": "Dairy",
+    "function": "Caseinophosphopeptide",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "GPFPI",
+    "category": "Dairy",
+    "function": "Cathepsin B Inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "PFPGPI",
+    "category": "Dairy",
+    "function": "Cathepsin B Inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "EPVLGPVRGP",
+    "category": "Dairy",
+    "function": "Cytomodulatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "FLQP",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "65,3 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "FPGPIPN",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": 260
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "GPFPILV",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": 163
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IPPLTQT",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "465,1 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LPL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "241,4 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LPLPL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "325 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LPLPLL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "371,5 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LPQ",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": 82
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LPQNIPP",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": 160
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LPQNIPPLT",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "205,2 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LPVPQ",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "43,8 µM"
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "MHQPPQPL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "350 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "PGPIPNS",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": 1000
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "PQNIPPL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": 1500
+  },
+  {
+    "proteinID": "P33048",
+    "peptide": "SPTVMFPPQSVL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "676 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VLGP",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "580,4 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VPGEIVE",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "224,5 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VR",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "826,1 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGP",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "749,2 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPIPN",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": 670
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPVEPF",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "124,7 µM"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "GFL",
+    "category": "Dairy",
+    "function": "immunomodulatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "PGPIPN",
+    "category": "Dairy",
+    "function": "immunomodulatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "QEPV",
+    "category": "Dairy",
+    "function": "immunomodulatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "QEPVL",
+    "category": "Dairy",
+    "function": "immunomodulatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPG",
+    "category": "Dairy",
+    "function": "immunomodulatory",
+    "secondary_function": "induce inflammatory immune response in gut"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "immunomodulatory",
+    "secondary_function": "induce inflammatory immune response in gut"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YQEPVLGPVRGPFPIIV",
+    "category": "Dairy",
+    "function": "immunomodulatory",
+    "secondary_function": "Bone Marrow-Derived Macrophages"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPG",
+    "category": "Dairy",
+    "function": "improves learning and memory",
+    "secondary_function": "in vivo (mice)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "GVSKVKEAMAPKHKEMPFPKYPVEPFTESQ",
+    "category": "Dairy",
+    "function": "Increase MUC2 expression",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "EMPFPK",
+    "category": "Dairy",
+    "function": "Increase MUC4 expression",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPVEPF",
+    "category": "Dairy",
+    "function": "Increase MUC4 expression",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "GVSKVKEAMAPKHKEMPFPKYPVEPFTESQ",
+    "category": "Dairy",
+    "function": "increase small intestinal goblet cell density",
+    "secondary_function": "In vivo"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPG",
+    "category": "Dairy",
+    "function": "increases intestinal motility",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "Increases jejunal mucus secretion",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "GVSKVKEAMAPKHKEMPFPKYPVEPFTESQ",
+    "category": "Dairy",
+    "function": "increases mMuc4 expression",
+    "secondary_function": "In vivo"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "Increases MUC2 expression",
+    "secondary_function": "rat DHE cells"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "Increases MUC3 expression",
+    "secondary_function": "rat DHE cells"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "Increases MUC5A expression",
+    "secondary_function": "human HT29-MTX cells"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "GVSKVKEAMAPKHKEMPFPKYPVEPFTESQ",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "Increases mucin secretion in vitro"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFP",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPG",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGP",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "induce jejunum mucus discharge"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "YPFVE",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "stimulate mucin secretion"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "YPFVEPI",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPVEPF",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IHPFAQTQ",
+    "category": "Dairy",
+    "function": "PEP-inhibitory",
+    "secondary_function": "150 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VYPFPGPI",
+    "category": "Dairy",
+    "function": "PEP-inhibitory",
+    "secondary_function": "110 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VYPFPGPIP",
+    "category": "Dairy",
+    "function": "PEP-inhibitory",
+    "secondary_function": "50 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IHPFAQTQ",
+    "category": "Dairy",
+    "function": "prolyl endopeptidase-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VYPFPGPI",
+    "category": "Dairy",
+    "function": "prolyl endopeptidase-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VYPFPGPIP",
+    "category": "Dairy",
+    "function": "prolyl endopeptidase-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPG",
+    "category": "Dairy",
+    "function": "promote neurite outgrowth",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "GVSKVKEAMAPKHKEMPFPKYPVEPFTESQ",
+    "category": "Dairy",
+    "function": "protective effects in indomethacin-induced enteritis through preservation of goblet cells and improvement in wound healing",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VPP",
+    "category": "Dairy",
+    "function": "reduces bone loss",
+    "secondary_function": "in vivo (rats)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "reduces pancreas MDA level",
+    "secondary_function": "in vivo (diabetic rats)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "satiety",
+    "secondary_function": "induces CCK-8 (satiety)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IPP",
+    "category": "Dairy",
+    "function": "stimulates proliferation",
+    "secondary_function": "osteoblast"
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "SPTIPFFDPQIPK",
+    "category": "Dairy",
+    "function": "stimulates proliferation",
+    "secondary_function": "DNA synthesis"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IPP",
+    "category": "Dairy",
+    "function": "stimulates trabecular bone growth",
+    "secondary_function": "in vivo (rats)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VPP",
+    "category": "Dairy",
+    "function": "stimulates trabecular bone growth",
+    "secondary_function": "in vivo (rats)"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "ALPM",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "N/A 928 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "ALPMH",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 521 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "ALPMHIR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 42,6 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "CMENSA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 788 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "DAQSAPLRVY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 11,62 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "GLDIQK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 580 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "GTW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 464,4 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "HIR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "N/A 953 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IIAEK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 63,7 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IPA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 141 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IPAVFK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 144,8 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IQKVAGTW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 51 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "N/A 695 µM"
+  },
+  {
+    "proteinID": "P67976",
+    "peptide": "KALPMHIRLAF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 11 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LAMA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 556 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LDAQSAPLR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 635 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LDIQK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 27,6 µM"
+  },
+  {
+    "proteinID": "P02755",
+    "peptide": "LDIQKVAGTW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 21 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LDTDY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 121 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LKALPMH",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 11 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971)"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LLF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 79,8 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LQKW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 34,7 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LSFNPTQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 106 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "MKG",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 71,8 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VAGTWY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 767,5 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VLDTDY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 128 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VLDTDYK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 946 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "WY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 38,3 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "WYSL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 90,4 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "WYSLA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 86,9 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "WYSLAM",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 56,3 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "WYSLAMA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 59,9 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "YLLF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 172 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IIAEK",
+    "category": "Dairy",
+    "function": "Antihypertensive",
+    "secondary_function": "Hypocholesterolemic"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "AVF",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "DYKKY",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "GTWY",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LF",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "WYSL",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "AASDISLLDAQSAPLR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) B. subtilis S. lentus S. zooepidemicus"
+  },
+  {
+    "proteinID": "P02756",
+    "peptide": "DAQSAPLR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli"
+  },
+  {
+    "proteinID": "P02756",
+    "peptide": "GLDIQKVAGT",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IDALNENK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02756",
+    "peptide": "IIAEKTKIPAVF",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli"
+  },
+  {
+    "proteinID": "P02756",
+    "peptide": "IIVTQTMK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IPAVFK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IRL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) L ivanovii E. coli"
+  },
+  {
+    "proteinID": "P02756",
+    "peptide": "LAFNPTQLEGQ",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli"
+  },
+  {
+    "proteinID": "P02756",
+    "peptide": "SLAMAASDISLL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "TPEVDDEALEK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) L. monocytogenes S. aureus"
+  },
+  {
+    "proteinID": "P02756",
+    "peptide": "TPEVDKEALE",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VAGTWY",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) B. subtilis"
+  },
+  {
+    "proteinID": "P02756",
+    "peptide": "VEELKPTPEGNLE",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VLVLDTDYK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) B. subtilis"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VAGTWY",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "5,63 µmol TE/ mol"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "WYSLAMAASDI",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "HIRL",
+    "category": "Dairy",
+    "function": "Anxiolytic",
+    "secondary_function": "in vivo (mice)"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LIVTQTMK",
+    "category": "Dairy",
+    "function": "Cytotoxic",
+    "secondary_function": "mice splenocyte"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "YLLF",
+    "category": "Dairy",
+    "function": "Cytotoxic",
+    "secondary_function": "mice splenocyte"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IPA",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "49 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IPAVF",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "44,7 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IPAVFK",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "149,1 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IPAVFKIDA",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "191 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IQKVAGTW",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "329 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LKALPMH",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "193 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LKPTPEGDL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "45 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LKPTPEGDLE",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "45 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LKPTPEGDLEIL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "57 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "TPEVDDEALEK",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "578,7 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VA",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "168,2 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VAGTWY",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "74,9 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "74 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VLDTDY",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "471 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VLVLDTDYK",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "424,4 µM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "ALPMH",
+    "category": "Dairy",
+    "function": "Hypocholesterolemic",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "GLDIQK",
+    "category": "Dairy",
+    "function": "Hypocholesterolemic",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IIAEK",
+    "category": "Dairy",
+    "function": "Hypocholesterolemic",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VYVEELKPTPEGDLEILLQK",
+    "category": "Dairy",
+    "function": "Hypocholesterolemic",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "YLLF",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "ALPMHIR",
+    "category": "Dairy",
+    "function": "Reduced vasoconstrictorendothelin-1 release",
+    "secondary_function": "áendothelial cells"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "ALKALPMHIR",
+    "category": "Dairy",
+    "function": "stimulates proliferation",
+    "secondary_function": "mice splenocyte"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "ALPMHIR",
+    "category": "Dairy",
+    "function": "stimulates proliferation",
+    "secondary_function": "mice splenocyte"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "EILLQK",
+    "category": "Dairy",
+    "function": "stimulates proliferation",
+    "secondary_function": "mice splenocyte"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IDALNENK",
+    "category": "Dairy",
+    "function": "stimulates proliferation",
+    "secondary_function": "mice splenocyte"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IPAVFK",
+    "category": "Dairy",
+    "function": "stimulates proliferation",
+    "secondary_function": "mice splenocyte"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VAGTWY",
+    "category": "Dairy",
+    "function": "stimulates proliferation",
+    "secondary_function": "mice splenocyte"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "VLVLDTDYKKYLLF",
+    "category": "Dairy",
+    "function": "stimulates proliferation",
+    "secondary_function": "mice splenocyte"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "AIPPKKNQD",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 19,9 µM"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "ANPAVVRP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 25 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "ARHPH",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 15,15 µM"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "AVVRP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 74 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "DERF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 37,08 µM"
+  },
+  {
+    "proteinID": "P02669",
+    "peptide": "EKDERF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 14,3 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "FSDKIAK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 113,6 µM"
+  },
+  {
+    "proteinID": "P02669",
+    "peptide": "HPHPHLSF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 28,9 µM"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "IAIP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 470 µM"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "IAIPP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 600 µM"
+  },
+  {
+    "proteinID": "P02669",
+    "peptide": "IAK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 15,7 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "IQY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 70,4 µM"
+  },
+  {
+    "proteinID": "P02669",
+    "peptide": "KDERF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 848 µM"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "KTAP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 37 µM"
+  },
+  {
+    "proteinID": "P02669",
+    "peptide": "LPYPY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 28,9 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "MAIPPKK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "in vivo (rats)"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "in vivo (rats)"
+  },
+  {
+    "proteinID": "I6UFY2",
+    "peptide": "PPEIN",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 510 µM"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "PTPAP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 33 µM"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "QKTAP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 30 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "RYPSYG",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 65,71 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "SY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 41 µM"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "VAV",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 260 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "VLSRYP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "N/A 36,7 µM"
+  },
+  {
+    "proteinID": "P02669",
+    "peptide": "VR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 52,8 µM"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "VVRP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 81 µM"
+  },
+  {
+    "proteinID": "P02669",
+    "peptide": "WQVLPNAVPAK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 10 µM"
+  },
+  {
+    "proteinID": "P02669",
+    "peptide": "YAKPVA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 14,3 µM"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "YANPAVVRP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Kasahara and Ashihara (1981) 7,8 µM"
+  },
+  {
+    "proteinID": "P02669",
+    "peptide": "YIPIQY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 10 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "YPYY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 90,9 µM"
+  },
+  {
+    "proteinID": "P02669",
+    "peptide": "YQQRPVA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 14,3 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "FFSDK",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "Cytotoxic for leukemic cells"
+  },
+  {
+    "proteinID": "P02670",
+    "peptide": "ASAEPTVH",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli B. cereus L. monocytogenes"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "AVESTVATLEDSPEVIESPPE",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) S. mutans"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "EIPT",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) E. coli S. maracescens"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "FFSDK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC E. coli S. aureus L. casei L. acidophilus"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "FSDKIAK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) E. coli L. innocua S. carnosus"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "IAK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC E. coli S. aureus L. casei L. acidophilus"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "IQY",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) E. coli"
+  },
+  {
+    "proteinID": "P02670",
+    "peptide": "IVNTVDNPEASSE",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli B. cereus"
+  },
+  {
+    "proteinID": "P02670",
+    "peptide": "MAIPPKKDQDKTEVPAINT",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli B. cereus L. monocytogenes"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "MAIPPKKNQDKTEIPTINT",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "E. coliá"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) S. mutans"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "MMK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Gram-positive bacteria  MIC E. coli S. aureus L. casei L. acidophilus"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "PAAVRSPAQILQ",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) E. coli"
+  },
+  {
+    "proteinID": "P02670",
+    "peptide": "PPKKDQDKTEVPA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli B. cereus L. monocytogenes"
+  },
+  {
+    "proteinID": "P02670",
+    "peptide": "PTVHSTPTTE",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli B. cereus L. monocytogenes"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "STVATL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "E.coli L. innocua S. carnosus"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "TEAVESTVATL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli B. subtilis"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "VESTVATL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) E. coli L. innocua S. carnosus"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "VQVTSTAV",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) L. innocua S. carnosus"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "YQRRPAIAINNPYVPRTYYANPAVVRPHAQIPQRQYLPNSHPPTVVRRPNLHPSF",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) E. coli"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "YVL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) S. maracescens L. innocua S. carnosus"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "YYQQKPVA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "log(N0/Nf) E. coli S. carnosus"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "IQY",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "NPYVPR",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "2600 µM TE/mM"
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "VPNSYP",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": "2500 µM TE/mM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "YVL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "MAIPPKK",
+    "category": "Dairy",
+    "function": "antithrombin",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "YIPIQYVLSR",
+    "category": "Dairy",
+    "function": "C3a Receptors agonist",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02670",
+    "peptide": "INNQFLPYPY",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "40,08 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "IPI",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "4,9 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "IPIQY",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "35,2 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "LPYPY",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "108,3 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "YPY",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "243,7 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "YPYY",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "194,4 µM"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV",
+    "category": "Dairy",
+    "function": "immunomodulatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "SRYPSY",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "YPSYGLN",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "YPSYGLNY",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "Opioid antagonist"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "YPYY",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "Opioid antagonist"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV",
+    "category": "Dairy",
+    "function": "stimulates exocrine pancreatic secretion",
+    "secondary_function": "in vivo (rats)"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "CRRWQWR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 2,3 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "DPYKLRP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 30,5 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 26,7 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQW",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 10,5 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 2,9 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMKKLGA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 25,5 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMKKLGAP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 11 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "GILRP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 90,7 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "KCRRWQWR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 5,8 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "KLRP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 91,6 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "LIWKL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 0,47 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "LNNSRAP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 105,3 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "LRP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 0,35 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "LRPVAA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 4,14 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "PYKLRP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 10,2 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "RPYL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 56,5 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "RRWQWR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 32 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "YKLRP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Sentandreu and Toldra (2006) 16,5 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMKKLGAPSITCVR",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "Cytotoxic for neuroblastoma cell lines"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMKKLGAPSITCVRRAF",
+    "category": "Dairy",
+    "function": "Anticancer",
+    "secondary_function": "Cytotoxic for leukemic cells"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "ADRDQYELL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Antiviral   HSV-1"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "APRKNVRWCTI",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "HIV-1 Reverse Transcriptase-inhibitory"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "APRKNVRWCTISQPEWFKCR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli B. subtilis"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "APRKNVRWCTISQPEWFKCRRWQWRMKKLGAPSITCVRRAFALECIRAIAEKKADAVTLDGGMVFEAGRDPYKLRPVAAEIYGTKESPQTHYYAVAVVKKGSNFQLDQLQGRKSCHTGLGRSAGWIIPMGILRPYLSWTESLEPLQGAVAKFFSASCVPCIDRQAYPNLCQLCKGEGENQCACSSREPYFGYSGAFKCLQDGAGDVAFVKETTVFENLPEKADRDQYELLCLNNSRAPVDAFKECHLAQVPSHAVVARSVDGKEDLIWKLLSKAQEKFGKNKSRSFQLFGSPPGQRDLLFKDSALGFLRIPSKVDSALYLGSRYLTTLKNLRE",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC S. aureus"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "APRKNVRWCTISQPEWFKCRRWQWRMKKLGAPSITCVRRAFALECIRAIAEKKADAVTLDGGMVFEAGRDPYKLRPVAAEIYGTKESPQTHYYAVAVVKKGSNFQLDQLQGRKSCHTGLGRSAGWIIPMGILRPYLSWTESLEPLQGAVAKFFSASCVPCIDRQAYPNLCQLCKGEGENQCACSSREPYFGYSGAFKCLQDGAGDVAFVKETTVFENLPEKADRDQYELLCLNNSRAPVDAFKECHLAQVPSHAVVARSVDGKEDLIWKLLSKAQEKFGKNKSRSFQLFGSPPGQRDLLFKDSALGFLRIPSKVDSALYLGSRYLTTLKNLRETAEEVKARYTR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC S. aureus"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "ATKCFQWQRNMRKVR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MMC99 (96 Well) E. faecalis S. epidermis S. aureus K. pneumoniae P. aeruginosa E. coli C. albicans"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "CFQWQRNMRKVR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MMC99 (96 Well) E. faecalis S. epidermis S. aureus K. pneumoniae P. aeruginosa E. coli C. albicans"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "CFQWQRNMRKVRGPPVSCI",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) P. intermedia"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "CRRWQWRMKKLGA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC E. coli S. aureus"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "CRRWQWRMKKLGAPSITCV",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) S. aureus S. mutans S. salivarius P. intermedia P. gingivalis F. nucleatum"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "DAIWNLLRQAQEKFGKDKSP",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Antifungal  MIC (96 Well) E. coli C. albicans S. sanguinis"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "DGKEDLIWKLLSKAQEKFGKNKSR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) C. albicans"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "DLIWKLLSKAQEKFGK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) C. albicans"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "DLIWKLLSKAQEKFGKNK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) C. albicans"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "DLIWKLLSKAQEKFGKNKSR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Antiparasitical  MIC (96 Well) L. donovani L. pifanoi"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "DLIWKLLSKAQEKFGKNKSRSFQLFGSPPGQR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli C. albicans"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "EATKCFQWQRNMRKVR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MMC99 (96 Well) E. faecalis S. epidermis S. aureus E. coli"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "EATKCFQWQRNMRKVRGPPVSCIKR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MMC99 (96 Well) E. coli S. aureus C. albicans"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "EDLIWK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Antiviral   HSV-1"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "EDLIWKLLSKAQEKFGKNKSR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) C. albicans"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "FFSASCVPGADKGQFPNLCRLCAGTGENKCA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Antibacterial, Antifungal  % Colonies inhibited C. albicans"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) L. monocytogenes E. coli B. cereus P. fluorescens"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRM",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited C. albicans"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli S. aureus"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMKKLG",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Antiparasitical  MIC (96 Well) L. donovani L. pifanoi"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMKKLGA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "E.coli S. Aureus"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMKKLGAPSITCVRRAF",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Many types Many types"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMKKLGAPSITCVRRAFA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) L. monocytogenes E. coli B. cereus P. fluorescens S. aureus"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMKKLGAPSITCVRRAFAL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMKKLGAPSITCVRRAFALECIRA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "FQWQRNMRKVR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies inhibited E. coli"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "FQWQRNMRKVRGPPVS",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies inhibited E. coli"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "GRRRS",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. faecalis E. coli"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "GRRRSVQW",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. faecalis L. lactis"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "GRRRSVQWCA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC S. aureus L. monocytogenes K. pneumoniae E. coli"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "KCFQWQRNMRKVR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MMC99 (96 Well) E. faecalis S. epidermis S. aureus K. pneumoniae P. aeruginosa E. coli C. albicans"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "KCRRWQWRMKKLGA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC E. coli S. aureus"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "KCRRWQWRMKKLGAPSITCV",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli S. aureus C. albicans"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "KEDLIWKLLSKAQEKFGKNKSR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) C. albicans"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "KKLGAPSITCVRRAFA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) L. monocytogenes E. coli"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "KLLSKAQEKFGKNKSRSFQL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli B. subtilis"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "LIWKLLSKAQEKFGKNKSR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) C. albicans"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "LLSKAQEKFGKNKSR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) C. albicans"
+  },
+  {
+    "proteinID": "Q29477",
+    "peptide": "LRKAQEKFGKNKSQSFQL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) E. coli M. flavus"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "PEATKCFQWQRNMRKVR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MMC99 (96 Well) E. faecalis S. epidermis S. aureus"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "PEWFKCRRWQWRMKKLGA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC E. coli S. aureus"
+  },
+  {
+    "proteinID": "Q29477",
+    "peptide": "PEWSKCYQWQRRMRKLGAPSITCIRRTSA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Agar Diffusion) E. coli M. flavus"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "QPEATKCFQWQRNMRKVR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MMC99 (96 Well) E. faecalis S. aureus"
+  },
+  {
+    "proteinID": "P14632",
+    "peptide": "RQWQSKIRR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli S. aureus C. albicans"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "RRRSVQWCA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC S. aureus L. monocytogenes K. pneumoniae E. coli"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "RRSVQWCA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC L. monocytogenes K. pneumoniae E. coli"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "RRWQWRMKK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "% Colonies Inhibited E. coli S. aureus C. albicans"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "RRWQWRMKKLG",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (Absorbance) E. coli B. subtilis"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "RRWQWRMKKLGA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC E. coli S. aureus"
+  },
+  {
+    "proteinID": "Q29477",
+    "peptide": "SKCYQWQRRMRKLGA",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC E. coli"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "SVDGKEDLIWKLLSKAQEKFGKNKSR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli C. albicans"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "TKCFQWQRN",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. faecalis E. faecium L. lactis S. aureus E. coli K. pneumoniae S. choleraesuis"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "TKCFQWQRNMRKVR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MMC99 (96 Well) E. faecalis S. epidermis S. aureus K. pneumoniae P. aeruginosa E. coli C. albicans"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "TKCFQWQRNMRKVRGPPVSCIKRDS",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Human cytomegalovirus"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "TRVVWCAVG",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli B. subtilis"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "WKLLSKAQEKFGKNKSR",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) C. albicans"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "WNLLRQAQEKFGKDKSP",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "Antifungal  MIC (96 Well) E. coli C. albicans S. sanguinis"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "WNLLRQAQEKFGKDKSPK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "HIV-1 Reverse Transcriptase-inhibitory"
+  },
+  {
+    "proteinID": "Q29477",
+    "peptide": "WQRRMRKLGAPSIT",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli"
+  },
+  {
+    "proteinID": "Q29477",
+    "peptide": "YQWQRRMRKL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC E. coli"
+  },
+  {
+    "proteinID": "Q29477",
+    "peptide": "YQWQRRMRKLGAPSIT",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": "MIC (96 Well) E. coli"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "CFQWQRNMRKVRGPPVSCIKRD",
+    "category": "Dairy",
+    "function": "Cell Penetrating",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRMKKLGAPSITCVRRAF",
+    "category": "Dairy",
+    "function": "DNA repair",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "IPM",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "69,5 µM"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "WI",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "138,7 µM"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "KYLGPQY",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "Opioid antagonist"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "RYYGY",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "Opioid antagonist"
+  },
+  {
+    "proteinID": "P02788",
+    "peptide": "YLGSGY",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": "Opioid antagonist"
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "YLGSRY",
+    "category": "Dairy",
+    "function": "Opioid",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "AEIYGTKESPQTHYY",
+    "category": "Dairy",
+    "function": "stimulates proliferation",
+    "secondary_function": "t intestinal epithelial cell"
+  },
+  {
+    "proteinID": "P80195",
+    "peptide": "NLENTVKETIKYLKSLFSHAFEVVKT",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P14639",
+    "peptide": "EGPKLVAS",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 19 µM"
+  },
+  {
+    "proteinID": "P14639",
+    "peptide": "KVGTKCCAKP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 30 µM"
+  },
+  {
+    "proteinID": "P14639",
+    "peptide": "PKIDAMREKVLA",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 103 µM"
+  },
+  {
+    "proteinID": "P14639",
+    "peptide": "QNALIVRYTR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 4,6 µM"
+  },
+  {
+    "proteinID": "P14639",
+    "peptide": "REKVLASS",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "Cushman and Cheung (1971) 32 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "HL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "143,19 µM"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "WV",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "65,69 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "AL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "882,13 µM"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "FL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitor",
+    "secondary_function": "399,58 µM"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YLGYLE",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "85.76 uM(IC50)"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YFYPEL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "8.82 uM(IC50)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPIP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "224.05 uM(IC50)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPIN",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "378.65 uM(IC50)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFVEP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "7.48 uM(IC50)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YGFL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "292.53 uM(IC50)"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "YLL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "518.54 uM(IC50)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "HQPHQPLPPTVMFPPQ",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "HQPHQPLPPT",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "WMHQPHQPLPPT",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LYQEPVLGPVR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LDQWLCEK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "PGPIPN",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LLYQEPVLGPVR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "274 uM(IC50)"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IPAVF",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "9.09 uM(IC50)"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "MHI",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "11.59 uM(IC50)"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IAEK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "25.08 uM(IC50)"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "TTFHTSGY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "142 μM)"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "NMAINPSKENLCSTFCK,",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "129.07 uM(IC50)"
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "YQKFPQYLQY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "PFPGPIPN",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LPLPLL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02756",
+    "peptide": "PEQSLACQCL",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "PFPEVFGK",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": "108 uM(IC50)"
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "IPPKKNQDKTE",
+    "category": "Dairy",
+    "function": "ameliorates insulin resistance",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "Q9TSI0",
+    "peptide": "VLPVPQK",
+    "category": "Dairy",
+    "function": "anti-apoptotic effect",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YP",
+    "category": "Dairy",
+    "function": "antihypertensive",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IPP",
+    "category": "Dairy",
+    "function": "antihypertensive",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYLGY",
+    "category": "Dairy",
+    "function": "Antihypertensive",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "AYFYPEL",
+    "category": "Dairy",
+    "function": "Antihypertensive",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "HQPHQPLPPTVMFPPQ",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "WMHQPHQPLPPT",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LYQEPVLGPVR",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LDQWLCEK",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YP",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "PGPIPN",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "KVLPVPQ",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "Q9TSI0",
+    "peptide": "YQEPVLGPVR",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "O62823",
+    "peptide": "YFYPQL",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LLY",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "IPAV",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "KTVDMESTEVFTKKTKLTEEEKNRLNFLKK",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "YPVTQPLAPVHNPIS",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKCRRWQWRM KKLGAPSITCVRRAF",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPVEPF",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LRLKKYKVPQL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "LLNQELLLNPTHQIYPV",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02663",
+    "peptide": "SSSEESII",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "RYLGYLE",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YLGYLE",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPI",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPIP",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPIN",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFVE",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFVEP",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YGFL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YGFLP",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPVEPF",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "YGLF",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "YLL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "YLLF",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02070",
+    "peptide": "YPW",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02070",
+    "peptide": "YPWT",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02070",
+    "peptide": "PWT",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "RELEEL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "QYVLSRYPSYGIN",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "KYIPIQYVLS",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "INNQFLPYPYYAKPA",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "DKTEIPTINTIASGEPT",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "AVRSPAQILQWQ",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "NTVPAKSCQAQPTTM",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "NVPGEIVESL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "HKEMPFPKYPVEPFTESQ",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "SQSKVLPVPQKAVPYPQ",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "SWMHQPHQPLPPT",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "FPKYPVEPF",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "APSFSDIPNPIGSENSE",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "KHQGLPQEVLNENLL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "PFPEVFGKE",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "O77698",
+    "peptide": "SVDGKEDLIW",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "Q9TSI0",
+    "peptide": "YQEPVLGPVR",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P07498",
+    "peptide": "YVPR",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VPYPQR",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "RHPHPHLSFM",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LLY",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02755",
+    "peptide": "YVEELKPTPEGDL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "KVLPVPEK",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "ARHPHPHLSFM",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VPP",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "IPP",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "O62823",
+    "peptide": "YFYPQL",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YQEPVLGPVR",
+    "category": "Dairy",
+    "function": "Antithrombotic",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "LDQWLCEKL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "59.6 uM(IC50)"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "ILDKVGINYWLAHK",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "23.1 uM(IC50)"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "VGINYWLAHK",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "13.8 uM(IC50)"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "EQLTKCEVFR",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "12 uM(IC50)"
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "KILDKVGINYWLAHK",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "11.4 uM(IC50)"
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VPYPQ",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "41.45 uM(IC50)"
+  },
+  {
+    "proteinID": "P00710",
+    "peptide": "ILDKEGIDY",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "347.8 uM(IC50)"
+  },
+  {
+    "proteinID": "O97943",
+    "peptide": "ILELA",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "721.1 uM(IC50)"
+  },
+  {
+    "proteinID": "O97943",
+    "peptide": "LLQLEAIR",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "177.8 uM(IC50)"
+  },
+  {
+    "proteinID": "Q9TVD0",
+    "peptide": "LPVP",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "87 uM(IC50)"
+  },
+  {
+    "proteinID": "Q9TVD0",
+    "peptide": "MPVQA",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "93.3 uM(IC50)"
+  },
+  {
+    "proteinID": "Q9TVD0",
+    "peptide": "SPVVPF",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "214.1 uM(IC50)"
+  },
+  {
+    "proteinID": "Q9TVD0",
+    "peptide": "YPVEPF",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "138 uM(IC50)"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "LKPTPEGDL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "LPYPY",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "IPIQY",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "IPI",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "IPP",
+    "category": "Dairy",
+    "function": "enhance insulin signaling",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VPP",
+    "category": "Dairy",
+    "function": "enhance insulin signaling",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P14632",
+    "peptide": "KCRQWQSKIRRTNPIFCIRR)",
+    "category": "Dairy",
+    "function": "Immunomodulatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YLG",
+    "category": "Dairy",
+    "function": "improves cognitive decline",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "TDVEN",
+    "category": "Dairy",
+    "function": "Inhibition of cholesterol solubility",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "LQPE",
+    "category": "Dairy",
+    "function": "Inhibition of cholesterol solubility",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "VAPFPE",
+    "category": "Dairy",
+    "function": "Inhibition of cholesterol solubility",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VLPVPQ",
+    "category": "Dairy",
+    "function": "Inhibition of cholesterol solubility",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VPP",
+    "category": "Dairy",
+    "function": "Nitric oxide liberation",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "IPP",
+    "category": "Dairy",
+    "function": "Nitric oxide liberation",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "YVEEL",
+    "category": "Dairy",
+    "function": "Osteoanabolic",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "YLLF",
+    "category": "Dairy",
+    "function": "Osteoanabolic",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "WLAHK",
+    "category": "Dairy",
+    "function": "Osteoanabolic",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VLPVPQK",
+    "category": "Dairy",
+    "function": "osteoanabolic action",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "FKSETKNLL",
+    "category": "Dairy",
+    "function": "Osteogenic activity",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "O62823",
+    "peptide": "EDVPSER",
+    "category": "Dairy",
+    "function": "Osteogenic activity",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "Q9TSI0",
+    "peptide": "VLPVPQK",
+    "category": "Dairy",
+    "function": "Osteogenic activity",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P11840",
+    "peptide": "HPHPHLSF",
+    "category": "Dairy",
+    "function": "Osteogenic activity",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "YVEEL",
+    "category": "Dairy",
+    "function": "osteo-protective",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "YLLF",
+    "category": "Dairy",
+    "function": "osteo-protective",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "MAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV",
+    "category": "Dairy",
+    "function": "Prevents or reverses skin barrier damage",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P47710",
+    "peptide": "YPFVE",
+    "category": "Dairy",
+    "function": "promote beta-cell development",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P47710",
+    "peptide": "YPFVEPI",
+    "category": "Dairy",
+    "function": "promote beta-cell development",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "RELEELNVPGEIVESLSSSEESITR",
+    "category": "Dairy",
+    "function": "promotes calcium uptake",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "VLPVPQK",
+    "category": "Dairy",
+    "function": "Wound healing",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P05814",
+    "peptide": "GRVMPVLKSPTIPFFDPQIP",
+    "category": "Dairy",
+    "function": "immunomodulatory",
+    "secondary_function": "BCCY-1 enhanced chemokine production and monocyte migration"
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YQLD",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "FSDIPNPIGSEN",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "FSDIPNPIGSE",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "YFYP",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "LKDLKGYGG",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": "IC50 value of 4.93 mM"
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "TPEVDKEALEK",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "VGINYWLAHK",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P00711",
+    "peptide": "IWCKDDQNPH",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "NLPEKADRD",
+    "category": "Dairy",
+    "function": "Antithrombin",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P24627",
+    "peptide": "NLPEKADRD",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "ELNVPGEIVES",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "SSSEESITRIN",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "GVSKVKEAMAPKH",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "DVENLHLPLPL",
+    "category": "Dairy",
+    "function": "Antimicrobial",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02754",
+    "peptide": "PMHIR",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "KVLPVPEK",
+    "category": "Dairy",
+    "function": "Anti-inflammatory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "E9NZN2",
+    "peptide": "KALNEINQF",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02662",
+    "peptide": "LHSMK",
+    "category": "Dairy",
+    "function": "Antioxidant",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPFPGPIPNS",
+    "category": "Dairy",
+    "function": "anti-anxiety",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P33049",
+    "peptide": "FPQYLQYPY",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "YPSYGL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02668",
+    "peptide": "HPHPHLSFMAIPP",
+    "category": "Dairy",
+    "function": "ACE-inhibitory",
+    "secondary_function": ""
+  },
+  {
+    "proteinID": "P02666",
+    "peptide": "SLPQNIPPL",
+    "category": "Dairy",
+    "function": "DPP-IV Inhibitory",
+    "secondary_function": ""
+  }
+]

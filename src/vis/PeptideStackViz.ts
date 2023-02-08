@@ -1,22 +1,19 @@
 import * as d3 from "d3";
 import { BaseType } from "d3";
 
-type Protein = {
+export type Protein = {
 	Entry: string;
 	Sequence: string;
 };
 
-type Peptide = {
-	entry: string;
-	sequence: string;
+export type Peptide = {
 	proteinID: string;
 	peptide: string;
 	category: string;
 	function: string;
-	secondary_function: string;
 };
 
-export default class PeptideStackVis {
+export class PeptideStackVis {
 	/**
 	 * Builds a visualization for stacking peptides as lines on an amino acid sequence scale
 	 */
@@ -53,6 +50,9 @@ export default class PeptideStackVis {
 			.attr("height", this.svgHeight);
 	}
 
+	clearVis() {
+		this.mainSvg.selectAll("g").remove();
+	}
 	/**
 	 * Builds axes out of amino acid sequence of the given protein
 	 * @param protein Entry name of the protein
