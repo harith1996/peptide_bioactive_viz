@@ -14,32 +14,36 @@ export default function VisContainer(props: Datasets) {
 		props.peptides,
 		"#viscontainer"
 	);
+	
 	useEffect(() => {
 		v.clearVis();
 		v.buildSplitAxes(proteinEntry);
 	});
+
 	const handleProteinChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
 		setProteinEntry(e.currentTarget.value);
 	};
 
 	return (
 		<div>
-      <svg id="viscontainer"></svg>
-			<label htmlFor="protein_selector">Choose a protein</label>
-			<select
-				name="protein_selector"
-				value={proteinEntry}
-				onChange={handleProteinChange}
-			>
-				{proteinList.map((p, i) => {
-					return (
-						<option key={i} value={p}>
-							{p}
-						</option>
-					);
-				})}
-				;
-			</select>
+			<svg id="viscontainer"></svg>
+			<div>
+				<label htmlFor="protein_selector">Choose a protein </label>
+				<select
+					name="protein_selector"
+					value={proteinEntry}
+					onChange={handleProteinChange}
+				>
+					{proteinList.map((p, i) => {
+						return (
+							<option key={i} value={p}>
+								{p}
+							</option>
+						);
+					})}
+					;
+				</select>
+			</div>
 		</div>
 	);
 }

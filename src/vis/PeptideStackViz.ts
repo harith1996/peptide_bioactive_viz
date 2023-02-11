@@ -51,7 +51,7 @@ export class PeptideStackVis {
 	}
 
 	clearVis() {
-		this.mainSvg.selectAll("g").remove();
+		this.mainSvg.selectAll("*").remove();
 	}
 	/**
 	 * Builds axes out of amino acid sequence of the given protein
