@@ -18,6 +18,7 @@ export default function VisContainer(props: Datasets) {
 	useEffect(() => {
 		v.clearVis();
 		v.buildSplitAxes(proteinEntry);
+		v.stackPeptides(proteinEntry);
 	});
 
 	const handleProteinChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
