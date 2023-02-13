@@ -237,7 +237,7 @@ export class PeptideStackVis {
 		let suffixLine = new PeptideLine(
 			line.proteinSeq,
 			suffixSeq,
-			0,
+			line.startIndex + line.length - excessLength,
 			axisNum + 1
 		);
 		suffixLine.setSplit(0);
@@ -250,7 +250,7 @@ export class PeptideStackVis {
 
 	getProcessedLines(lines: PeptideLine[]) {
 		let splitLines = new Array<PeptideLine>();
-		lines = lines.map((line) => {
+		lines = lines.reduce((acc, line) => {
 			let axisNumber = this.getStartAxisNumber(line.startIndex);
 			line.startAxisNumber = axisNumber;
 			if (line.startIndex > -1) {
@@ -272,10 +272,10 @@ export class PeptideStackVis {
 					}
 				}
 				this.stageLineForRender(line);
+				acc.push(line);
 			}
-
-			return line;
-		});
+			return acc;
+		}, new Array<PeptideLine>());
 		splitLines.forEach((l) => this.stageLineForRender(l));
 		return lines.concat(splitLines);
 	}
@@ -292,8 +292,10 @@ export class PeptideStackVis {
 	stageLineForRender(line: PeptideLine) {
 		if (line.startAxisNumber > -1) {
 			let axis = this.axes[line.startAxisNumber];
-			line.x1 = this.padding + axis.scale(''+line.startIndex);
-			line.x2 = this.padding + axis.scale('' + (line.startIndex + line.length - 1));
+			line.x1 = this.padding + axis.scale("" + line.startIndex);
+			line.x2 =
+				this.padding +
+				axis.scale("" + (line.startIndex + line.length - 1));
 			let axisOffset = line.startIndex % this.maxAxisLength;
 			let stackPos = this.indexStack[line.startIndex].freeStackPos;
 			line.y =
