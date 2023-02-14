@@ -180,7 +180,7 @@ export class PeptideStackVis {
 			suffixSeq,
 			line.startIndex + line.length - excessLength,
 			axisNum + 1,
-			this.colorScale(line.bioFunction) as string,
+			line.stroke,
 			line.bioFunction
 		);
 		suffixLine.setSplit(0);
@@ -287,6 +287,9 @@ export class PeptideStackVis {
 		let stroke = customColorScheme[7];
 		if(isImportantFunction > -1) {
 			stroke = this.colorScale(peptide.function) as string;
+		}
+		else {
+			console.log("unimportant");
 		}
 		return stroke;
 	}
