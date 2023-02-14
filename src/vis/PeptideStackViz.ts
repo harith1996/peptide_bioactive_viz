@@ -16,7 +16,7 @@ export type Peptide = {
 
 type IndexStack = {
 	freeStackPos: number;
-	minLength: number;
+	maxLength: number;
 };
 
 class PeptideLine {
@@ -140,10 +140,10 @@ export class PeptideStackVis {
 			sequenceString.length / this.maxAxisLength
 		);
 		if (stringifiedIndices.length > 1) {
-			this.indexStack = stringifiedIndices.map((s) => {
+			this.indexStack = stringifiedIndices.map((s,i) => {
 				return {
 					freeStackPos: 0,
-					minLength: stringifiedIndices.length,
+					maxLength: stringifiedIndices.length - i
 				};
 			});
 
@@ -169,7 +169,7 @@ export class PeptideStackVis {
 					);
 				this.axes.push({
 					axis: seqAxis,
-					scale: pointScale,
+					pointScale: pointScale,
 					protein: protein,
 					startIndex: i * this.maxAxisLength,
 					length: seqAxis.length,
@@ -318,10 +318,10 @@ export class PeptideStackVis {
 
 	stageLineForRender(line: PeptideLine) {
 			let axis = this.axes[line.startAxisNumber];
-			line.x1 = this.padding + axis.scale("" + line.startIndex);
+			line.x1 = this.padding + axis.pointScale("" + line.startIndex);
 			line.x2 =
 				this.padding +
-				axis.scale("" + (line.startIndex + line.length - 1));
+				axis.pointScale("" + (line.startIndex + line.length - 1));
 			let axisOffset = line.startIndex % this.maxAxisLength;
 			let stackPos = this.getFreeStackPos(line);
 			line.y =
