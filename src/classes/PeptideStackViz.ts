@@ -9,7 +9,8 @@ type IndexStack = {
 	maxLength: number;
 };
 
-const importantFunctions = ["ACE-inhibitory", "Antimicrobial", "Antioxidant", "DPP-IV Inhibitor", "Opioid", "immunomodulatory", "Anticancer"]
+const importantFunctions = ["ACE-inhibitory", "Antimicrobial", "Antioxidant", "DPP-IV Inhibitor", "Opioid", "immunomodulatory", "Anticancer", "Others"]
+const customColorScheme = d3.schemeTableau10.slice(0,7).concat([d3.schemeTableau10[9]])
 
 export class PeptideStackVis {
 	/**
@@ -268,8 +269,7 @@ export class PeptideStackVis {
 	}
 
 	buildColorScale(peptides:Peptide[]) {
-		let uniqueFunctions = this.getUniqueBioFunctions(peptides);
-		let scale = d3.scaleOrdinal().domain(importantFunctions).range(d3.schemeTableau10);
+		let scale = d3.scaleOrdinal().domain(importantFunctions).range(customColorScheme);
 		return scale;
 	}
 
@@ -280,6 +280,15 @@ export class PeptideStackVis {
 
 	findProteinById(protein:string) {
 		return this.proteins.find(p=> p.Entry === protein);
+	}
+
+	getLineStroke(peptide:Peptide) {
+		let isImportantFunction = importantFunctions.indexOf(peptide.function);
+		let stroke = customColorScheme[7];
+		if(isImportantFunction > -1) {
+			stroke = this.colorScale(peptide.function) as string;
+		}
+		return stroke;
 	}
 
 	stackPeptides(proteinId: string) {
@@ -304,7 +313,7 @@ export class PeptideStackVis {
 				p.peptide,
 				p.seqIndex[0],
 				axisNumber,
-				this.colorScale(p.function) as string,
+				this.getLineStroke(p),
 				p.function
 			);
 		});
