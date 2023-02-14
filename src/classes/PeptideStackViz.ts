@@ -26,7 +26,7 @@ export class PeptideStackVis {
 	stackGap: number; // vertical gap between lines
 	axes: any;
 	indexStack: Array<IndexStack>;
-	colorScale:(bioFunction : string) => string;
+	colorScale: d3.ScaleOrdinal<string, unknown, never>;
 
 	constructor(
 		proteins: Array<Protein>,
@@ -177,7 +177,7 @@ export class PeptideStackVis {
 			suffixSeq,
 			line.startIndex + line.length - excessLength,
 			axisNum + 1,
-			this.colorScale(line.bioFunction),
+			this.colorScale(line.bioFunction) as string,
 			line.bioFunction
 		);
 		suffixLine.setSplit(0);
@@ -267,9 +267,7 @@ export class PeptideStackVis {
 
 	buildColorScale(peptides:Peptide[]) {
 		let uniqueFunctions = this.getUniqueBioFunctions(peptides);
-		return function(bioFunction:string) {
-			return d3.schemeTableau10[uniqueFunctions.indexOf(bioFunction) % 10]
-		}
+		return d3.scaleOrdinal().domain(uniqueFunctions).range(d3.schemeTableau10);
 	}
 
 	getUniqueBioFunctions(peptides:Peptide[]) {
@@ -303,7 +301,7 @@ export class PeptideStackVis {
 				p.peptide,
 				p.seqIndex[0],
 				axisNumber,
-				this.colorScale(p.function),
+				this.colorScale(p.function) as string,
 				p.function
 			);
 		});
