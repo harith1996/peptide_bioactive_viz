@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { PeptideStackVis, Protein, Peptide } from "../vis/PeptideStackViz";
+import { PeptideStackVis } from "../classes/PeptideStackViz";
+import { Protein, Peptide } from "../common/types";
 
 interface Datasets {
 	proteins: Array<Protein>;
@@ -27,7 +28,6 @@ export default function VisContainer(props: Datasets) {
 
 	return (
 		<div>
-			<svg id="viscontainer"></svg>
 			<div>
 				<label htmlFor="protein_selector">Choose a protein </label>
 				<select
@@ -45,6 +45,8 @@ export default function VisContainer(props: Datasets) {
 					;
 				</select>
 			</div>
+			<svg id="viscontainer"></svg>
+			
 		</div>
 	);
 }

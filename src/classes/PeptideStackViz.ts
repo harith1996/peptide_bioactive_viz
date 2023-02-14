@@ -1,81 +1,13 @@
 import * as d3 from "d3";
 import { BaseType, color, min, sort } from "d3";
-
-export type Protein = {
-	Entry: string;
-	Sequence: string;
-};
-
-export type Peptide = {
-	proteinID: string;
-	peptide: string;
-	category: string;
-	function: string;
-	seqIndex: Array<number>;
-};
+import { PeptideLine } from "./PeptideLine";
+import { Protein, Peptide } from "../common/types";
 
 type IndexStack = {
 	freeStackPos: number;
 	maxLength: number;
 };
 
-class PeptideLine {
-	proteinSeq: string;
-	peptideSeq: string;
-	length: number;
-	startIndex: number;
-	isSplit: boolean;
-	splitPosition: number;
-	stackPosition: number;
-	thickness: number;
-	startAxisNumber: number;
-	x1: number;
-	x2: number;
-	y: number;
-	stroke: string;
-	axisOffset: number;
-	bioFunction:string;
-
-	constructor(
-		proteinSequence: string,
-		peptideSequence: string,
-		startIndex: number,
-		startAxisNumber: number,
-		stroke: string,
-		bioFunction: string
-	) {
-		this.proteinSeq = proteinSequence;
-		this.peptideSeq = peptideSequence;
-		this.startIndex = startIndex;
-		this.length = this.peptideSeq.length;
-		this.isSplit = false;
-		this.splitPosition = -1;
-		this.stackPosition = -1;
-		this.thickness = 10;
-		this.startAxisNumber = startAxisNumber;
-		this.x1 = this.x2 = this.y = 0;
-		this.axisOffset = 0;
-		this.bioFunction = bioFunction;
-		this.stroke = stroke;
-	}
-
-	getPixelLength(tickGap: number) {
-		return (this.length - 1) * tickGap;
-	}
-
-	setSplit(splitPos: number) {
-		this.isSplit = true;
-		this.splitPosition = splitPos;
-	}
-
-	setStack(stackPos: number) {
-		this.stackPosition = stackPos;
-	}
-
-	setThickness(thickness: number) {
-		this.thickness = thickness;
-	}
-}
 
 export class PeptideStackVis {
 	/**
