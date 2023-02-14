@@ -2,12 +2,14 @@ import * as d3 from "d3";
 import { BaseType, min } from "d3";
 import { PeptideLine } from "./PeptideLine";
 import { Protein, Peptide } from "../common/types";
+import { Swatches } from "./Swatches";
 
 type IndexStack = {
 	freeStackPos: number;
 	maxLength: number;
 };
 
+const importantFunctions = ["ACE-inhibitory", "Antimicrobial", "Antioxidant", "DPP-IV Inhibitor", "Opioid", "immunomodulatory", "Anticancer"]
 
 export class PeptideStackVis {
 	/**
@@ -267,7 +269,8 @@ export class PeptideStackVis {
 
 	buildColorScale(peptides:Peptide[]) {
 		let uniqueFunctions = this.getUniqueBioFunctions(peptides);
-		return d3.scaleOrdinal().domain(uniqueFunctions).range(d3.schemeTableau10);
+		let scale = d3.scaleOrdinal().domain(importantFunctions).range(d3.schemeTableau10);
+		return scale;
 	}
 
 	getUniqueBioFunctions(peptides:Peptide[]) {
@@ -309,6 +312,13 @@ export class PeptideStackVis {
 		//process the lines for splits
 		lines = this.getProcessedLines(lines);
 
+		if(lines.length>0) {
+				let legend = (Swatches(this.colorScale));
+				let node = document.querySelector('#legend');
+				node?.firstChild?.remove();
+				node?.appendChild(legend);
+		}
+
 		//stack lines
 		this.mainSvg
 			.append("g")
@@ -321,6 +331,7 @@ export class PeptideStackVis {
 			.attr("y2", (d) => d.y)
 			.attr("stroke", (d) => d.stroke)
 			.attr("stroke-width", (d) => d.thickness);
+			
 		// lines.forEach((line) => {
 		// 	this.stackPeptide(line);
 		// 	this.incrementStack(line);

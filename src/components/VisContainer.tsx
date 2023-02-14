@@ -45,8 +45,9 @@ export default function VisContainer(props: Datasets) {
 					;
 				</select>
 			</div>
-			<svg id="viscontainer"></svg>
 			
+			<div id="legend"></div>
+			<svg id="viscontainer"></svg>
 		</div>
 	);
 }
