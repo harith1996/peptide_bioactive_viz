@@ -203,6 +203,7 @@ export class PeptideStackVis {
 			line.bioFunction
 		);
 		suffixLine.setSplit(0);
+		suffixLine.splitLines= [line];
 		return suffixLine;
 	}
 
@@ -245,6 +246,7 @@ export class PeptideStackVis {
 				this.splitLine(line, excessLength);
 			}
 		}
+		line.splitLines = splitLines;
 		return splitLines;
 	}
 
@@ -259,8 +261,8 @@ export class PeptideStackVis {
 
 		//increment freeStackPos
 		if (s > -1) {
-			for (let i = s; i < s + line.length; i++) {
-				this.indexStack[i].freeStackPos++;
+			for (let i = s; i < s + line.length - 1; i++) {
+				this.indexStack[i].freeStackPos = line.stackPos + 1;
 			}
 		}
 
@@ -298,7 +300,7 @@ export class PeptideStackVis {
 			30;
 		line.axisOffset = axisOffset;
 		line.stackPosition = stackPos;
-		line.stagingIndex = stagingIndex;
+		line.stackPos = stackPos;
 		this.updateStack(line);
 	}
 
@@ -367,7 +369,7 @@ export class PeptideStackVis {
 		//stack lines
 		this.mainSvg
 			.append("g")
-			.selectAll("line")
+			.selectAll("rect")
 			.data(lines)
 			.join("rect")
 			.attr("x", (d) => d.x1)
