@@ -41,13 +41,15 @@ export class PeptideStackVis {
 	axes: any;
 	indexStack: Array<IndexStack>;
 	colorScale: d3.ScaleOrdinal<string, unknown, never>;
+	matureProteinStart: number;
 
 	constructor(
 		proteins: Array<Protein>,
 		peptides: Array<Peptide>,
 		mainSvgId: string,
 		width = 1600,
-		height = 1500
+		height = 1500,
+		matureProteinStart = 15
 	) {
 		this.proteins = proteins;
 		this.peptides = peptides;
@@ -68,6 +70,7 @@ export class PeptideStackVis {
 		this.axes = [];
 		this.indexStack = [];
 		this.colorScale = this.buildColorScale();
+		this.matureProteinStart = 15;
 	}
 
 	clearVis() {
@@ -128,7 +131,7 @@ export class PeptideStackVis {
 		let prot = this.proteins.find((p: Protein) => {
 			return p.Entry === protein;
 		});
-		return prot?.Sequence || "";
+		return prot?.Sequence.slice(this.matureProteinStart) || "";
 	}
 
 	getSequenceIndices(sequenceString: string) {
