@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { BaseType } from "d3";
+import { BaseType, stack } from "d3";
 import { PeptideLine } from "./PeptideLine";
 import { Protein, Peptide } from "../common/types";
 import { Swatches } from "./Swatches";
@@ -88,7 +88,6 @@ export class PeptideStackVis {
 			sequenceString.length / this.maxAxisLength
 		);
 		if (stringifiedIndices.length > 1) {
-
 			Array.from(Array(number_of_axes).keys()).forEach((i) => {
 				let axisDomain = stringifiedIndices.slice(
 					i * this.maxAxisLength,
@@ -101,7 +100,7 @@ export class PeptideStackVis {
 				let seqAxis = d3.axisBottom(pointScale).tickFormat((d, t) => {
 					return sequenceString[parseInt(d)];
 				});
-				this.mainSvg
+				let axisNode = this.mainSvg
 					.append("g")
 					.style("font", "14px courier")
 					.call(seqAxis)
@@ -111,7 +110,8 @@ export class PeptideStackVis {
 					);
 				this.axes.push({
 					axis: seqAxis,
-					pointScale: pointScale
+					axisNode: axisNode,
+					pointScale: pointScale,
 				});
 			});
 		}
@@ -147,19 +147,27 @@ export class PeptideStackVis {
 		});
 	}
 
-	getSortedPeptidesStartingWith(sequencedPeptides:PeptideLine[], startIndex: number) {
-		let peptides = sequencedPeptides.filter(p => p.startIndex === startIndex);
+	getSortedPeptidesStartingWith(
+		sequencedPeptides: PeptideLine[],
+		startIndex: number
+	) {
+		let peptides = sequencedPeptides.filter(
+			(p) => p.startIndex === startIndex
+		);
 		peptides = peptides.sort((pA, pB) => pA.length - pB.length);
 		return peptides;
 	}
 
-	buildPeptideStack(sequencedPeptides: PeptideLine[], proteinID:string) {
+	buildPeptideStack(sequencedPeptides: PeptideLine[], proteinID: string) {
 		let proteinSequence = this.getSequence(proteinID) || "";
 		Array.from(proteinSequence).forEach((s, i) => {
 			this.indexStack.push({
-				peptideLines: this.getSortedPeptidesStartingWith(sequencedPeptides, i)
-			})
-		})
+				peptideLines: this.getSortedPeptidesStartingWith(
+					sequencedPeptides,
+					i
+				),
+			});
+		});
 	}
 
 	getSuffixLine(line: PeptideLine, excessLength: number, axisNum: number) {
@@ -176,7 +184,7 @@ export class PeptideStackVis {
 			line.bioFunction
 		);
 		suffixLine.setSplit(0);
-		suffixLine.splitLines= [line];
+		suffixLine.splitLines = [line];
 		return suffixLine;
 	}
 
@@ -203,20 +211,23 @@ export class PeptideStackVis {
 		return processedLines;
 	}
 
-	stageForRendering(lines:PeptideLine[], proteinID: string) {
+	stageForRender(lines: PeptideLine[], proteinID: string) {
 		let stackPos = 0;
 		let stacked = 0;
 		let startIndex = 0;
-		let proteinSeq= this.getSequence(proteinID);
-		while(stacked < lines.length) {
-			let line = this.indexStack[startIndex%proteinSeq!.length].peptideLines.pop();
-			if(!line) {
+		let proteinSeq = this.getSequence(proteinID);
+		while (stacked < lines.length) {
+			let line =
+				this.indexStack[
+					startIndex % proteinSeq!.length
+				].peptideLines.pop();
+			if (!line) {
 				startIndex++;
 				stackPos = Math.floor(startIndex / proteinSeq!.length);
 				continue;
 			}
 			this.stageLineForRender(line!, stackPos);
-			startIndex+=line!.length;
+			startIndex += line!.length;
 			stackPos = Math.floor(startIndex / proteinSeq!.length);
 			stacked++;
 		}
@@ -289,6 +300,24 @@ export class PeptideStackVis {
 		return stroke;
 	}
 
+	getStackHeight(lines:PeptideLine[],axisNum:number) {
+		let axisLines = lines.filter(l=> l.startAxisNumber === axisNum);
+		return d3.max(axisLines.map(l=>l.stackPos));
+	}
+
+	updateAxisHeights(lines:PeptideLine[]) {
+		let height = 0;
+		Array(this.axes.length).fill(0).forEach((v,axisNum)=>{
+			let stackHeight = this.getStackHeight(lines, axisNum) || 0;
+			let axisGap = axisNum * stackHeight * (lines[0].thickness + this.stackGap);
+			this.axes[axisNum].axisNode.attr(
+				"transform",
+				`translate(${this.padding},${height + axisGap})`
+			);
+			height += axisGap;
+		})
+	}
+
 	stackPeptides(proteinId: string) {
 		//get protein sequence
 		let protSeq = this.getSequence(proteinId);
@@ -314,11 +343,13 @@ export class PeptideStackVis {
 
 		//process the lines for splits
 		lines = this.getProcessedLines(lines);
-		
+
 		//sort peptides
 		this.buildPeptideStack(lines, proteinId);
+
+		this.stageForRender(lines, proteinId);
 		
-		this.stageForRendering(lines, proteinId);
+		this.updateAxisHeights(lines);
 
 		if (lines.length > 0) {
 			let legend = Swatches(this.colorScale);
