@@ -216,6 +216,7 @@ export class PeptideStackVis {
 			let line = this.indexStack[startIndex%proteinSeq!.length].peptideLines.pop();
 			if(!line) {
 				startIndex++;
+				stackPos = Math.floor(startIndex / proteinSeq!.length);
 				continue;
 			}
 			this.stageLineForRender(line!, stackPos);
