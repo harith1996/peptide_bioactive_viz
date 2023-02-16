@@ -57,7 +57,7 @@ export class PeptideStackVis {
 		this.tickGap = 20;
 		this.padding = 1 * this.tickGap; //multiple of tickGap
 		this.axisGap = 500;
-		this.stackGap = 5;
+		this.stackGap = 1;
 		this.maxAxisLength = Math.ceil(
 			(this.svgWidth - 2 * this.padding) / this.tickGap
 		);
@@ -67,7 +67,7 @@ export class PeptideStackVis {
 			.attr("height", this.svgHeight);
 		this.axes = [];
 		this.indexStack = [];
-		this.colorScale = this.buildColorScale(peptides);
+		this.colorScale = this.buildColorScale();
 	}
 
 	clearVis() {
@@ -212,7 +212,7 @@ export class PeptideStackVis {
 
 	getProcessedLines(lines: PeptideLine[]) {
 		let splitLines = new Array<PeptideLine>();
-		lines = lines.reduce((acc, line) => {
+		lines = lines.reduce((acc, line, index) => {
 			let axisNumber = this.getStartAxisNumber(line.startIndex);
 			line.startAxisNumber = axisNumber;
 			if (line.startIndex > -1) {
@@ -221,12 +221,12 @@ export class PeptideStackVis {
 					this.getSplitLines(line, axisNumber)
 				);
 				//prepare for render
-				this.stageLineForRender(line);
+				this.stageLineForRender(line, index);
 				acc.push(line);
 			}
 			return acc;
 		}, new Array<PeptideLine>());
-		splitLines.forEach((l) => this.stageLineForRender(l));
+		splitLines.forEach((l,i) => this.stageLineForRender(l, i));
 		return lines.concat(splitLines);
 	}
 
@@ -284,7 +284,7 @@ export class PeptideStackVis {
 		return d3.max(indexes) || 0;
 	}
 
-	stageLineForRender(line: PeptideLine) {
+	stageLineForRender(line: PeptideLine, stagingIndex:number) {
 		let axis = this.axes[line.startAxisNumber];
 		line.x1 = this.padding + axis.pointScale("" + line.startIndex);
 		line.x2 =
@@ -298,10 +298,11 @@ export class PeptideStackVis {
 			30;
 		line.axisOffset = axisOffset;
 		line.stackPosition = stackPos;
+		line.stagingIndex = stagingIndex;
 		this.updateStack(line);
 	}
 
-	buildColorScale(peptides: Peptide[]) {
+	buildColorScale() {
 		let scale = d3
 			.scaleOrdinal()
 			.domain(importantFunctions)
@@ -323,8 +324,6 @@ export class PeptideStackVis {
 		let stroke = customColorScheme[7];
 		if (isImportantFunction > -1) {
 			stroke = this.colorScale(peptide.function) as string;
-		} else {
-			console.log("unimportant");
 		}
 		return stroke;
 	}
@@ -370,13 +369,14 @@ export class PeptideStackVis {
 			.append("g")
 			.selectAll("line")
 			.data(lines)
-			.join("line")
-			.attr("x1", (d) => d.x1)
-			.attr("x2", (d) => d.x2)
-			.attr("y1", (d) => d.y)
-			.attr("y2", (d) => d.y)
-			.attr("stroke", (d) => d.stroke)
-			.attr("stroke-width", (d) => d.thickness);
+			.join("rect")
+			.attr("x", (d) => d.x1)
+			.attr("width", (d) => d.x2 - d.x1)
+			.attr("y", (d) => d.y)
+			.attr("height", (d) => d.thickness)
+			.attr("fill", (d) => d.stroke)
+			.attr("stroke-width", "2px")
+			.attr("stroke", "rgba(255,255,255,1)");
 
 		// lines.forEach((line) => {
 		// 	this.stackPeptide(line);

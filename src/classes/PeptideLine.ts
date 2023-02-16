@@ -14,6 +14,7 @@ export class PeptideLine {
 	stroke: string;
 	axisOffset: number;
 	bioFunction:string;
+	stagingIndex: number;
 
 	constructor(
 		proteinSequence: string,
@@ -21,7 +22,8 @@ export class PeptideLine {
 		startIndex: number,
 		startAxisNumber: number,
 		stroke: string,
-		bioFunction: string
+		bioFunction: string,
+		stagingIndex = 0
 	) {
 		this.proteinSeq = proteinSequence;
 		this.peptideSeq = peptideSequence;
@@ -36,6 +38,7 @@ export class PeptideLine {
 		this.axisOffset = 0;
 		this.bioFunction = bioFunction;
 		this.stroke = stroke;
+		this.stagingIndex = stagingIndex;
 	}
 
 	getPixelLength(tickGap: number) {
