@@ -284,7 +284,7 @@ export class PeptideStackVis {
 				let seqAxis = d3.axisBottom(pointScale).tickFormat((d, t) => {
 					return sequenceString[parseInt(d)];
 				});
-				this.mainSvg
+				let axisNode = this.mainSvg
 					.append("g")
 					.style("font", "14px courier")
 					.call(seqAxis)
@@ -295,6 +295,7 @@ export class PeptideStackVis {
 				this.axes.push({
 					axis: seqAxis,
 					pointScale: pointScale,
+					axisNode: axisNode
 				});
 			});
 		}
@@ -308,8 +309,8 @@ export class PeptideStackVis {
 	updateAxisHeights(lines:PeptideLine[]) {
 		let height = 0;
 		Array(this.axes.length).fill(0).forEach((v,axisNum)=>{
-			let stackHeight = this.getStackHeight(lines, axisNum) || 0;
-			let axisGap = axisNum * stackHeight * (lines[0].thickness + this.stackGap);
+			let stackHeight = this.getStackHeight(lines, axisNum - 1) || 0;
+			let axisGap = axisNum * (stackHeight + 2) * (lines[0].thickness + this.stackGap) + axisNum*30;
 			this.axes[axisNum].axisNode.attr(
 				"transform",
 				`translate(${this.padding},${height + axisGap})`
@@ -348,6 +349,8 @@ export class PeptideStackVis {
 		this.buildPeptideStack(lines, proteinId);
 
 		this.stageForRendering(lines, proteinId);
+
+		this.updateAxisHeights(lines);
 
 		if (lines.length > 0) {
 			let legend = Swatches(this.colorScale);
