@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { BaseType, min } from "d3";
+import { BaseType, sort } from "d3";
 import { PeptideLine } from "./PeptideLine";
 import { Protein, Peptide } from "../common/types";
 import { Swatches } from "./Swatches";
@@ -174,10 +174,18 @@ export class PeptideStackVis {
 		return peptide.seqIndex[0] !== -1;
 	}
 
-	getSortedPeptides(sequencedPeptides: Peptide[]) {
-		let sortedPeptides = sequencedPeptides.sort((pA, pB) => {
-			return this.comparePeptideIndex(pA, pB);
-		});
+	getSortedPeptidesStartingWith(sequencedPeptides:Peptide[], startIndex: number) {
+		let peptides = sequencedPeptides.filter(p => p.seqIndex[0] === startIndex);
+		peptides = peptides.sort((pA, pB) => pB.peptide.length - pA.peptide.length);
+		return peptides;
+	}
+
+	getSortedPeptides(sequencedPeptides: Peptide[], proteinID:string) {
+		let sortedPeptides = new Array<Peptide>();
+		let proteinSequence = this.findProteinById(proteinID)?.Sequence || "";
+		Array.from(proteinSequence).forEach((s, i) => {
+			sortedPeptides = sortedPeptides.concat(this.getSortedPeptidesStartingWith(sequencedPeptides, i));
+		})
 		return sortedPeptides;
 	}
 
@@ -332,7 +340,7 @@ export class PeptideStackVis {
 		peptides = this.getSequencedPeptides(peptides);
 
 		//sort peptides
-		peptides = this.getSortedPeptides(peptides);
+		peptides = this.getSortedPeptides(peptides, proteinId);
 
 		//make PeptideLine for each peptide
 		let lines = peptides.map((p) => {
