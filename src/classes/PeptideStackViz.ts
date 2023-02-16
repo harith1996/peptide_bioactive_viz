@@ -129,75 +129,23 @@ export class PeptideStackVis {
 		return stroke;
 	}
 
-	buildColorScale() {
-		let scale = d3
-			.scaleOrdinal()
-			.domain(importantFunctions)
-			.range(customColorScheme);
-		return scale;
-	}
-
-	/**
-	 * Builds axes out of amino acid sequence of the given protein
-	 * @param protein Entry name of the protein
-	 */
-	buildSplitAxes(protein: string) {
-		let sequenceString = this.getSequence(protein);
-		let sequenceIndices = this.getSequenceIndices(sequenceString);
-		let stringifiedIndices = sequenceIndices.map((n) => "" + n); //converts [0,1,2,3,...] => ["0", "1", "2", "3", ...] to use with d3.scalePoint()
-		let number_of_axes = Math.ceil(
-			sequenceString.length / this.maxAxisLength
-		);
-		if (stringifiedIndices.length > 1) {
-			Array.from(Array(number_of_axes).keys()).forEach((i) => {
-				let axisDomain = stringifiedIndices.slice(
-					i * this.maxAxisLength,
-					(i + 1) * this.maxAxisLength
+	//Checks if line needs to split, and returns the suffix line in a list
+	getSplitLines(line: PeptideLine, axisNumber: number) {
+		let splitLines = new Array<PeptideLine>();
+		if (!line.isSplit) {
+			let excessLength =
+				line.length +
+				(line.startIndex % this.maxAxisLength) -
+				this.maxAxisLength;
+			if (excessLength > 0) {
+				splitLines.push(
+					this.getSuffixLine(line, excessLength, axisNumber)
 				);
-				let pointScale = d3
-					.scalePoint()
-					.domain(axisDomain)
-					.range([0, axisDomain.length * this.tickGap]);
-				let seqAxis = d3.axisBottom(pointScale).tickFormat((d, t) => {
-					return sequenceString[parseInt(d)];
-				});
-				this.mainSvg
-					.append("g")
-					.style("font", "14px courier")
-					.call(seqAxis)
-					.attr(
-						"transform",
-						`translate(${this.padding},${i * this.axisGap})`
-					);
-				this.axes.push({
-					axis: seqAxis,
-					pointScale: pointScale,
-				});
-			});
+				this.splitLine(line, excessLength);
+			}
 		}
-	}
-
-	getPeptidesStartingWith(
-		sequencedPeptides: PeptideLine[],
-		startIndex: number
-	) {
-		let peptides = sequencedPeptides.filter(
-			(p) => p.startIndex === startIndex
-		);
-		peptides = peptides.sort((pA, pB) => pA.length - pB.length);
-		return peptides;
-	}
-
-	buildPeptideStack(sequencedPeptides: PeptideLine[], proteinID: string) {
-		let proteinSequence = this.getSequence(proteinID) || "";
-		Array.from(proteinSequence).forEach((s, i) => {
-			this.indexStack.push({
-				peptideLines: this.getPeptidesStartingWith(
-					sequencedPeptides,
-					i
-				),
-			});
-		});
+		line.splitLines = splitLines;
+		return splitLines;
 	}
 
 	getSuffixLine(line: PeptideLine, excessLength: number, axisNum: number) {
@@ -236,6 +184,29 @@ export class PeptideStackVis {
 		processedLines = processedLines.concat(splitLines);
 		return processedLines;
 	}
+	
+	getPeptidesStartingWith(
+		sequencedPeptides: PeptideLine[],
+		startIndex: number
+	) {
+		let peptides = sequencedPeptides.filter(
+			(p) => p.startIndex === startIndex
+		);
+		peptides = peptides.sort((pA, pB) => pA.length - pB.length);
+		return peptides;
+	}
+
+	buildPeptideStack(sequencedPeptides: PeptideLine[], proteinID: string) {
+		let proteinSequence = this.getSequence(proteinID) || "";
+		Array.from(proteinSequence).forEach((s, i) => {
+			this.indexStack.push({
+				peptideLines: this.getPeptidesStartingWith(
+					sequencedPeptides,
+					i
+				),
+			});
+		});
+	}
 
 	stageForRendering(lines: PeptideLine[], proteinID: string) {
 		let stackPos = 0;
@@ -257,25 +228,6 @@ export class PeptideStackVis {
 			stackPos = Math.floor(startIndex / proteinSeq!.length);
 			stacked++;
 		}
-	}
-
-	//Checks if line needs to split, and returns the suffix line in a list
-	getSplitLines(line: PeptideLine, axisNumber: number) {
-		let splitLines = new Array<PeptideLine>();
-		if (!line.isSplit) {
-			let excessLength =
-				line.length +
-				(line.startIndex % this.maxAxisLength) -
-				this.maxAxisLength;
-			if (excessLength > 0) {
-				splitLines.push(
-					this.getSuffixLine(line, excessLength, axisNumber)
-				);
-				this.splitLine(line, excessLength);
-			}
-		}
-		line.splitLines = splitLines;
-		return splitLines;
 	}
 
 	splitLine(line: PeptideLine, excessLength: number) {
@@ -300,7 +252,55 @@ export class PeptideStackVis {
 		line.stackPos = stackPos;
 	}
 
-	stackPeptides(proteinId: string) {
+	buildColorScale() {
+		let scale = d3
+			.scaleOrdinal()
+			.domain(importantFunctions)
+			.range(customColorScheme);
+		return scale;
+	}
+
+	/**
+	 * Builds axes out of amino acid sequence of the given protein
+	 * @param protein Entry name of the protein
+	 */
+	renderSplitAxes(protein: string) {
+		let sequenceString = this.getSequence(protein);
+		let sequenceIndices = this.getSequenceIndices(sequenceString);
+		let stringifiedIndices = sequenceIndices.map((n) => "" + n); //converts [0,1,2,3,...] => ["0", "1", "2", "3", ...] to use with d3.scalePoint()
+		let number_of_axes = Math.ceil(
+			sequenceString.length / this.maxAxisLength
+		);
+		if (stringifiedIndices.length > 1) {
+			Array.from(Array(number_of_axes).keys()).forEach((i) => {
+				let axisDomain = stringifiedIndices.slice(
+					i * this.maxAxisLength,
+					(i + 1) * this.maxAxisLength
+				);
+				let pointScale = d3
+					.scalePoint()
+					.domain(axisDomain)
+					.range([0, axisDomain.length * this.tickGap]);
+				let seqAxis = d3.axisBottom(pointScale).tickFormat((d, t) => {
+					return sequenceString[parseInt(d)];
+				});
+				this.mainSvg
+					.append("g")
+					.style("font", "14px courier")
+					.call(seqAxis)
+					.attr(
+						"transform",
+						`translate(${this.padding},${i * this.axisGap})`
+					);
+				this.axes.push({
+					axis: seqAxis,
+					pointScale: pointScale,
+				});
+			});
+		}
+	}
+
+	renderPeptideLines(proteinId: string) {
 		//get protein sequence
 		let protSeq = this.getSequence(proteinId);
 
