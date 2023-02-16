@@ -76,6 +76,67 @@ export class PeptideStackVis {
 		this.mainSvg.selectAll("*").remove();
 	}
 
+	getProteinById(protein: string) {
+		return this.proteins.find((p) => p.Entry === protein);
+	}
+
+	getPeptides(protein: string) {
+		return this.peptides.filter((p) => {
+			return p.proteinID === protein;
+		});
+	}
+
+	getSequence(protein: string) {
+		let prot = this.proteins.find((p: Protein) => {
+			return p.Entry === protein;
+		});
+		return prot?.Sequence.slice(this.matureProteinStart) || "";
+	}
+
+	//convert "ASOFUBNQOUFBEGQEOGBU..." => [0,1,2,3,4,5,6,7, ...]
+	getSequenceIndices(sequenceString: string) {
+		return Array.from(Array(sequenceString.length).keys()); 
+	}
+
+	findSeqIndex(peptide: Peptide) {
+		let sequenceString = this.getSequence(peptide.proteinID);
+		return sequenceString.search(peptide.peptide);
+	}
+
+	getSequencedPeptides(peptides: Peptide[]) {
+		return peptides.map((p) => {
+			let index = this.findSeqIndex(p);
+			p.seqIndex = [index, index + p.peptide.length];
+			return p;
+		});
+	}
+
+	getStartAxisNumber(startIndex: number) {
+		return Math.floor(startIndex / this.maxAxisLength);
+	}
+
+	getUniqueBioFunctions(peptides: Peptide[]) {
+		let functions = peptides.map((p) => p.function);
+		return Array.from(new Set(functions));
+	}
+
+	getLineStroke(peptide: Peptide) {
+		let isImportantFunction = importantFunctions.indexOf(peptide.function);
+		let stroke = customColorScheme[7];
+		if (isImportantFunction > -1) {
+			stroke = this.colorScale(peptide.function) as string;
+		}
+		return stroke;
+	}
+
+	buildColorScale() {
+		let scale = d3
+			.scaleOrdinal()
+			.domain(importantFunctions)
+			.range(customColorScheme);
+		return scale;
+	}
+
 	/**
 	 * Builds axes out of amino acid sequence of the given protein
 	 * @param protein Entry name of the protein
@@ -88,7 +149,6 @@ export class PeptideStackVis {
 			sequenceString.length / this.maxAxisLength
 		);
 		if (stringifiedIndices.length > 1) {
-
 			Array.from(Array(number_of_axes).keys()).forEach((i) => {
 				let axisDomain = stringifiedIndices.slice(
 					i * this.maxAxisLength,
@@ -111,55 +171,33 @@ export class PeptideStackVis {
 					);
 				this.axes.push({
 					axis: seqAxis,
-					pointScale: pointScale
+					pointScale: pointScale,
 				});
 			});
 		}
 	}
 
-	getSequence(protein: string) {
-		let prot = this.proteins.find((p: Protein) => {
-			return p.Entry === protein;
-		});
-		return prot?.Sequence.slice(this.matureProteinStart) || "";
-	}
-
-	getSequenceIndices(sequenceString: string) {
-		return Array.from(Array(sequenceString.length).keys()); //convert "ASOFUBNQOUFBEGQEOGBU..." => [0,1,2,3,4,5,6,7, ...]
-	}
-
-	findPeptides(protein: string) {
-		return this.peptides.filter((p) => {
-			return p.proteinID === protein;
-		});
-	}
-
-	findSeqIndex(peptide: Peptide) {
-		let sequenceString = this.getSequence(peptide.proteinID);
-		return sequenceString.search(peptide.peptide);
-	}
-
-	getSequencedPeptides(peptides: Peptide[]) {
-		return peptides.map((p) => {
-			let index = this.findSeqIndex(p);
-			p.seqIndex = [index, index + p.peptide.length];
-			return p;
-		});
-	}
-
-	getSortedPeptidesStartingWith(sequencedPeptides:PeptideLine[], startIndex: number) {
-		let peptides = sequencedPeptides.filter(p => p.startIndex === startIndex);
+	getPeptidesStartingWith(
+		sequencedPeptides: PeptideLine[],
+		startIndex: number
+	) {
+		let peptides = sequencedPeptides.filter(
+			(p) => p.startIndex === startIndex
+		);
 		peptides = peptides.sort((pA, pB) => pA.length - pB.length);
 		return peptides;
 	}
 
-	buildPeptideStack(sequencedPeptides: PeptideLine[], proteinID:string) {
+	buildPeptideStack(sequencedPeptides: PeptideLine[], proteinID: string) {
 		let proteinSequence = this.getSequence(proteinID) || "";
 		Array.from(proteinSequence).forEach((s, i) => {
 			this.indexStack.push({
-				peptideLines: this.getSortedPeptidesStartingWith(sequencedPeptides, i)
-			})
-		})
+				peptideLines: this.getPeptidesStartingWith(
+					sequencedPeptides,
+					i
+				),
+			});
+		});
 	}
 
 	getSuffixLine(line: PeptideLine, excessLength: number, axisNum: number) {
@@ -176,12 +214,8 @@ export class PeptideStackVis {
 			line.bioFunction
 		);
 		suffixLine.setSplit(0);
-		suffixLine.splitLines= [line];
+		suffixLine.splitLines = [line];
 		return suffixLine;
-	}
-
-	getStartAxisNumber(startIndex: number) {
-		return Math.floor(startIndex / this.maxAxisLength);
 	}
 
 	getProcessedLines(lines: PeptideLine[]) {
@@ -203,20 +237,23 @@ export class PeptideStackVis {
 		return processedLines;
 	}
 
-	stageForRendering(lines:PeptideLine[], proteinID: string) {
+	stageForRendering(lines: PeptideLine[], proteinID: string) {
 		let stackPos = 0;
 		let stacked = 0;
 		let startIndex = 0;
-		let proteinSeq= this.getSequence(proteinID);
-		while(stacked < lines.length) {
-			let line = this.indexStack[startIndex%proteinSeq!.length].peptideLines.pop();
-			if(!line) {
+		let proteinSeq = this.getSequence(proteinID);
+		while (stacked < lines.length) {
+			let line =
+				this.indexStack[
+					startIndex % proteinSeq!.length
+				].peptideLines.pop();
+			if (!line) {
 				startIndex++;
 				stackPos = Math.floor(startIndex / proteinSeq!.length);
 				continue;
 			}
 			this.stageLineForRender(line!, stackPos);
-			startIndex+=line!.length;
+			startIndex += line!.length;
 			stackPos = Math.floor(startIndex / proteinSeq!.length);
 			stacked++;
 		}
@@ -263,38 +300,12 @@ export class PeptideStackVis {
 		line.stackPos = stackPos;
 	}
 
-	buildColorScale() {
-		let scale = d3
-			.scaleOrdinal()
-			.domain(importantFunctions)
-			.range(customColorScheme);
-		return scale;
-	}
-
-	getUniqueBioFunctions(peptides: Peptide[]) {
-		let functions = peptides.map((p) => p.function);
-		return Array.from(new Set(functions));
-	}
-
-	findProteinById(protein: string) {
-		return this.proteins.find((p) => p.Entry === protein);
-	}
-
-	getLineStroke(peptide: Peptide) {
-		let isImportantFunction = importantFunctions.indexOf(peptide.function);
-		let stroke = customColorScheme[7];
-		if (isImportantFunction > -1) {
-			stroke = this.colorScale(peptide.function) as string;
-		}
-		return stroke;
-	}
-
 	stackPeptides(proteinId: string) {
 		//get protein sequence
 		let protSeq = this.getSequence(proteinId);
 
 		//find peptides
-		let peptides = this.findPeptides(proteinId);
+		let peptides = this.getPeptides(proteinId);
 
 		//find peptides' start and end indexes on the protein chain
 		peptides = this.getSequencedPeptides(peptides);
@@ -314,10 +325,10 @@ export class PeptideStackVis {
 
 		//process the lines for splits
 		lines = this.getProcessedLines(lines);
-		
+
 		//sort peptides
 		this.buildPeptideStack(lines, proteinId);
-		
+
 		this.stageForRendering(lines, proteinId);
 
 		if (lines.length > 0) {
