@@ -224,7 +224,7 @@ export class PeptideStackVis {
 				continue;
 			}
 			this.stageLineForRender(line!, stackPos);
-			startIndex += line!.length;
+			startIndex += line!.length -1;
 			stackPos = Math.floor(startIndex / proteinSeq!.length);
 			stacked++;
 		}
