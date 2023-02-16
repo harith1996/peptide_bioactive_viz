@@ -112,10 +112,7 @@ export class PeptideStackVis {
 					);
 				this.axes.push({
 					axis: seqAxis,
-					pointScale: pointScale,
-					protein: protein,
-					startIndex: i * this.maxAxisLength,
-					length: seqAxis.length,
+					pointScale: pointScale
 				});
 			});
 		}
@@ -318,11 +315,9 @@ export class PeptideStackVis {
 
 		//process the lines for splits
 		lines = this.getProcessedLines(lines);
-
 		
 		//sort peptides
 		this.buildPeptideStack(lines, proteinId);
-
 		
 		this.stageForRendering(lines, proteinId);
 
