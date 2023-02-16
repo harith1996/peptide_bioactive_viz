@@ -70,7 +70,7 @@ export class PeptideStackVis {
 		this.axes = [];
 		this.indexStack = [];
 		this.colorScale = this.buildColorScale();
-		this.matureProteinStart = 15;
+		this.matureProteinStart = matureProteinStart;
 	}
 
 	clearVis() {
