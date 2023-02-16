@@ -37,10 +37,10 @@ export class PeptideStackVis {
 	tickGap: number; //gap between each tick
 	axisGap: number; //vertical gap between split axes
 	stackGap: number; // vertical gap between lines
+	matureProteinStart: number;	//offset on the protein sequence, where the mature protein starts. Default = 15
 	axes: any;
 	indexStack: Array<PeptideStack>;
 	colorScale: d3.ScaleOrdinal<string, unknown, never>;
-	matureProteinStart: number;
 
 	constructor(
 		proteins: Array<Protein>,
