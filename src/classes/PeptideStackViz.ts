@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { BaseType, sort } from "d3";
+import { BaseType } from "d3";
 import { PeptideLine } from "./PeptideLine";
 import { Protein, Peptide } from "../common/types";
 import { Swatches } from "./Swatches";
@@ -136,22 +136,6 @@ export class PeptideStackVis {
 
 	getSequenceIndices(sequenceString: string) {
 		return Array.from(Array(sequenceString.length).keys()); //convert "ASOFUBNQOUFBEGQEOGBU..." => [0,1,2,3,4,5,6,7, ...]
-	}
-
-	comparePeptideIndex(peptideA: Peptide, peptideB: Peptide) {
-		let startA = peptideA.seqIndex[0];
-		let startB = peptideB.seqIndex[0];
-		let out = -1;
-		if (startA < startB) {
-			if (peptideA.peptide.length > peptideB.peptide.length) {
-				out = -1;
-			} else out = 1;
-		} else if (startA === startB) {
-			if (peptideA.peptide.length > peptideB.peptide.length) {
-				out = -1;
-			} else out = 0;
-		} else out = 1;
-		return out;
 	}
 
 	findPeptides(protein: string) {
