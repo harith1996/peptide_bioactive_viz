@@ -9,8 +9,19 @@ type IndexStack = {
 	maxLength: number;
 };
 
-const importantFunctions = ["ACE-inhibitory", "Antimicrobial", "Antioxidant", "DPP-IV Inhibitor", "Opioid", "immunomodulatory", "Anticancer", "Others"]
-const customColorScheme = d3.schemeTableau10.slice(0,7).concat([d3.schemeTableau10[9]])
+const importantFunctions = [
+	"ACE-inhibitory",
+	"Antimicrobial",
+	"Antioxidant",
+	"DPP-IV Inhibitor",
+	"Opioid",
+	"immunomodulatory",
+	"Anticancer",
+	"Others",
+];
+const customColorScheme = d3.schemeTableau10
+	.slice(0, 7)
+	.concat([d3.schemeTableau10[9]]);
 
 export class PeptideStackVis {
 	/**
@@ -75,10 +86,10 @@ export class PeptideStackVis {
 			sequenceString.length / this.maxAxisLength
 		);
 		if (stringifiedIndices.length > 1) {
-			this.indexStack = stringifiedIndices.map((s,i) => {
+			this.indexStack = stringifiedIndices.map((s, i) => {
 				return {
 					freeStackPos: 0,
-					maxLength: stringifiedIndices.length - i
+					maxLength: stringifiedIndices.length - i,
 				};
 			});
 
@@ -198,7 +209,9 @@ export class PeptideStackVis {
 			line.startAxisNumber = axisNumber;
 			if (line.startIndex > -1) {
 				//check if line should be split
-				splitLines = splitLines.concat(this.getSplitLines(line, axisNumber));
+				splitLines = splitLines.concat(
+					this.getSplitLines(line, axisNumber)
+				);
 				//prepare for render
 				this.stageLineForRender(line);
 				acc.push(line);
@@ -210,7 +223,7 @@ export class PeptideStackVis {
 	}
 
 	//Checks if line needs to split, and returns the suffix line in a list
-	getSplitLines(line:PeptideLine, axisNumber: number) {
+	getSplitLines(line: PeptideLine, axisNumber: number) {
 		let splitLines = new Array<PeptideLine>();
 		if (!line.isSplit) {
 			let excessLength =
@@ -227,68 +240,82 @@ export class PeptideStackVis {
 		return splitLines;
 	}
 
-	splitLine(line:PeptideLine, excessLength:number) {
+	splitLine(line: PeptideLine, excessLength: number) {
 		line.setSplit(line.length - excessLength);
-		line.peptideSeq = line.peptideSeq.slice(
-			0,
-			line.length - excessLength
-		);
+		line.peptideSeq = line.peptideSeq.slice(0, line.length - excessLength);
 		line.length = line.length - excessLength;
 	}
 
-	incrementStack(line: PeptideLine) {
+	updateStack(line: PeptideLine) {
 		let s = line.startIndex;
+
+		//increment freeStackPos
 		if (s > -1) {
 			for (let i = s; i < s + line.length; i++) {
 				this.indexStack[i].freeStackPos++;
 			}
 		}
+
+		//update max lengths
+	}
+
+	getMaxLength(startPosition: number) {
+		let i = startPosition;
+		let startPos = this.indexStack[i];
+		while (this.indexStack[i] <= startPos) {
+			i++;
+		}
+		return i - startPosition;
 	}
 
 	getFreeStackPos(line: PeptideLine) {
 		let s = line.startIndex;
-		let indexes = this.indexStack.slice(s, s+ line.length).map( i => i.freeStackPos);
-		return min(indexes) || 0;
+		let indexes = this.indexStack
+			.slice(s, s + line.length)
+			.map((i) => i.freeStackPos);
+		return d3.max(indexes) || 0;
 	}
 
 	stageLineForRender(line: PeptideLine) {
-			let axis = this.axes[line.startAxisNumber];
-			line.x1 = this.padding + axis.pointScale("" + line.startIndex);
-			line.x2 =
-				this.padding +
-				axis.pointScale("" + (line.startIndex + line.length - 1));
-			let axisOffset = line.startIndex % this.maxAxisLength;
-			let stackPos = this.getFreeStackPos(line);
-			line.y =
-				line.startAxisNumber * this.axisGap +
-				stackPos * (line.thickness + this.stackGap) +
-				30;
-			line.axisOffset = axisOffset;
-			line.stackPosition = stackPos;
-			this.incrementStack(line);
+		let axis = this.axes[line.startAxisNumber];
+		line.x1 = this.padding + axis.pointScale("" + line.startIndex);
+		line.x2 =
+			this.padding +
+			axis.pointScale("" + (line.startIndex + line.length - 1));
+		let axisOffset = line.startIndex % this.maxAxisLength;
+		let stackPos = this.getFreeStackPos(line);
+		line.y =
+			line.startAxisNumber * this.axisGap +
+			stackPos * (line.thickness + this.stackGap) +
+			30;
+		line.axisOffset = axisOffset;
+		line.stackPosition = stackPos;
+		this.updateStack(line);
 	}
 
-	buildColorScale(peptides:Peptide[]) {
-		let scale = d3.scaleOrdinal().domain(importantFunctions).range(customColorScheme);
+	buildColorScale(peptides: Peptide[]) {
+		let scale = d3
+			.scaleOrdinal()
+			.domain(importantFunctions)
+			.range(customColorScheme);
 		return scale;
 	}
 
-	getUniqueBioFunctions(peptides:Peptide[]) {
-		let functions = peptides.map(p=>p.function);
+	getUniqueBioFunctions(peptides: Peptide[]) {
+		let functions = peptides.map((p) => p.function);
 		return Array.from(new Set(functions));
 	}
 
-	findProteinById(protein:string) {
-		return this.proteins.find(p=> p.Entry === protein);
+	findProteinById(protein: string) {
+		return this.proteins.find((p) => p.Entry === protein);
 	}
 
-	getLineStroke(peptide:Peptide) {
+	getLineStroke(peptide: Peptide) {
 		let isImportantFunction = importantFunctions.indexOf(peptide.function);
 		let stroke = customColorScheme[7];
-		if(isImportantFunction > -1) {
+		if (isImportantFunction > -1) {
 			stroke = this.colorScale(peptide.function) as string;
-		}
-		else {
+		} else {
 			console.log("unimportant");
 		}
 		return stroke;
@@ -307,7 +334,6 @@ export class PeptideStackVis {
 		//sort peptides
 		peptides = this.getSortedPeptides(peptides);
 
-
 		//make PeptideLine for each peptide
 		let lines = peptides.map((p) => {
 			let axisNumber = this.getStartAxisNumber(p.seqIndex[0]);
@@ -324,11 +350,11 @@ export class PeptideStackVis {
 		//process the lines for splits
 		lines = this.getProcessedLines(lines);
 
-		if(lines.length>0) {
-				let legend = (Swatches(this.colorScale));
-				let node = document.querySelector('#legend');
-				node?.firstChild?.remove();
-				node?.appendChild(legend);
+		if (lines.length > 0) {
+			let legend = Swatches(this.colorScale);
+			let node = document.querySelector("#legend");
+			node?.firstChild?.remove();
+			node?.appendChild(legend);
 		}
 
 		//stack lines
@@ -343,7 +369,7 @@ export class PeptideStackVis {
 			.attr("y2", (d) => d.y)
 			.attr("stroke", (d) => d.stroke)
 			.attr("stroke-width", (d) => d.thickness);
-			
+
 		// lines.forEach((line) => {
 		// 	this.stackPeptide(line);
 		// 	this.incrementStack(line);
