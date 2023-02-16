@@ -15,7 +15,7 @@ export default function VisContainer(props: Datasets) {
 		props.peptides,
 		"#viscontainer"
 	);
-	
+
 	useEffect(() => {
 		v.clearVis();
 		v.buildSplitAxes(proteinEntry);
@@ -45,7 +45,7 @@ export default function VisContainer(props: Datasets) {
 					;
 				</select>
 			</div>
-			
+
 			<div id="legend"></div>
 			<svg id="viscontainer"></svg>
 		</div>

@@ -157,10 +157,6 @@ export class PeptideStackVis {
 		});
 	}
 
-	isValidIndex(peptide: Peptide) {
-		return peptide.seqIndex[0] !== -1;
-	}
-
 	getSortedPeptidesStartingWith(sequencedPeptides:Peptide[], startIndex: number) {
 		let peptides = sequencedPeptides.filter(p => p.seqIndex[0] === startIndex);
 		peptides = peptides.sort((pA, pB) => pB.peptide.length - pA.peptide.length);
@@ -366,10 +362,5 @@ export class PeptideStackVis {
 			.attr("fill", (d) => d.stroke)
 			.attr("stroke-width", "2px")
 			.attr("stroke", "rgba(255,255,255,1)");
-
-		// lines.forEach((line) => {
-		// 	this.stackPeptide(line);
-		// 	this.incrementStack(line);
-		// });
 	}
 }
