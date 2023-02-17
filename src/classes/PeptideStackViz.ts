@@ -18,9 +18,7 @@ const importantFunctions = [
 	"Anticancer",
 	"Others",
 ];
-const customColorScheme = d3.schemeTableau10
-	.slice(0, 7)
-	.concat([d3.schemeTableau10[9]]);
+const customColorScheme = ['#CC6677', '#332288', '#DDCC77', '#117733', '#88CCEE', '#882255', '#44AA99', '#DDDDDD']
 
 export class PeptideStackVis {
 	/**
@@ -339,7 +337,6 @@ export class PeptideStackVis {
 					height += axisGap;
 					this.svgHeight = height + axisGap;
 				});
-			this.svgHeight += this.getAxisHeight(this.axes.length, lines);
 			this.mainSvg.attr("height", this.svgHeight);
 		}
 	}
