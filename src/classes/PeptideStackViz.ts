@@ -392,13 +392,14 @@ export class PeptideStackVis {
 			node?.appendChild(legend);
 		}
 
-		//stack lines
+		//add groups for wrapping lines and split arrows
 		let lineGroups = this.mainSvg
 			.append("g")
 			.selectAll("g")
 			.data(lines)
 			.join("g");
 
+		//add lines
 		lineGroups
 			.attr("transform", (d) => `translate(${d.x1}, ${d.y})`)
 			.append("rect")
@@ -410,6 +411,7 @@ export class PeptideStackVis {
 			.attr("stroke-width", "1px")
 			.attr("stroke", "rgba(255,255,255,1)");
 
+		//add split arrows
 		lineGroups
 			.append("path")
 			.attr("d", (d) => {
@@ -419,6 +421,7 @@ export class PeptideStackVis {
 					return "";
 				}
 			})
+			//move & flip arrows according to split location
 			.attr(
 				"transform",
 				(d) =>
