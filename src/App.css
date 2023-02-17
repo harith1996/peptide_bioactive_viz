@@ -37,6 +37,7 @@
   }
 }
 
-#legend {
-  font-size: 45px;
+#legend div {
+  width: 100%;
+  justify-content: center;
 }
