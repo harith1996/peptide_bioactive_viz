@@ -36,9 +36,9 @@ export class PeptideStackVis {
 	maxAxisLength: number; //maximum number of ticks on one axis
 	tickGap: number; //gap between each tick
 	axisGap: number; //vertical gap between split axes
-	axisThickness:number; //vertical thickness of an axis. Default = 30
+	axisThickness: number; //vertical thickness of an axis. Default = 30
 	stackGap: number; // vertical gap between lines
-	matureProteinStart: number;	//offset on the protein sequence, where the mature protein starts. Default = 15
+	matureProteinStart: number; //offset on the protein sequence, where the mature protein starts. Default = 15
 	axes: any;
 	indexStack: Array<PeptideStack>;
 	colorScale: d3.ScaleOrdinal<string, unknown, never>;
@@ -97,7 +97,7 @@ export class PeptideStackVis {
 
 	//convert "ASOFUBNQOUFBEGQEOGBU..." => [0,1,2,3,4,5,6,7, ...]
 	getSequenceIndices(sequenceString: string) {
-		return Array.from(Array(sequenceString.length).keys()); 
+		return Array.from(Array(sequenceString.length).keys());
 	}
 
 	findSeqIndex(peptide: Peptide) {
@@ -186,7 +186,7 @@ export class PeptideStackVis {
 		processedLines = processedLines.concat(splitLines);
 		return processedLines;
 	}
-	
+
 	getPeptidesStartingWith(
 		sequencedPeptides: PeptideLine[],
 		startIndex: number
@@ -225,8 +225,8 @@ export class PeptideStackVis {
 				stackPos = Math.floor(startIndex / proteinSeq!.length);
 				continue;
 			}
-			line.stackPosition = stackPos
-			startIndex += line!.length -1;
+			line.stackPosition = stackPos;
+			startIndex += line!.length - 1;
 			stackPos = Math.floor(startIndex / proteinSeq!.length);
 			stacked++;
 		}
@@ -247,7 +247,7 @@ export class PeptideStackVis {
 		let axisOffset = line.startIndex % this.maxAxisLength;
 		line.y =
 			axisHeight +
-			 line.stackPosition * (line.thickness + this.stackGap) +
+			line.stackPosition * (line.thickness + this.stackGap) +
 			this.axisThickness;
 		line.axisOffset = axisOffset;
 	}
@@ -296,34 +296,52 @@ export class PeptideStackVis {
 					axis: seqAxis,
 					pointScale: pointScale,
 					axisNode: axisNode,
-					height:0
+					height: 0,
 				});
 			});
 		}
 	}
 
-	getStackHeight(lines:PeptideLine[],axisNum:number) {
-		let axisLines = lines.filter(l=> l.startAxisNumber === axisNum);
-		return d3.max(axisLines.map(l=>l.stackPosition));
+	getStackHeight(lines: PeptideLine[], axisNum: number) {
+		let axisLines = lines.filter((l) => l.startAxisNumber === axisNum);
+		return d3.max(axisLines.map((l) => l.stackPosition));
 	}
 
-	updateHeights(lines:PeptideLine[]) {
+	getAxisHeight(axisNum: number, lines: PeptideLine[]) {
+		let stackHeight = this.getStackHeight(lines, axisNum - 1) || 0;
+		return (
+			(axisNum > 0 ? 1 : 0) *
+				(stackHeight + 5) *
+				(lines[0].thickness + this.stackGap) +
+			this.axisThickness
+		);
+	}
+
+	updateHeights(lines: PeptideLine[]) {
 		let height = 0;
-		Array(this.axes.length).fill(0).forEach((v,axisNum)=>{
-			let stackHeight = this.getStackHeight(lines, axisNum - 1) || 0;
-			let axisGap = (axisNum>0?1:0) * (stackHeight + 5) * (lines[0].thickness + this.stackGap) + this.axisThickness;
-			this.axes[axisNum].height = height + axisGap;
-			this.axes[axisNum].axisNode.attr(
-				"transform",
-				`translate(${this.padding},${this.axes[axisNum].height})`
-			);
-			let axisLines = lines.filter(l => l.startAxisNumber === axisNum);
-			axisLines.forEach(l => this.stageLineForRender(l, this.axes[axisNum].height))
-			height+=axisGap;
-		})
-		this.svgHeight = height;
-		this.mainSvg
-		.attr("height", this.svgHeight);
+		if (lines.length) {
+			Array(this.axes.length)
+				.fill(0)
+				.forEach((v, axisNum) => {
+					let axis = this.axes[axisNum];
+					let axisGap = this.getAxisHeight(axisNum, lines);
+					axis.height = height + axisGap;
+					axis.axisNode.attr(
+						"transform",
+						`translate(${this.padding},${axis.height})`
+					);
+					let axisLines = lines.filter(
+						(l) => l.startAxisNumber === axisNum
+					);
+					axisLines.forEach((l) =>
+						this.stageLineForRender(l, axis.height)
+					);
+					height += axisGap;
+					this.svgHeight = height + axisGap;
+				});
+			this.svgHeight += this.getAxisHeight(this.axes.length, lines);
+			this.mainSvg.attr("height", this.svgHeight);
+		}
 	}
 
 	renderPeptideLines(proteinId: string) {
