@@ -45,7 +45,7 @@ export class PeptideStackVis {
 		proteins: Array<Protein>,
 		peptides: Array<Peptide>,
 		mainSvgId: string,
-		width = window.screen.availWidth * 0.8,
+		width = window.innerWidth  * 0.8,
 		height = 1500,
 		matureProteinStart = 15
 	) {
