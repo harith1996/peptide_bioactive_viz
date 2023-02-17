@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { BaseType } from "d3";
+import { BaseType, line } from "d3";
 import { PeptideLine } from "./PeptideLine";
 import { Protein, Peptide } from "../common/types";
 import { Swatches } from "./Swatches";
@@ -18,7 +18,18 @@ const importantFunctions = [
 	"Anticancer",
 	"Others",
 ];
-const customColorScheme = ['#CC6677', '#332288', '#DDCC77', '#117733', '#88CCEE', '#882255', '#44AA99', '#DDDDDD']
+const customColorScheme = [
+	"#CC6677",
+	"#332288",
+	"#DDCC77",
+	"#117733",
+	"#88CCEE",
+	"#882255",
+	"#44AA99",
+	"#DDDDDD",
+];
+
+const arrowPathD = `M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z`;
 
 export class PeptideStackVis {
 	/**
@@ -45,7 +56,7 @@ export class PeptideStackVis {
 		proteins: Array<Protein>,
 		peptides: Array<Peptide>,
 		mainSvgId: string,
-		width = window.innerWidth  * 0.8,
+		width = window.innerWidth * 0.8,
 		height = 1500,
 		matureProteinStart = 15
 	) {
@@ -55,7 +66,7 @@ export class PeptideStackVis {
 		this.svgWidth = width;
 		this.svgHeight = height;
 		this.tickGap = 20;
-		this.padding = 1 * this.tickGap; //multiple of tickGap
+		this.padding = 2 * this.tickGap; //multiple of tickGap
 		this.axisGap = 500;
 		this.axisThickness = 30;
 		this.stackGap = 1;
@@ -382,17 +393,39 @@ export class PeptideStackVis {
 		}
 
 		//stack lines
-		this.mainSvg
+		let lineGroups = this.mainSvg
 			.append("g")
-			.selectAll("rect")
+			.selectAll("g")
 			.data(lines)
-			.join("rect")
-			.attr("x", (d) => d.x1)
+			.join("g");
+
+		lineGroups
+			.attr("transform", (d) => `translate(${d.x1}, ${d.y})`)
+			.append("rect")
+			.attr("x", 0)
+			.attr("y", 0)
 			.attr("width", (d) => d.x2 - d.x1)
-			.attr("y", (d) => d.y)
 			.attr("height", (d) => d.thickness)
 			.attr("fill", (d) => d.stroke)
-			.attr("stroke-width", "2px")
+			.attr("stroke-width", "1px")
 			.attr("stroke", "rgba(255,255,255,1)");
+
+		lineGroups
+			.append("path")
+			.attr("d", (d) => {
+				if (d.isSplit) {
+					return arrowPathD;
+				} else {
+					return "";
+				}
+			})
+			.attr(
+				"transform",
+				(d) =>
+					`translate(${
+						d.axisOffset > 0 ? d.x2 - d.x1 : 0
+					},0),
+					scale(${d.axisOffset > 0 ? 1 : -1},1)`
+			);
 	}
 }
