@@ -36,6 +36,7 @@ export class PeptideStackVis {
 	maxAxisLength: number; //maximum number of ticks on one axis
 	tickGap: number; //gap between each tick
 	axisGap: number; //vertical gap between split axes
+	axisThickness:number; //vertical thickness of an axis. Default = 30
 	stackGap: number; // vertical gap between lines
 	matureProteinStart: number;	//offset on the protein sequence, where the mature protein starts. Default = 15
 	axes: any;
@@ -58,6 +59,7 @@ export class PeptideStackVis {
 		this.tickGap = 20;
 		this.padding = 1 * this.tickGap; //multiple of tickGap
 		this.axisGap = 500;
+		this.axisThickness = 30;
 		this.stackGap = 1;
 		this.maxAxisLength = Math.ceil(
 			(this.svgWidth - 2 * this.padding) / this.tickGap
@@ -208,7 +210,7 @@ export class PeptideStackVis {
 		});
 	}
 
-	stageForRendering(lines: PeptideLine[], proteinID: string) {
+	updateStackPos(lines: PeptideLine[], proteinID: string) {
 		let stackPos = 0;
 		let stacked = 0;
 		let startIndex = 0;
@@ -223,7 +225,7 @@ export class PeptideStackVis {
 				stackPos = Math.floor(startIndex / proteinSeq!.length);
 				continue;
 			}
-			this.stageLineForRender(line!, stackPos);
+			line.stackPosition = stackPos
 			startIndex += line!.length -1;
 			stackPos = Math.floor(startIndex / proteinSeq!.length);
 			stacked++;
@@ -236,7 +238,7 @@ export class PeptideStackVis {
 		line.length = line.length - excessLength;
 	}
 
-	stageLineForRender(line: PeptideLine, stackPos: number) {
+	stageLineForRender(line: PeptideLine, axisHeight: number) {
 		let axis = this.axes[line.startAxisNumber];
 		line.x1 = this.padding + axis.pointScale("" + line.startIndex);
 		line.x2 =
@@ -244,12 +246,10 @@ export class PeptideStackVis {
 			axis.pointScale("" + (line.startIndex + line.length - 1));
 		let axisOffset = line.startIndex % this.maxAxisLength;
 		line.y =
-			line.startAxisNumber * this.axisGap +
-			stackPos * (line.thickness + this.stackGap) +
-			30;
+			axisHeight +
+			 line.stackPosition * (line.thickness + this.stackGap) +
+			this.axisThickness;
 		line.axisOffset = axisOffset;
-		line.stackPosition = stackPos;
-		line.stackPos = stackPos;
 	}
 
 	buildColorScale() {
@@ -295,7 +295,8 @@ export class PeptideStackVis {
 				this.axes.push({
 					axis: seqAxis,
 					pointScale: pointScale,
-					axisNode: axisNode
+					axisNode: axisNode,
+					height:0
 				});
 			});
 		}
@@ -303,20 +304,26 @@ export class PeptideStackVis {
 
 	getStackHeight(lines:PeptideLine[],axisNum:number) {
 		let axisLines = lines.filter(l=> l.startAxisNumber === axisNum);
-		return d3.max(axisLines.map(l=>l.stackPos));
+		return d3.max(axisLines.map(l=>l.stackPosition));
 	}
 
-	updateAxisHeights(lines:PeptideLine[]) {
+	updateHeights(lines:PeptideLine[]) {
 		let height = 0;
 		Array(this.axes.length).fill(0).forEach((v,axisNum)=>{
 			let stackHeight = this.getStackHeight(lines, axisNum - 1) || 0;
-			let axisGap = axisNum * (stackHeight + 2) * (lines[0].thickness + this.stackGap) + axisNum*30;
+			let axisGap = (axisNum>0?1:0) * (stackHeight + 5) * (lines[0].thickness + this.stackGap) + this.axisThickness;
+			this.axes[axisNum].height = height + axisGap;
 			this.axes[axisNum].axisNode.attr(
 				"transform",
-				`translate(${this.padding},${height + axisGap})`
+				`translate(${this.padding},${this.axes[axisNum].height})`
 			);
-			height += axisGap;
+			let axisLines = lines.filter(l => l.startAxisNumber === axisNum);
+			axisLines.forEach(l => this.stageLineForRender(l, this.axes[axisNum].height))
+			height+=axisGap;
 		})
+		this.svgHeight = height;
+		this.mainSvg
+		.attr("height", this.svgHeight);
 	}
 
 	renderPeptideLines(proteinId: string) {
@@ -348,9 +355,9 @@ export class PeptideStackVis {
 		//sort peptides
 		this.buildPeptideStack(lines, proteinId);
 
-		this.stageForRendering(lines, proteinId);
+		this.updateStackPos(lines, proteinId);
 
-		this.updateAxisHeights(lines);
+		this.updateHeights(lines);
 
 		if (lines.length > 0) {
 			let legend = Swatches(this.colorScale);
