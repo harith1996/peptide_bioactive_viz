@@ -18,9 +18,7 @@ const importantFunctions = [
 	"Anticancer",
 	"Others",
 ];
-const customColorScheme = d3.schemeTableau10
-	.slice(0, 7)
-	.concat([d3.schemeTableau10[9]]);
+const customColorScheme = ['#CC6677', '#332288', '#DDCC77', '#117733', '#88CCEE', '#882255', '#44AA99', '#DDDDDD']
 
 export class PeptideStackVis {
 	/**
@@ -36,8 +34,9 @@ export class PeptideStackVis {
 	maxAxisLength: number; //maximum number of ticks on one axis
 	tickGap: number; //gap between each tick
 	axisGap: number; //vertical gap between split axes
+	axisThickness: number; //vertical thickness of an axis. Default = 30
 	stackGap: number; // vertical gap between lines
-	matureProteinStart: number;	//offset on the protein sequence, where the mature protein starts. Default = 15
+	matureProteinStart: number; //offset on the protein sequence, where the mature protein starts. Default = 15
 	axes: any;
 	indexStack: Array<PeptideStack>;
 	colorScale: d3.ScaleOrdinal<string, unknown, never>;
@@ -58,6 +57,7 @@ export class PeptideStackVis {
 		this.tickGap = 20;
 		this.padding = 1 * this.tickGap; //multiple of tickGap
 		this.axisGap = 500;
+		this.axisThickness = 30;
 		this.stackGap = 1;
 		this.maxAxisLength = Math.ceil(
 			(this.svgWidth - 2 * this.padding) / this.tickGap
@@ -95,7 +95,7 @@ export class PeptideStackVis {
 
 	//convert "ASOFUBNQOUFBEGQEOGBU..." => [0,1,2,3,4,5,6,7, ...]
 	getSequenceIndices(sequenceString: string) {
-		return Array.from(Array(sequenceString.length).keys()); 
+		return Array.from(Array(sequenceString.length).keys());
 	}
 
 	findSeqIndex(peptide: Peptide) {
@@ -184,7 +184,7 @@ export class PeptideStackVis {
 		processedLines = processedLines.concat(splitLines);
 		return processedLines;
 	}
-	
+
 	getPeptidesStartingWith(
 		sequencedPeptides: PeptideLine[],
 		startIndex: number
@@ -208,7 +208,7 @@ export class PeptideStackVis {
 		});
 	}
 
-	stageForRendering(lines: PeptideLine[], proteinID: string) {
+	updateStackPos(lines: PeptideLine[], proteinID: string) {
 		let stackPos = 0;
 		let stacked = 0;
 		let startIndex = 0;
@@ -223,8 +223,8 @@ export class PeptideStackVis {
 				stackPos = Math.floor(startIndex / proteinSeq!.length);
 				continue;
 			}
-			this.stageLineForRender(line!, stackPos);
-			startIndex += line!.length -1;
+			line.stackPosition = stackPos;
+			startIndex += line!.length - 1;
 			stackPos = Math.floor(startIndex / proteinSeq!.length);
 			stacked++;
 		}
@@ -236,7 +236,7 @@ export class PeptideStackVis {
 		line.length = line.length - excessLength;
 	}
 
-	stageLineForRender(line: PeptideLine, stackPos: number) {
+	stageLineForRender(line: PeptideLine, axisHeight: number) {
 		let axis = this.axes[line.startAxisNumber];
 		line.x1 = this.padding + axis.pointScale("" + line.startIndex);
 		line.x2 =
@@ -244,12 +244,10 @@ export class PeptideStackVis {
 			axis.pointScale("" + (line.startIndex + line.length - 1));
 		let axisOffset = line.startIndex % this.maxAxisLength;
 		line.y =
-			line.startAxisNumber * this.axisGap +
-			stackPos * (line.thickness + this.stackGap) +
-			30;
+			axisHeight +
+			line.stackPosition * (line.thickness + this.stackGap) +
+			this.axisThickness;
 		line.axisOffset = axisOffset;
-		line.stackPosition = stackPos;
-		line.stackPos = stackPos;
 	}
 
 	buildColorScale() {
@@ -284,7 +282,7 @@ export class PeptideStackVis {
 				let seqAxis = d3.axisBottom(pointScale).tickFormat((d, t) => {
 					return sequenceString[parseInt(d)];
 				});
-				this.mainSvg
+				let axisNode = this.mainSvg
 					.append("g")
 					.style("font", "14px courier")
 					.call(seqAxis)
@@ -295,8 +293,51 @@ export class PeptideStackVis {
 				this.axes.push({
 					axis: seqAxis,
 					pointScale: pointScale,
+					axisNode: axisNode,
+					height: 0,
 				});
 			});
+		}
+	}
+
+	getStackHeight(lines: PeptideLine[], axisNum: number) {
+		let axisLines = lines.filter((l) => l.startAxisNumber === axisNum);
+		return d3.max(axisLines.map((l) => l.stackPosition));
+	}
+
+	getAxisHeight(axisNum: number, lines: PeptideLine[]) {
+		let stackHeight = this.getStackHeight(lines, axisNum - 1) || 0;
+		return (
+			(axisNum > 0 ? 1 : 0) *
+				(stackHeight + 5) *
+				(lines[0].thickness + this.stackGap) +
+			this.axisThickness
+		);
+	}
+
+	updateHeights(lines: PeptideLine[]) {
+		let height = 0;
+		if (lines.length) {
+			Array(this.axes.length)
+				.fill(0)
+				.forEach((v, axisNum) => {
+					let axis = this.axes[axisNum];
+					let axisGap = this.getAxisHeight(axisNum, lines);
+					axis.height = height + axisGap;
+					axis.axisNode.attr(
+						"transform",
+						`translate(${this.padding},${axis.height})`
+					);
+					let axisLines = lines.filter(
+						(l) => l.startAxisNumber === axisNum
+					);
+					axisLines.forEach((l) =>
+						this.stageLineForRender(l, axis.height)
+					);
+					height += axisGap;
+					this.svgHeight = height + axisGap;
+				});
+			this.mainSvg.attr("height", this.svgHeight);
 		}
 	}
 
@@ -329,7 +370,9 @@ export class PeptideStackVis {
 		//sort peptides
 		this.buildPeptideStack(lines, proteinId);
 
-		this.stageForRendering(lines, proteinId);
+		this.updateStackPos(lines, proteinId);
+
+		this.updateHeights(lines);
 
 		if (lines.length > 0) {
 			let legend = Swatches(this.colorScale);

@@ -14,7 +14,6 @@ export class PeptideLine {
 	stroke: string;
 	axisOffset: number;
 	bioFunction:string;
-	stackPos: number;
 	splitLines: Array<PeptideLine>
 
 	constructor(
@@ -39,7 +38,6 @@ export class PeptideLine {
 		this.axisOffset = 0;
 		this.bioFunction = bioFunction;
 		this.stroke = stroke;
-		this.stackPos = stackPos;
 		this.splitLines = new Array<PeptideLine>();
 	}
 
