@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { BaseType, stack } from "d3";
+import { BaseType } from "d3";
 import { PeptideLine } from "./PeptideLine";
 import { Protein, Peptide } from "../common/types";
 import { Swatches } from "./Swatches";
