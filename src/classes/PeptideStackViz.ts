@@ -236,7 +236,11 @@ export class PeptideStackVis {
 				stackPos = Math.floor(startIndex / proteinSeq!.length);
 				continue;
 			}
-			line.stackPosition = stackPos;
+			
+			if(line.stackPosition === -1){
+				line.stackPosition = stackPos;
+			
+			}
 			// eslint-disable-next-line no-loop-func
 			line.splitLines.forEach(l =>{
 				if(l.stackPosition !== -1){
