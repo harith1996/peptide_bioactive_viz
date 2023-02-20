@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { BaseType, line } from "d3";
+import { BaseType } from "d3";
 import { PeptideLine } from "./PeptideLine";
 import { Protein, Peptide } from "../common/types";
 import { Swatches } from "./Swatches";
@@ -237,6 +237,7 @@ export class PeptideStackVis {
 				continue;
 			}
 			line.stackPosition = stackPos;
+			line.splitLines.forEach(l =>{l.stackPosition = stackPos});
 			startIndex += line!.length - 1;
 			stackPos = Math.floor(startIndex / proteinSeq!.length);
 			stacked++;
