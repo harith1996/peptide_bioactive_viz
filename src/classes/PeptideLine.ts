@@ -14,10 +14,12 @@ export class PeptideLine {
 	stroke: string;
 	axisOffset: number;
 	bioFunction:string;
-	splitLines: Array<PeptideLine>
+	splitLines: Array<PeptideLine>;
+	proteinId: string;
 
 	constructor(
 		proteinSequence: string,
+		proteinId:string,
 		peptideSequence: string,
 		startIndex: number,
 		startAxisNumber: number,
@@ -39,6 +41,7 @@ export class PeptideLine {
 		this.bioFunction = bioFunction;
 		this.stroke = stroke;
 		this.splitLines = new Array<PeptideLine>();
+		this.proteinId = proteinId;
 	}
 
 	getPixelLength(tickGap: number) {

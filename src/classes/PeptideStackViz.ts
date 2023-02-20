@@ -166,6 +166,7 @@ export class PeptideStackVis {
 		);
 		let suffixLine = new PeptideLine(
 			line.proteinSeq,
+			line.proteinId,
 			suffixSeq,
 			line.startIndex + line.length - excessLength,
 			axisNum + 1,
@@ -247,7 +248,7 @@ export class PeptideStackVis {
 		line.length = line.length - excessLength;
 	}
 
-	stageLineForRender(line: PeptideLine, axisHeight: number) {
+	stageLineForRender(line: PeptideLine) {
 		let axis = this.axes[line.startAxisNumber];
 		line.x1 = this.padding + axis.pointScale("" + line.startIndex);
 		line.x2 =
@@ -255,7 +256,7 @@ export class PeptideStackVis {
 			axis.pointScale("" + (line.startIndex + line.length - 1));
 		let axisOffset = line.startIndex % this.maxAxisLength;
 		line.y =
-			axisHeight +
+			axis.height +
 			line.stackPosition * (line.thickness + this.stackGap) +
 			this.axisThickness;
 		line.axisOffset = axisOffset;
@@ -343,7 +344,7 @@ export class PeptideStackVis {
 						(l) => l.startAxisNumber === axisNum
 					);
 					axisLines.forEach((l) =>
-						this.stageLineForRender(l, axis.height)
+						this.stageLineForRender(l)
 					);
 					height += axisGap;
 					this.svgHeight = height + axisGap;
@@ -352,39 +353,7 @@ export class PeptideStackVis {
 		}
 	}
 
-	renderPeptideLines(proteinId: string) {
-		//get protein sequence
-		let protSeq = this.getSequence(proteinId);
-
-		//find peptides
-		let peptides = this.getPeptides(proteinId);
-
-		//find peptides' start and end indexes on the protein chain
-		peptides = this.getSequencedPeptides(peptides);
-
-		//make PeptideLine for each peptide
-		let lines = peptides.map((p) => {
-			let axisNumber = this.getStartAxisNumber(p.seqIndex[0]);
-			return new PeptideLine(
-				protSeq,
-				p.peptide,
-				p.seqIndex[0],
-				axisNumber,
-				this.getLineStroke(p),
-				p.function
-			);
-		});
-
-		//process the lines for splits
-		lines = this.getProcessedLines(lines);
-
-		//sort peptides
-		this.buildPeptideStack(lines, proteinId);
-
-		this.updateStackPos(lines, proteinId);
-
-		this.updateHeights(lines);
-
+	renderLines(lines:PeptideLine[]) {
 		if (lines.length > 0) {
 			let legend = Swatches(this.colorScale);
 			let node = document.querySelector("#legend");
@@ -431,4 +400,42 @@ export class PeptideStackVis {
 					scale(${d.axisOffset > 0 ? 1 : -1},1)`
 			);
 	}
+
+	renderPeptideLines(proteinId: string) {
+		//get protein sequence
+		let protSeq = this.getSequence(proteinId);
+
+		//find peptides
+		let peptides = this.getPeptides(proteinId);
+
+		//find peptides' start and end indexes on the protein chain
+		peptides = this.getSequencedPeptides(peptides);
+
+		//make PeptideLine for each peptide
+		let lines = peptides.map((p) => {
+			let axisNumber = this.getStartAxisNumber(p.seqIndex[0]);
+			return new PeptideLine(
+				protSeq,
+				proteinId,
+				p.peptide,
+				p.seqIndex[0],
+				axisNumber,
+				this.getLineStroke(p),
+				p.function
+			);
+		});
+
+		//process the lines for splits
+		lines = this.getProcessedLines(lines);
+
+		//sort peptides
+		this.buildPeptideStack(lines, proteinId);
+
+		this.updateStackPos(lines, proteinId);
+
+		this.updateHeights(lines);
+
+		this.renderLines(lines);
+	}
+		
 }
