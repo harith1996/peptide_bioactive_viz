@@ -66,7 +66,7 @@ export class PeptideStackVis {
 		this.svgWidth = width;
 		this.svgHeight = height;
 		this.tickGap = 20;
-		this.padding = 2 * this.tickGap; //multiple of tickGap
+		this.padding = 3 * this.tickGap; //multiple of tickGap
 		this.axisGap = 500;
 		this.axisThickness = 30;
 		this.stackGap = 1;
@@ -147,7 +147,8 @@ export class PeptideStackVis {
 			let excessLength =
 				line.length +
 				(line.startIndex % this.maxAxisLength) -
-				this.maxAxisLength;
+				this.maxAxisLength -
+				1;
 			if (excessLength > 0) {
 				splitLines.push(
 					this.getSuffixLine(line, excessLength, axisNumber)
@@ -161,14 +162,14 @@ export class PeptideStackVis {
 
 	getSuffixLine(line: PeptideLine, excessLength: number, axisNum: number) {
 		let suffixSeq = line.peptideSeq.slice(
-			line.length - excessLength,
+			line.length - excessLength - 1,
 			line.length
 		);
 		let suffixLine = new PeptideLine(
 			line.proteinSeq,
 			line.proteinId,
 			suffixSeq,
-			line.startIndex + line.length - excessLength,
+			line.startIndex + line.length - excessLength - 1,
 			axisNum + 1,
 			line.stroke,
 			line.bioFunction
@@ -244,22 +245,36 @@ export class PeptideStackVis {
 
 	splitLine(line: PeptideLine, excessLength: number) {
 		line.setSplit(line.length - excessLength);
-		line.peptideSeq = line.peptideSeq.slice(0, line.length - excessLength);
+		line.peptideSeq = line.peptideSeq.slice(
+			0,
+			line.length - excessLength -1
+		);
 		line.length = line.length - excessLength;
+	}
+
+	isEdgeLine(line:PeptideLine, axisLength:number) {
+		if(line.length + line.axisOffset >=axisLength) {
+			return true;
+		}
+		else return false;
 	}
 
 	stageLineForRender(line: PeptideLine) {
 		let axis = this.axes[line.startAxisNumber];
+		let axisOffset = line.startIndex % this.maxAxisLength;
+		line.axisOffset = axisOffset;
+		let isEdgeLine = this.isEdgeLine(line, axis.pointScale.domain().length);
 		line.x1 = this.padding + axis.pointScale("" + line.startIndex);
 		line.x2 =
 			this.padding +
-			axis.pointScale("" + (line.startIndex + line.length - 1));
-		let axisOffset = line.startIndex % this.maxAxisLength;
+			axis.pointScale("" + (line.startIndex + (line.length - (isEdgeLine? 2 : 1))));
+		if(isEdgeLine) {
+			line.x2 += this.tickGap;
+		}
 		line.y =
 			axis.height +
 			line.stackPosition * (line.thickness + this.stackGap) +
 			this.axisThickness;
-		line.axisOffset = axisOffset;
 	}
 
 	buildColorScale() {
@@ -283,29 +298,47 @@ export class PeptideStackVis {
 		);
 		if (stringifiedIndices.length > 1) {
 			Array.from(Array(number_of_axes).keys()).forEach((i) => {
-				let axisDomain = stringifiedIndices.slice(
-					i * this.maxAxisLength,
-					(i + 1) * this.maxAxisLength
-				);
-				let pointScale = d3
+				let axisDomain = stringifiedIndices
+					.slice(i * this.maxAxisLength, (i + 1) * this.maxAxisLength)
+					.concat(["dummy"]);
+				let tickScale = d3
 					.scalePoint()
 					.domain(axisDomain)
 					.range([0, axisDomain.length * this.tickGap]);
-				let seqAxis = d3.axisBottom(pointScale).tickFormat((d, t) => {
-					return sequenceString[parseInt(d)];
+				let tickAxis = d3.axisBottom(tickScale).tickFormat((d, t) => {
+					return "";
 				});
-				let axisNode = this.mainSvg
-					.append("g")
+
+				let labelScale = d3
+					.scalePoint()
+					.domain(axisDomain.slice(0, -1))
+					.range([0, (axisDomain.length - 1) * this.tickGap]);
+
+				let labelAxis = d3
+					.axisBottom(labelScale)
+					.tickFormat((d, t) => {
+						return sequenceString[parseInt(d)];
+					})
+					.tickSize(0)
+					.tickPadding(10);
+
+				let axisGroup = this.mainSvg.append("g");
+				axisGroup
 					.style("font", "14px courier")
-					.call(seqAxis)
+					.call(tickAxis)
 					.attr(
 						"transform",
 						`translate(${this.padding},${i * this.axisGap})`
 					);
+				axisGroup
+					.append("g")
+					.style("font", "14px courier")
+					.call(labelAxis)
+					.attr("transform", `translate(${this.tickGap / 2},0)`);
 				this.axes.push({
-					axis: seqAxis,
-					pointScale: pointScale,
-					axisNode: axisNode,
+					axis: tickAxis,
+					pointScale: tickScale,
+					axisNode: axisGroup,
 					height: 0,
 				});
 			});
@@ -343,9 +376,7 @@ export class PeptideStackVis {
 					let axisLines = lines.filter(
 						(l) => l.startAxisNumber === axisNum
 					);
-					axisLines.forEach((l) =>
-						this.stageLineForRender(l)
-					);
+					axisLines.forEach((l) => this.stageLineForRender(l));
 					height += axisGap;
 					this.svgHeight = height + axisGap;
 				});
@@ -353,7 +384,7 @@ export class PeptideStackVis {
 		}
 	}
 
-	renderLines(lines:PeptideLine[]) {
+	renderLines(lines: PeptideLine[]) {
 		if (lines.length > 0) {
 			let legend = Swatches(this.colorScale);
 			let node = document.querySelector("#legend");
@@ -394,9 +425,7 @@ export class PeptideStackVis {
 			.attr(
 				"transform",
 				(d) =>
-					`translate(${
-						d.axisOffset > 0 ? d.x2 - d.x1 : 0
-					},0),
+					`translate(${d.axisOffset > 0 ? d.x2 - d.x1 : 0},0),
 					scale(${d.axisOffset > 0 ? 1 : -1},1)`
 			);
 	}
@@ -437,5 +466,4 @@ export class PeptideStackVis {
 
 		this.renderLines(lines);
 	}
-		
 }

@@ -30,7 +30,7 @@ export class PeptideLine {
 		this.proteinSeq = proteinSequence;
 		this.peptideSeq = peptideSequence;
 		this.startIndex = startIndex;
-		this.length = this.peptideSeq.length;
+		this.length = this.peptideSeq.length + 1 ;
 		this.isSplit = false;
 		this.splitPosition = -1;
 		this.stackPosition = -1;
