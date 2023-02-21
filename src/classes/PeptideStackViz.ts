@@ -229,7 +229,7 @@ export class PeptideStackVis {
 		return lines.find((l) => {
 			return (
 				l.stackPosition === stackPos &&
-				startIndex < l.startIndex + l.length - 1
+				l.startIndex === startIndex
 			);
 		});
 	}
@@ -242,8 +242,7 @@ export class PeptideStackVis {
 		while (stacked < lines.length) {
 			let indexLines =
 				this.indexStack[startIndex % proteinSeq!.length].peptideLines;
-
-			//for each stackPos, check if there exists a splitLine with same stackPosition.
+			//for each startIndex, check if there exists a splitLine with same stackPosition.
 			//if yes, increment startIndex by the length of splitLine
 			let existingLine = this.getLineWithStackPos(
 				indexLines,
@@ -265,7 +264,7 @@ export class PeptideStackVis {
 				});
 				indexIncrement = line!.length - 1;
 			} else {
-				indexIncrement = existingLine.length - 1 - (startIndex - existingLine.startIndex);
+				indexIncrement = existingLine.length - 1;
 			}
 			startIndex += indexIncrement;
 			stackPos = Math.floor(startIndex / proteinSeq!.length);
