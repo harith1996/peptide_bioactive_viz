@@ -252,7 +252,6 @@ export class PeptideStackVis {
 				startIndex
 			);
 			let indexIncrement = 1;
-			// eslint-disable-next-line no-loop-func
 			if (existingLine === undefined) {
 				let line = indexLines.pop();
 				if (!line) {
@@ -263,6 +262,7 @@ export class PeptideStackVis {
 				if (line.stackPosition === -1) {
 					line.stackPosition = stackPos;
 				}
+				// eslint-disable-next-line no-loop-func
 				line.splitLines.forEach((l) => {
 					l.stackPosition = stackPos;
 				});
