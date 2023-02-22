@@ -1,8 +1,9 @@
 import * as d3 from "d3";
-import { BaseType } from "d3";
+import { BaseType, index } from "d3";
 import { PeptideLine } from "./PeptideLine";
 import { Protein, Peptide } from "../common/types";
 import { Swatches } from "./Swatches";
+import { exit } from "process";
 
 type PeptideStack = {
 	peptideLines: PeptideLine[];
@@ -175,7 +176,6 @@ export class PeptideStackVis {
 			line.bioFunction
 		);
 		suffixLine.setSplit(0);
-		suffixLine.splitLines = [line];
 		return suffixLine;
 	}
 
@@ -221,35 +221,58 @@ export class PeptideStackVis {
 		});
 	}
 
+	getLineWithStackPos(
+		lines: PeptideLine[],
+		stackPos: number,
+		startIndex: number
+	) {
+		return lines.find((l) => {
+			return (
+				l.stackPosition === stackPos &&
+				l.startIndex === startIndex &&
+				l.splitPosition === 0
+			);
+		});
+	}
+
 	updateStackPos(lines: PeptideLine[], proteinID: string) {
 		let stackPos = 0;
 		let stacked = 0;
-		let startIndex = 0;
+		let cumulativeStartIndex = 0;
 		let proteinSeq = this.getSequence(proteinID);
 		while (stacked < lines.length) {
-			let line =
-				this.indexStack[
-					startIndex % proteinSeq!.length
-				].peptideLines.pop();
-			if (!line) {
-				startIndex++;
-				stackPos = Math.floor(startIndex / proteinSeq!.length);
-				continue;
+			let startIndex = cumulativeStartIndex % proteinSeq!.length 
+			let indexLines =
+				this.indexStack[startIndex].peptideLines;
+			//for each startIndex, check if there exists a splitLine with same stackPosition.
+			//if yes, increment startIndex by the length of splitLine
+			let existingLine = this.getLineWithStackPos(
+				indexLines,
+				stackPos,
+				startIndex
+			);
+			let indexIncrement = 1;
+			// eslint-disable-next-line no-loop-func
+			if (existingLine === undefined) {
+				let line = indexLines.pop();
+				if (!line) {
+					cumulativeStartIndex++;
+					stackPos = Math.floor(cumulativeStartIndex / proteinSeq!.length);
+					continue;
+				}
+				if (line.stackPosition === -1) {
+					line.stackPosition = stackPos;
+				}
+				line.splitLines.forEach((l) => {
+					l.stackPosition = stackPos;
+				});
+				indexIncrement = line!.length - 1;
+				stacked++;
+			} else {
+				indexIncrement = existingLine.length - 1;
 			}
-			
-			if(line.stackPosition === -1){
-				line.stackPosition = stackPos;
-			
-			}
-			// // eslint-disable-next-line no-loop-func
-			// line.splitLines.forEach(l =>{
-			// 	if(l.stackPosition !== -1){
-			// 		l.stackPosition = stackPos
-			// 	}
-			// });
-			startIndex += line!.length - 1;
-			stackPos = Math.floor(startIndex / proteinSeq!.length);
-			stacked++;
+			cumulativeStartIndex += indexIncrement;
+			stackPos = Math.floor(cumulativeStartIndex / proteinSeq!.length);
 		}
 	}
 
@@ -257,16 +280,15 @@ export class PeptideStackVis {
 		line.setSplit(line.length - excessLength);
 		line.peptideSeq = line.peptideSeq.slice(
 			0,
-			line.length - excessLength -1
+			line.length - excessLength - 1
 		);
 		line.length = line.length - excessLength;
 	}
 
-	isEdgeLine(line:PeptideLine, axisLength:number) {
-		if(line.length + line.axisOffset >=axisLength) {
+	isEdgeLine(line: PeptideLine, axisLength: number) {
+		if (line.length + line.axisOffset >= axisLength) {
 			return true;
-		}
-		else return false;
+		} else return false;
 	}
 
 	stageLineForRender(line: PeptideLine) {
@@ -277,8 +299,10 @@ export class PeptideStackVis {
 		line.x1 = this.padding + axis.pointScale("" + line.startIndex);
 		line.x2 =
 			this.padding +
-			axis.pointScale("" + (line.startIndex + (line.length - (isEdgeLine? 2 : 1))));
-		if(isEdgeLine) {
+			axis.pointScale(
+				"" + (line.startIndex + (line.length - (isEdgeLine ? 2 : 1)))
+			);
+		if (isEdgeLine) {
 			line.x2 += this.tickGap;
 		}
 		line.y =
