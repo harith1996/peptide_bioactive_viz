@@ -151,9 +151,15 @@ export class PeptideStackVis {
 				this.maxAxisLength -
 				1;
 			if (excessLength > 0) {
-				splitLines.push(
-					this.getSuffixLine(line, excessLength, axisNumber)
+				let suffixLine = this.getSuffixLine(
+					line,
+					excessLength,
+					axisNumber
 				);
+				splitLines = splitLines.concat(
+					this.getSplitLines(suffixLine, axisNumber + 1)
+				);
+				splitLines.push(suffixLine);
 				this.splitLine(line, excessLength);
 			}
 		}
@@ -241,9 +247,8 @@ export class PeptideStackVis {
 		let cumulativeStartIndex = 0;
 		let proteinSeq = this.getSequence(proteinID);
 		while (stacked < lines.length) {
-			let startIndex = cumulativeStartIndex % proteinSeq!.length 
-			let indexLines =
-				this.indexStack[startIndex].peptideLines;
+			let startIndex = cumulativeStartIndex % proteinSeq!.length;
+			let indexLines = this.indexStack[startIndex].peptideLines;
 			//for each startIndex, check if there exists a splitLine with same stackPosition.
 			//if yes, increment startIndex by the length of splitLine
 			let existingLine = this.getLineWithStackPos(
@@ -256,7 +261,9 @@ export class PeptideStackVis {
 				let line = indexLines.pop();
 				if (!line) {
 					cumulativeStartIndex++;
-					stackPos = Math.floor(cumulativeStartIndex / proteinSeq!.length);
+					stackPos = Math.floor(
+						cumulativeStartIndex / proteinSeq!.length
+					);
 					continue;
 				}
 				if (line.stackPosition === -1) {
