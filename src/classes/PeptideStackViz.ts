@@ -229,7 +229,8 @@ export class PeptideStackVis {
 		return lines.find((l) => {
 			return (
 				l.stackPosition === stackPos &&
-				l.startIndex === startIndex
+				l.startIndex === startIndex &&
+				l.splitPosition === 0
 			);
 		});
 	}
@@ -237,11 +238,12 @@ export class PeptideStackVis {
 	updateStackPos(lines: PeptideLine[], proteinID: string) {
 		let stackPos = 0;
 		let stacked = 0;
-		let startIndex = 0;
+		let cumulativeStartIndex = 0;
 		let proteinSeq = this.getSequence(proteinID);
 		while (stacked < lines.length) {
+			let startIndex = cumulativeStartIndex % proteinSeq!.length 
 			let indexLines =
-				this.indexStack[startIndex % proteinSeq!.length].peptideLines;
+				this.indexStack[startIndex].peptideLines;
 			//for each startIndex, check if there exists a splitLine with same stackPosition.
 			//if yes, increment startIndex by the length of splitLine
 			let existingLine = this.getLineWithStackPos(
@@ -249,26 +251,28 @@ export class PeptideStackVis {
 				stackPos,
 				startIndex
 			);
-			let indexIncrement = 0;
+			let indexIncrement = 1;
 			// eslint-disable-next-line no-loop-func
 			if (existingLine === undefined) {
 				let line = indexLines.pop();
 				if (!line) {
-					startIndex++;
-					stackPos = Math.floor(startIndex / proteinSeq!.length);
+					cumulativeStartIndex++;
+					stackPos = Math.floor(cumulativeStartIndex / proteinSeq!.length);
 					continue;
 				}
-				line.stackPosition = stackPos;
+				if (line.stackPosition === -1) {
+					line.stackPosition = stackPos;
+				}
 				line.splitLines.forEach((l) => {
 					l.stackPosition = stackPos;
 				});
 				indexIncrement = line!.length - 1;
+				stacked++;
 			} else {
 				indexIncrement = existingLine.length - 1;
 			}
-			startIndex += indexIncrement;
-			stackPos = Math.floor(startIndex / proteinSeq!.length);
-			stacked++;
+			cumulativeStartIndex += indexIncrement;
+			stackPos = Math.floor(cumulativeStartIndex / proteinSeq!.length);
 		}
 	}
 
