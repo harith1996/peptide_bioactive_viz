@@ -4,7 +4,8 @@ export class PeptideLine {
 	length: number;
 	startIndex: number;
 	isSplit: boolean;
-	splitPosition: number;
+	prefixSplit: number;
+	suffixSplit:number;
 	stackPosition: number;
 	thickness: number;
 	startAxisNumber: number;
@@ -32,7 +33,8 @@ export class PeptideLine {
 		this.startIndex = startIndex;
 		this.length = this.peptideSeq.length + 1 ;
 		this.isSplit = false;
-		this.splitPosition = -1;
+		this.prefixSplit = -1;
+		this.suffixSplit = -1;
 		this.stackPosition = -1;
 		this.thickness = 13;
 		this.startAxisNumber = startAxisNumber;
@@ -48,9 +50,13 @@ export class PeptideLine {
 		return (this.length - 1) * tickGap;
 	}
 
-	setSplit(splitPos: number) {
+	setPrefixSplit(prefixSplit: number) {
 		this.isSplit = true;
-		this.splitPosition = splitPos;
+		this.prefixSplit = prefixSplit;
+	}
+	setSuffixSplit(suffixSplit:number) {
+		this.isSplit = true;
+		this.suffixSplit = suffixSplit;
 	}
 
 	setStack(stackPos: number) {

@@ -144,24 +144,18 @@ export class PeptideStackVis {
 	//Checks if line needs to split, and returns the suffix line in a list
 	getSplitLines(line: PeptideLine, axisNumber: number) {
 		let splitLines = new Array<PeptideLine>();
-		if (!line.isSplit) {
-			let excessLength =
-				line.length +
-				(line.startIndex % this.maxAxisLength) -
-				this.maxAxisLength -
-				1;
-			if (excessLength > 0) {
-				let suffixLine = this.getSuffixLine(
-					line,
-					excessLength,
-					axisNumber
-				);
-				splitLines = splitLines.concat(
-					this.getSplitLines(suffixLine, axisNumber + 1)
-				);
-				splitLines.push(suffixLine);
-				this.splitLine(line, excessLength);
-			}
+		let excessLength =
+			line.length +
+			(line.startIndex % this.maxAxisLength) -
+			this.maxAxisLength -
+			1;
+		if (excessLength > 0) {
+			let suffixLine = this.getSuffixLine(line, excessLength, axisNumber);
+			splitLines = splitLines.concat(
+				this.getSplitLines(suffixLine, axisNumber + 1)
+			);
+			splitLines.push(suffixLine);
+			this.splitLine(line, excessLength);
 		}
 		line.splitLines = splitLines;
 		return splitLines;
@@ -181,7 +175,7 @@ export class PeptideStackVis {
 			line.stroke,
 			line.bioFunction
 		);
-		suffixLine.setSplit(0);
+		suffixLine.setPrefixSplit(0);
 		return suffixLine;
 	}
 
@@ -236,7 +230,7 @@ export class PeptideStackVis {
 			return (
 				l.stackPosition === stackPos &&
 				l.startIndex === startIndex &&
-				l.splitPosition === 0
+				l.prefixSplit === 0
 			);
 		});
 	}
@@ -284,7 +278,7 @@ export class PeptideStackVis {
 	}
 
 	splitLine(line: PeptideLine, excessLength: number) {
-		line.setSplit(line.length - excessLength);
+		line.setSuffixSplit(line.length - excessLength);
 		line.peptideSeq = line.peptideSeq.slice(
 			0,
 			line.length - excessLength - 1
@@ -453,22 +447,33 @@ export class PeptideStackVis {
 			.attr("stroke", "rgba(255,255,255,1)");
 
 		//add split arrows
-		lineGroups
-			.append("path")
-			.attr("d", (d) => {
-				if (d.isSplit) {
-					return arrowPathD;
-				} else {
-					return "";
-				}
-			})
-			//move & flip arrows according to split location
-			.attr(
-				"transform",
-				(d) =>
-					`translate(${d.axisOffset > 0 ? d.x2 - d.x1 : 0},0),
-					scale(${d.axisOffset > 0 ? 1 : -1},1)`
-			);
+		let prefixArrows = lineGroups.append("path").attr("d", (d) => {
+			if (d.prefixSplit > -1) {
+				return arrowPathD;
+			} else {
+				return "";
+			}
+		});
+		let suffixArrows = lineGroups.append("path").attr("d", (d) => {
+			if (d.suffixSplit > -1) {
+				return arrowPathD;
+			} else {
+				return "";
+			}
+		});
+		//move & flip arrows according to split location
+		suffixArrows.attr(
+			"transform",
+			(d) =>
+				`translate(${d.x2 - d.x1},0),
+					scale(${1},1)`
+		);
+		prefixArrows.attr(
+			"transform",
+			(d) =>
+				`translate(0,0),
+					scale(-1,1)`
+		);
 	}
 
 	renderPeptideLines(proteinId: string) {
