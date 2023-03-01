@@ -21,12 +21,12 @@ const importantFunctions = [
 ];
 const customColorScheme = [
 	"#CC6677",
-	"#332288",
 	"#DDCC77",
 	"#117733",
 	"#88CCEE",
-	"#882255",
+	"#999933",
 	"#44AA99",
+	"#AA4499",
 	"#DDDDDD",
 ];
 
@@ -462,17 +462,18 @@ export class PeptideStackVis {
 			}
 		});
 		//move & flip arrows according to split location
-		suffixArrows.attr(
-			"transform",
-			(d) =>
-				`translate(${d.x2 - d.x1},0),
-					scale(${1},1)`
-		);
+		
 		prefixArrows.attr(
 			"transform",
 			(d) =>
 				`translate(0,0),
 					scale(-1,1)`
+		);
+		suffixArrows.attr(
+			"transform",
+			(d) =>
+				`translate(${d.x2 - d.x1},0),
+					scale(1,1)`
 		);
 	}
 
@@ -503,7 +504,6 @@ export class PeptideStackVis {
 		//process the lines for splits
 		lines = this.getProcessedLines(lines);
 
-		//sort peptides
 		this.buildPeptideStack(lines, proteinId);
 
 		this.updateStackPos(lines, proteinId);
