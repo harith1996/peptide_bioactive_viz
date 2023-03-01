@@ -3,7 +3,6 @@ import { BaseType} from "d3";
 import { PeptideLine } from "./PeptideLine";
 import { Protein, Peptide } from "../common/types";
 import { Swatches } from "./Swatches";
-import { exit } from "process";
 
 type PeptideStack = {
 	peptideLines: PeptideLine[];
