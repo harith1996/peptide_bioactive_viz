@@ -159,9 +159,8 @@ export class PeptideStackVis {
 			1;
 		if (excessLength > 0) {
 			let suffixLine = this.getSuffixLine(line, excessLength, axisNumber);
-			splitLines = splitLines.concat(
-				this.getSplitLines(suffixLine, axisNumber + 1)
-			);
+			
+			this.getSplitLines(suffixLine, axisNumber + 1)
 			splitLines.push(suffixLine);
 			this.splitLine(line, excessLength);
 		}
