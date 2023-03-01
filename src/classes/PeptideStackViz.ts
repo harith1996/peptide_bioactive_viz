@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { BaseType} from "d3";
+import { BaseType } from "d3";
 import { PeptideLine } from "./PeptideLine";
 import { Protein, Peptide } from "../common/types";
 import { Swatches } from "./Swatches";
@@ -495,7 +495,7 @@ export class PeptideStackVis {
 						.attr("y1", y1)
 						.attr("y2", y2)
 						.attr("stroke", "lightgray")
-						.attr("stroke-dasharray","4 1");
+						.attr("stroke-dasharray", "4 1");
 				}
 			});
 		});
@@ -536,7 +536,7 @@ export class PeptideStackVis {
 		this.updateHeights(lines);
 
 		this.renderLines(lines);
-		
+
 		this.renderAxisGuideMarks();
 	}
 }

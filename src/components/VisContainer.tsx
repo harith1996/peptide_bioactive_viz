@@ -17,9 +17,11 @@ export default function VisContainer(props: Datasets) {
 	);
 
 	useEffect(() => {
-		v.clearVis();
-		v.renderSplitAxes(proteinEntry);
-		v.renderPeptideLines(proteinEntry);
+		if (props.peptides.length && props.proteins.length && proteinEntry!== "") {
+			v.clearVis();
+			v.renderSplitAxes(proteinEntry);
+			v.renderPeptideLines(proteinEntry);
+		}
 	});
 
 	const handleProteinChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
