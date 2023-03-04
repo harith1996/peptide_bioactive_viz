@@ -40,3 +40,9 @@
   width: 100%;
   justify-content: center;
 }
+
+.loader {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}

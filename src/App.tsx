@@ -29,17 +29,19 @@ function App() {
 	};
 	return (
 		<div className="App">
-			<div>Upload protein
+			<div className="loader">
+			<div>Upload Protein
 				<FileUploadSingle
 					onUpload={handleProteinData}
 				></FileUploadSingle>
 			</div>
-			<div>upload peptide
+			<div>Upload Peptide
 				<FileUploadSingle
 					onUpload={handlePeptideData}
 				></FileUploadSingle>
 			</div>
-			<div>Peptide Dataset uploader</div>
+			</div>
+			
 			<VisContainer
 				proteins={proteins!}
 				peptides={peptides!}
