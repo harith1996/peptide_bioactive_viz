@@ -159,8 +159,7 @@ export class PeptideStackVis {
 			1;
 		if (excessLength > 0) {
 			let suffixLine = this.getSuffixLine(line, excessLength, axisNumber);
-			
-			this.getSplitLines(suffixLine, axisNumber + 1)
+			splitLines = splitLines.concat(this.getSplitLines(suffixLine, axisNumber + 1));
 			splitLines.push(suffixLine);
 			this.splitLine(line, excessLength);
 		}
@@ -506,7 +505,7 @@ export class PeptideStackVis {
 						.attr("y1", y1)
 						.attr("y2", y2)
 						.attr("stroke", "lightgray")
-						.attr("stroke-dasharray", "4 1");
+						.attr("stroke-dasharray", "7 16");
 				}
 			});
 		});
