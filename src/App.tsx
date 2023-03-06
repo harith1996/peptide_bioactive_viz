@@ -30,13 +30,13 @@ function App() {
 	return (
 		<div className="App">
 			<div className="loader">
-			<div>Upload Protein
-				<FileUploadSingle
+			<div>Upload Protein Sequences (.csv)
+				<FileUploadSingle fileExtension=".csv"
 					onUpload={handleProteinData}
 				></FileUploadSingle>
 			</div>
-			<div>Upload Peptide
-				<FileUploadSingle
+			<div>Upload Peptide dataset (.csv)
+				<FileUploadSingle fileExtension=".csv"
 					onUpload={handlePeptideData}
 				></FileUploadSingle>
 			</div>

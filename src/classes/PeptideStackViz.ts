@@ -159,7 +159,9 @@ export class PeptideStackVis {
 			1;
 		if (excessLength > 0) {
 			let suffixLine = this.getSuffixLine(line, excessLength, axisNumber);
-			splitLines = splitLines.concat(this.getSplitLines(suffixLine, axisNumber + 1));
+			splitLines = splitLines.concat(
+				this.getSplitLines(suffixLine, axisNumber + 1)
+			);
 			splitLines.push(suffixLine);
 			this.splitLine(line, excessLength);
 		}
@@ -245,9 +247,10 @@ export class PeptideStackVis {
 		let stackPos = 0;
 		let stacked = 0;
 		let cumulativeStartIndex = 0;
+		let startIndex = 0;
 		let proteinSeq = this.getSequence(proteinID);
 		while (stacked < lines.length) {
-			let startIndex = cumulativeStartIndex % proteinSeq!.length;
+			startIndex = cumulativeStartIndex % proteinSeq!.length;
 			let indexLines = this.indexStack[startIndex].peptideLines;
 			//for each startIndex, check if there exists a splitLine with same stackPosition.
 			//if yes, increment startIndex by the length of splitLine
@@ -266,17 +269,22 @@ export class PeptideStackVis {
 					);
 					continue;
 				}
-				if (line.stackPosition === -1) {
+				if (!line.stacked) {
 					line.stackPosition = stackPos;
+					line.stacked = true;
 				}
 				// eslint-disable-next-line no-loop-func
 				line.splitLines.forEach((l) => {
-					l.stackPosition = stackPos;
+					if (!l.stacked) {
+						l.stackPosition = stackPos;
+						l.stacked = true;
+					}
 				});
 				indexIncrement = line!.length - 1;
 				stacked++;
 			} else {
 				indexIncrement = existingLine.length - 1;
+				existingLine.stacked = true;
 			}
 			cumulativeStartIndex += indexIncrement;
 			stackPos = Math.floor(cumulativeStartIndex / proteinSeq!.length);
@@ -303,7 +311,7 @@ export class PeptideStackVis {
 		let axisOffset = line.startIndex % this.maxAxisLength;
 		line.axisOffset = axisOffset;
 		let scale = axis.pointScale;
-		let isEdgeLine = this.isEdgeLine(line, scale.domain().length);
+		let isEdgeLine = this.isEdgeLine(line, scale.domain().length - 1);
 		line.x1 = this.padding + scale("" + line.startIndex)!;
 		line.x2 =
 			this.padding +
@@ -451,7 +459,7 @@ export class PeptideStackVis {
 			.attr("height", (d) => d.thickness)
 			.attr("fill", (d) => d.stroke)
 			.attr("stroke-width", "1px")
-			.attr("stroke", "rgba(255,255,255,1)");
+			.attr("stroke", "rgba(100,100,100,0.5)");
 
 		//add split arrows
 		let prefixArrows = lineGroups.append("path").attr("d", (d) => {
@@ -469,7 +477,7 @@ export class PeptideStackVis {
 			}
 		});
 		//move & flip arrows according to split location
-		
+
 		prefixArrows.attr(
 			"transform",
 			(d) =>

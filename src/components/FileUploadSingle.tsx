@@ -2,6 +2,7 @@ import { ChangeEvent, useState } from "react";
 
 interface UploadHandler {
 	onUpload: (data: File | undefined) => void;
+	fileExtension: string;
 }
 
 function FileUploadSingle(props: UploadHandler) {
@@ -16,7 +17,7 @@ function FileUploadSingle(props: UploadHandler) {
 
 	return (
 		<div>
-			<input type="file" onChange={handleFileChange} />
+			<input type="file" accept={props.fileExtension} onChange={handleFileChange} />
 
 			<div>{file && `${file.name} - ${file.type}`}</div>
 		</div>
