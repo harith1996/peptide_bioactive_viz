@@ -459,7 +459,7 @@ export class PeptideStackVis {
 			.attr("height", (d) => d.thickness)
 			.attr("fill", (d) => d.stroke)
 			.attr("stroke-width", "1px")
-			.attr("stroke", "rgba(100,100,100,0.5)");
+			.attr("stroke", "rgba(255,255,255,0.5)");
 
 		//add split arrows
 		let prefixArrows = lineGroups.append("path").attr("d", (d) => {
@@ -512,8 +512,8 @@ export class PeptideStackVis {
 						.attr("x2", x)
 						.attr("y1", y1)
 						.attr("y2", y2)
-						.attr("stroke", "lightgray")
-						.attr("stroke-dasharray", "7 16");
+						.attr("stroke", "darkgray")
+						.attr("stroke-dasharray", "3 16");
 				}
 			});
 		});
