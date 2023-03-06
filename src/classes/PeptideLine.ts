@@ -64,6 +64,7 @@ export class PeptideLine {
 
 	setStack(stackPos: number) {
 		this.stackPosition = stackPos;
+		this.stacked = true;
 	}
 
 	setThickness(thickness: number) {

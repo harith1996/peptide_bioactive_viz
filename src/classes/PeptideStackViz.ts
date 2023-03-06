@@ -229,12 +229,12 @@ export class PeptideStackVis {
 		});
 	}
 
-	getLineWithStackPos(
+	getLinesWithStackPos(
 		lines: PeptideLine[],
 		stackPos: number,
 		startIndex: number
 	) {
-		return lines.find((l) => {
+		return lines.filter((l) => {
 			return (
 				l.stackPosition === stackPos &&
 				l.startIndex === startIndex &&
@@ -254,37 +254,41 @@ export class PeptideStackVis {
 			let indexLines = this.indexStack[startIndex].peptideLines;
 			//for each startIndex, check if there exists a splitLine with same stackPosition.
 			//if yes, increment startIndex by the length of splitLine
-			let existingLine = this.getLineWithStackPos(
+			let existingLines = this.getLinesWithStackPos(
 				indexLines,
 				stackPos,
 				startIndex
 			);
 			let indexIncrement = 1;
-			if (existingLine === undefined) {
+			if (existingLines.length === 0) {
 				let line = indexLines.pop();
 				if (!line) {
-					cumulativeStartIndex++;
+					indexIncrement = 1;
+				} else if (line.stackPosition === stackPos) {
+					indexIncrement = line!.length - 1;
+					stacked ++;
+				}
+				if (!line || line.stackPosition === stackPos) {
+					cumulativeStartIndex += indexIncrement;
 					stackPos = Math.floor(
 						cumulativeStartIndex / proteinSeq!.length
 					);
 					continue;
 				}
 				if (!line.stacked) {
-					line.stackPosition = stackPos;
-					line.stacked = true;
+					line.setStack(stackPos);
 				}
 				// eslint-disable-next-line no-loop-func
 				line.splitLines.forEach((l) => {
-					if (!l.stacked) {
-						l.stackPosition = stackPos;
-						l.stacked = true;
-					}
+					l.stackPosition = stackPos;
 				});
 				indexIncrement = line!.length - 1;
 				stacked++;
 			} else {
-				indexIncrement = existingLine.length - 1;
-				existingLine.stacked = true;
+				indexIncrement = existingLines[0].length - 1;
+				existingLines[0].stacked = true;
+				indexLines.splice(indexLines.indexOf(existingLines[0]), 1)
+				stacked++;
 			}
 			cumulativeStartIndex += indexIncrement;
 			stackPos = Math.floor(cumulativeStartIndex / proteinSeq!.length);
@@ -458,8 +462,8 @@ export class PeptideStackVis {
 			.attr("width", (d) => d.x2 - d.x1)
 			.attr("height", (d) => d.thickness)
 			.attr("fill", (d) => d.stroke)
-			.attr("stroke-width", "1px")
-			.attr("stroke", "rgba(255,255,255,0.5)");
+			.attr("stroke-width", "2px")
+			.attr("stroke", "rgba(255,255,255,1)");
 
 		//add split arrows
 		let prefixArrows = lineGroups.append("path").attr("d", (d) => {
