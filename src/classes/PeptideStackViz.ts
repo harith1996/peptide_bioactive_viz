@@ -59,6 +59,7 @@ export class PeptideStackVis {
 	indexStack: Array<PeptideStack>;
 	colorScale: d3.ScaleOrdinal<string, unknown, never>;
 	guideMarkGap: number; // number of ticks between guide marks
+	numberMarkGap: number;
 
 	constructor(
 		proteins: Array<Protein>,
@@ -90,6 +91,7 @@ export class PeptideStackVis {
 		this.colorScale = this.buildColorScale();
 		this.matureProteinStart = matureProteinStart;
 		this.guideMarkGap = 5;
+		this.numberMarkGap = 10;
 	}
 
 	clearVis() {
@@ -266,7 +268,7 @@ export class PeptideStackVis {
 					indexIncrement = 1;
 				} else if (line.stackPosition === stackPos) {
 					indexIncrement = line!.length - 1;
-					stacked ++;
+					stacked++;
 				}
 				if (!line || line.stackPosition === stackPos) {
 					cumulativeStartIndex += indexIncrement;
@@ -287,7 +289,7 @@ export class PeptideStackVis {
 			} else {
 				indexIncrement = existingLines[0].length - 1;
 				existingLines[0].stacked = true;
-				indexLines.splice(indexLines.indexOf(existingLines[0]), 1)
+				indexLines.splice(indexLines.indexOf(existingLines[0]), 1);
 				stacked++;
 			}
 			cumulativeStartIndex += indexIncrement;
@@ -376,6 +378,10 @@ export class PeptideStackVis {
 					.tickSize(0)
 					.tickPadding(10);
 
+					//add evenly spaced number ticks 
+					//use this.numberMarkGap
+
+
 				let axisGroup = this.mainSvg.append("g");
 				axisGroup
 					.style("font", "14px courier")
@@ -389,6 +395,8 @@ export class PeptideStackVis {
 					.style("font", "14px courier")
 					.call(labelAxis)
 					.attr("transform", `translate(${this.tickGap / 2},0)`);
+
+
 				this.axes.push({
 					axis: tickAxis,
 					pointScale: tickScale,
