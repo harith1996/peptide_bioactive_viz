@@ -546,7 +546,7 @@ export class PeptideStackVis {
 						.attr("y", y)
 						.attr("fill", "darkgray")
 						.attr("transform", `rotate(-90 ${x} ${y})`)
-						.style("font", "15px lucida sans")
+						.style("font", "15px")
 						.text(parseInt(value) + 1);
 				}
 			});
