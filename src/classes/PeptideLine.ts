@@ -4,7 +4,8 @@ export class PeptideLine {
 	length: number;
 	startIndex: number;
 	isSplit: boolean;
-	splitPosition: number;
+	prefixSplit: number;
+	suffixSplit:number;
 	stackPosition: number;
 	thickness: number;
 	startAxisNumber: number;
@@ -16,6 +17,7 @@ export class PeptideLine {
 	bioFunction:string;
 	splitLines: Array<PeptideLine>;
 	proteinId: string;
+	stacked: boolean;
 
 	constructor(
 		proteinSequence: string,
@@ -25,15 +27,17 @@ export class PeptideLine {
 		startAxisNumber: number,
 		stroke: string,
 		bioFunction: string,
-		stackPos = -1
+		stackPos = -1,
+		stacked = false
 	) {
 		this.proteinSeq = proteinSequence;
 		this.peptideSeq = peptideSequence;
 		this.startIndex = startIndex;
 		this.length = this.peptideSeq.length + 1 ;
 		this.isSplit = false;
-		this.splitPosition = -1;
-		this.stackPosition = -1;
+		this.prefixSplit = -1;
+		this.suffixSplit = -1;
+		this.stackPosition = stackPos;
 		this.thickness = 13;
 		this.startAxisNumber = startAxisNumber;
 		this.x1 = this.x2 = this.y = 0;
@@ -42,19 +46,25 @@ export class PeptideLine {
 		this.stroke = stroke;
 		this.splitLines = new Array<PeptideLine>();
 		this.proteinId = proteinId;
+		this.stacked = stacked;
 	}
 
 	getPixelLength(tickGap: number) {
 		return (this.length - 1) * tickGap;
 	}
 
-	setSplit(splitPos: number) {
+	setPrefixSplit(prefixSplit: number) {
 		this.isSplit = true;
-		this.splitPosition = splitPos;
+		this.prefixSplit = prefixSplit;
+	}
+	setSuffixSplit(suffixSplit:number) {
+		this.isSplit = true;
+		this.suffixSplit = suffixSplit;
 	}
 
 	setStack(stackPos: number) {
 		this.stackPosition = stackPos;
+		this.stacked = true;
 	}
 
 	setThickness(thickness: number) {

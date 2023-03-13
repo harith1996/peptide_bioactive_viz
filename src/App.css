@@ -40,3 +40,30 @@
   width: 100%;
   justify-content: center;
 }
+
+.loader {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+#vis-controls{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#vis-controls div{
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+#legend-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#legend-container div{
+  margin-left: 20px;
+}
