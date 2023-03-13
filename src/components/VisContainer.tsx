@@ -15,7 +15,7 @@ export default function VisContainer(props: Datasets) {
 	let v = new PeptideStackVis(
 		props.proteins,
 		props.peptides,
-		"#viscontainer",
+		"#vis-container",
 		sigPepLength,
 		maxAxisLength
 	);
@@ -50,56 +50,80 @@ export default function VisContainer(props: Datasets) {
 
 	return (
 		<div>
-			<div id="vis_controls">
-				<div>
-					<label htmlFor="signal_pep_length">
-						Length of signal peptide{" "}
-					</label>
-					<input
-						name="signal_pep_length"
-						min="0"
-						type="number"
-						width={10}
-						value={sigPepLength}
-						onChange={handleSigPepLengthChange}
-					></input>
-				</div>
-				<div>
-					<label htmlFor="max_axis_length">
-						Maximum axis length{" "}
-					</label>
-					<input
-						name="signal_pep_length"
-						min="0"
-						type="number"
-						width={10}
-						value={maxAxisLength}
-						onChange={handleMaxAxisLengthChange}
-					></input>
-				</div>
-				<div>
-					<label htmlFor="protein_selector">Choose a protein </label>
-					<select
-						name="protein_selector"
-						value={proteinEntry}
-						onChange={handleProteinChange}
-					>
-						{proteinList.map((p, i) => {
-							return (
-								<option key={i} value={p}>
-									{p}
-								</option>
-							);
-						})}
-						;
-					</select>
-				</div>
+			<div id="vis-controls">
+				{proteinEntry !== "" ? (
+					<div>
+						<label htmlFor="signal_pep_length">
+							Length of signal peptide{" "}
+						</label>
+						<input
+							name="signal_pep_length"
+							min="0"
+							type="number"
+							width={10}
+							value={sigPepLength}
+							onChange={handleSigPepLengthChange}
+						></input>
+					</div>
+				) : (
+					""
+				)}
+				{proteinEntry !== "" ? (
+					<div>
+						<label htmlFor="max_axis_length">
+							Maximum axis length{" "}
+						</label>
+						<input
+							name="signal_pep_length"
+							min="0"
+							type="number"
+							width={10}
+							value={maxAxisLength}
+							onChange={handleMaxAxisLengthChange}
+						></input>
+					</div>
+				) : (
+					""
+				)}
+				{proteinList.length > 0 ? (
+					<div>
+						<label htmlFor="protein_selector">
+							Choose a protein{" "}
+						</label>
+						<select
+							name="protein_selector"
+							value={proteinEntry}
+							onChange={handleProteinChange}
+						>
+							{proteinList.map((p, i) => {
+								return (
+									<option key={i} value={p}>
+										{p}
+									</option>
+								);
+							})}
+							;
+						</select>
+					</div>
+				) : (
+					""
+				)}
 			</div>
-			<div id="protein_header">
-				<h3>Protein: {proteinEntry}</h3>
-			</div>
-			<div id="legend"></div>
-			<svg id="viscontainer"></svg>
+			{proteinEntry !== "" ? (
+				<div>
+					<div id="protein-header">
+						<h2>Protein: {proteinEntry}</h2>
+					</div>
+					<div id="legend-container">
+						<h4>Bioactive Function</h4>
+						<div id="legend"></div>
+					</div>
+				</div>
+			) : (
+				""
+			)}
+
+			<svg id="vis-container"></svg>
 		</div>
 	);
 }

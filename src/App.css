@@ -47,14 +47,23 @@
   padding: 1%;
 }
 
-#vis_controls{
+#vis-controls{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#vis_controls div{
+#vis-controls div{
   display: flex;
-  width: 30%;
+  width: 400px;
   justify-content: space-between;
+}
+
+#legend-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#legend-container div{
+  margin-left: 20px;
 }
