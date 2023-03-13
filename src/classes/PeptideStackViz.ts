@@ -231,7 +231,7 @@ export class PeptideStackVis {
 		});
 	}
 
-	getLinesWithStackPos(
+	getSplitLinesAtStackPos(
 		lines: PeptideLine[],
 		stackPos: number,
 		startIndex: number
@@ -256,7 +256,7 @@ export class PeptideStackVis {
 			let indexLines = this.indexStack[startIndex].peptideLines;
 			//for each startIndex, check if there exists a splitLine with same stackPosition.
 			//if yes, increment startIndex by the length of splitLine
-			let existingLines = this.getLinesWithStackPos(
+			let existingLines = this.getSplitLinesAtStackPos(
 				indexLines,
 				stackPos,
 				startIndex
@@ -531,6 +531,28 @@ export class PeptideStackVis {
 		});
 	}
 
+	renderAxisGuideNumbers() {
+		let guideNumbers = this.mainSvg.append("g").attr("class", "guidenumbers");
+		this.axes.forEach((axis, index) => {
+			let scale = axis.pointScale;
+			let domain = scale.domain();
+			domain.forEach((value, index) => {
+				if (index % this.numberMarkGap === 0) {
+					let x = (scale(value) || 0) + this.padding + this.tickGap/1.33;
+					let y = axis.height - 10;
+					guideNumbers
+						.append("text")
+						.attr("x", x)
+						.attr("y", y)
+						.attr("fill", "darkgray")
+						.attr("transform", `rotate(-90 ${x} ${y})`)
+						.style("font", "15px lucida sans")
+						.text(parseInt(value) + 1);
+				}
+			});
+		});
+	}
+
 	renderPeptideLines(proteinId: string) {
 		//get protein sequence
 		let protSeq = this.getSequence(proteinId);
@@ -567,5 +589,7 @@ export class PeptideStackVis {
 		this.renderLines(lines);
 
 		this.renderAxisGuideMarks();
+
+		this.renderAxisGuideNumbers();
 	}
 }
