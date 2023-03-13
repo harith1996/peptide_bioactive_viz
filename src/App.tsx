@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import VisContainer from "./components/VisContainer";
-import proteins from "./data/proteins.json";
-import peptides from "./data/peptides.json";
 import FileUploadSingle from "./components/FileUploadSingle";
 import { parse } from "papaparse";
 import { Peptide, Protein } from "./common/types";
