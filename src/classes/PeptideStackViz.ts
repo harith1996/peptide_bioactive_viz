@@ -54,7 +54,7 @@ export class PeptideStackVis {
 	axisGap: number; //vertical gap between split axes
 	axisThickness: number; //vertical thickness of an axis. Default = 30
 	stackGap: number; // vertical gap between lines
-	matureProteinStart: number; //offset on the protein sequence, where the mature protein starts. Default = 15
+	signalPeptideLength: number; //offset on the protein sequence, where the mature protein starts. Default = 15
 	axes: Array<Axis>;
 	indexStack: Array<PeptideStack>;
 	colorScale: d3.ScaleOrdinal<string, unknown, never>;
@@ -65,9 +65,10 @@ export class PeptideStackVis {
 		proteins: Array<Protein>,
 		peptides: Array<Peptide>,
 		mainSvgId: string,
+		signalPeptideLength : number,
+		maxAxisLength = 0,
 		width = window.innerWidth * 0.8,
 		height = 1500,
-		matureProteinStart = 15
 	) {
 		this.proteins = proteins;
 		this.peptides = peptides;
@@ -79,7 +80,7 @@ export class PeptideStackVis {
 		this.axisGap = 500;
 		this.axisThickness = 30;
 		this.stackGap = 1;
-		this.maxAxisLength = Math.ceil(
+		this.maxAxisLength = maxAxisLength || Math.ceil(
 			(this.svgWidth - 2 * this.padding) / this.tickGap
 		);
 		this.mainSvg = d3
@@ -89,7 +90,7 @@ export class PeptideStackVis {
 		this.axes = [];
 		this.indexStack = [];
 		this.colorScale = this.buildColorScale();
-		this.matureProteinStart = matureProteinStart;
+		this.signalPeptideLength = signalPeptideLength;
 		this.guideMarkGap = 5;
 		this.numberMarkGap = 10;
 	}
@@ -112,7 +113,7 @@ export class PeptideStackVis {
 		let prot = this.proteins.find((p: Protein) => {
 			return p.Entry === protein;
 		});
-		return prot?.Sequence.slice(this.matureProteinStart) || "";
+		return prot?.Sequence.slice(this.signalPeptideLength) || "";
 	}
 
 	//convert "ASOFUBNQOUFBEGQEOGBU..." => [0,1,2,3,4,5,6,7, ...]
@@ -395,8 +396,7 @@ export class PeptideStackVis {
 					.style("font", "14px courier")
 					.call(labelAxis)
 					.attr("transform", `translate(${this.tickGap / 2},0)`);
-
-
+			
 				this.axes.push({
 					axis: tickAxis,
 					pointScale: tickScale,
@@ -537,7 +537,7 @@ export class PeptideStackVis {
 			let scale = axis.pointScale;
 			let domain = scale.domain();
 			domain.forEach((value, index) => {
-				if (index % this.numberMarkGap === 0) {
+				if (index % this.numberMarkGap === 0 && value !== "dummy") {
 					let x = (scale(value) || 0) + this.padding + this.tickGap/1.33;
 					let y = axis.height - 10;
 					guideNumbers
