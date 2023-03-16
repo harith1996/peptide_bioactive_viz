@@ -105,7 +105,7 @@ export class PeptideStackVis {
 
 	/**
 	 * Returns peptides associated with a protein
-	 * @param protein 
+	 * @param protein
 	 * @returns
 	 */
 	getPeptides(protein: string) {
@@ -116,8 +116,8 @@ export class PeptideStackVis {
 
 	/**
 	 * Returns the protein sequence (without signal peptide) of a protein
-	 * @param protein 
-	 * @returns 
+	 * @param protein
+	 * @returns
 	 */
 	getSequence(protein: string) {
 		let prot = this.proteins.find((p: Protein) => {
@@ -126,11 +126,10 @@ export class PeptideStackVis {
 		return prot?.Sequence.slice(this.signalPeptideLength) || "";
 	}
 
-
 	/**
 	 * 	converts a sequence "ASOFUBNQOUFBEGQEOGBU..." => [0,1,2,3,4,5,6,7, ...]
-	 * @param sequenceString 
-	 * @returns 
+	 * @param sequenceString
+	 * @returns
 	 */
 	getSequenceIndices(sequenceString: string) {
 		return Array.from(Array(sequenceString.length).keys());
@@ -138,7 +137,7 @@ export class PeptideStackVis {
 
 	/**
 	 * Returns start index of peptide on its associated protein
-	 * @param peptide 
+	 * @param peptide
 	 * @returns
 	 */
 	findSeqIndex(peptide: Peptide) {
@@ -148,7 +147,7 @@ export class PeptideStackVis {
 
 	/**
 	 * 	find peptides' start and end indexes on the protein chain
-	 * @param peptides 
+	 * @param peptides
 	 * @returns
 	 */
 	getSequencedPeptides(peptides: Peptide[]) {
@@ -161,8 +160,8 @@ export class PeptideStackVis {
 
 	/**
 	 * for a given startIndex, returns the axisNumber
-	 * @param startIndex 
-	 * @returns 
+	 * @param startIndex
+	 * @returns
 	 */
 	getStartAxisNumber(startIndex: number) {
 		return Math.floor(startIndex / this.maxAxisLength);
@@ -205,7 +204,7 @@ export class PeptideStackVis {
 	getSuffixLine(line: PeptideLine, excessLength: number, axisNum: number) {
 		let suffixSeq = line.peptideSeq.slice(
 			line.length - excessLength - 1,
-			line.length
+			line.length - 1
 		);
 		let suffixLine = new PeptideLine(
 			line.proteinSeq,
@@ -298,9 +297,11 @@ export class PeptideStackVis {
 			let indexIncrement = 1;
 			if (existingLines.length === 0) {
 				let line = indexLines.pop();
+
 				if (!line) {
 					indexIncrement = 1;
 				} else if (line.stackPosition === stackPos) {
+					//if line has already been stacked at the same position
 					indexIncrement = line!.length - 1;
 					stacked++;
 				}
@@ -313,12 +314,13 @@ export class PeptideStackVis {
 				}
 				if (!line.stacked) {
 					line.setStack(stackPos);
+					// eslint-disable-next-line no-loop-func
+					line.splitLines.forEach((l) => {
+						l.stackPosition = stackPos;
+					});
 				}
-				// eslint-disable-next-line no-loop-func
-				line.splitLines.forEach((l) => {
-					l.stackPosition = stackPos;
-				});
-				indexIncrement = line!.length - 1;
+
+				indexIncrement = line!.length -1;
 				stacked++;
 			} else {
 				indexIncrement = existingLines[0].length - 1;
@@ -591,6 +593,33 @@ export class PeptideStackVis {
 		});
 	}
 
+	isOverlapping(line1: PeptideLine, line2: PeptideLine) {
+		if (line1 !== line2) {
+			if (line1.x1 <= line2.x1) {
+				if (line1.x2 > line2.x1) {
+					if (line1.y === line2.y) {
+						return true;
+					}
+				}
+			}
+		}
+
+		return false;
+	}
+
+	getOverlappingLines(lines: PeptideLine[]) {
+		let overlappers = [];
+		for (let i = 0; i < lines.length; i++) {
+			for (let j = 0; j < lines.length; j++) {
+				if (this.isOverlapping(lines[i], lines[j])) {
+					overlappers.push(lines[i]);
+					overlappers.push(lines[j]);
+				}
+			}
+		}
+		return overlappers;
+	}
+
 	renderPeptideLines(proteinId: string) {
 		//get protein sequence
 		let protSeq = this.getSequence(proteinId);
@@ -627,5 +656,7 @@ export class PeptideStackVis {
 		this.renderAxisGuideMarks();
 
 		this.renderAxisGuideNumbers();
+
+		console.log(this.getOverlappingLines(lines));
 	}
 }
