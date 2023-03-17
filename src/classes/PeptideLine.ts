@@ -70,4 +70,8 @@ export class PeptideLine {
 	setThickness(thickness: number) {
 		this.thickness = thickness;
 	}
+
+	isEqual(line:PeptideLine){
+		return this.peptideSeq === line.peptideSeq && this.startIndex === line.startIndex && this.bioFunction.toLowerCase() === line.bioFunction.toLowerCase();
+	}
 }
