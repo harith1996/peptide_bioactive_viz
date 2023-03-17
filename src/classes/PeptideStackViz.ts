@@ -295,28 +295,21 @@ export class PeptideStackVis {
 			);
 			let indexIncrement = 1;
 			if (existingLines.length === 0) {
-				// if(true) {
 				let line = indexLines.pop();
 
 				if (!line) {
 					indexIncrement = 1;
-				} else if (line.stackPosition === stackPos) {
-					//if line has already been stacked at the same position
-					indexIncrement = line!.length - 1;
-					stacked++;
-				}
-				if (!line || line.stackPosition === stackPos) {
 					cumulativeStartIndex += indexIncrement;
 					stackPos = Math.floor(
 						cumulativeStartIndex / proteinSeq!.length
 					);
 					continue;
 				}
-				if (!line.stacked) {
+				if (!line.stacked && line.prefixSplit === -1) {
 					line.setStack(stackPos);
 					// eslint-disable-next-line no-loop-func
 					line.splitLines.forEach((l) => {
-						l.stackPosition = stackPos;
+						l.setStack(stackPos);
 					});
 				}
 
@@ -324,7 +317,6 @@ export class PeptideStackVis {
 				stacked++;
 			} else {
 				indexIncrement = existingLines[0].length - 1;
-				existingLines[0].stacked = true;
 				indexLines.splice(indexLines.indexOf(existingLines[0]), 1);
 				stacked++;
 			}
@@ -657,6 +649,8 @@ export class PeptideStackVis {
 
 		this.renderAxisGuideNumbers();
 
-		console.log(this.getOverlappingLines(lines));
+		console.log("overlapping lines", this.getOverlappingLines(lines));
+
+		console.log("unstacked lines", lines.filter(l=>l.stackPosition===-1));
 	}
 }
