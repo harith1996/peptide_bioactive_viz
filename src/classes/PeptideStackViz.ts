@@ -317,7 +317,9 @@ export class PeptideStackVis {
 				stacked++;
 			} else {
 				indexIncrement = existingLines[0].length - 1;
-				indexLines.splice(indexLines.indexOf(existingLines[0]), 1);
+				let stack = this.indexStack[existingLines[0].startIndex].peptideLines;
+				let i = stack.findIndex(l => l.isEqual(existingLines[0]));
+				stack.splice(i, 1);
 				stacked++;
 			}
 			cumulativeStartIndex += indexIncrement;
