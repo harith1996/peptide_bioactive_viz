@@ -271,8 +271,7 @@ export class PeptideStackVis {
 		return lines.filter((l) => {
 			return (
 				l.stackPosition === stackPos &&
-				l.startIndex === startIndex &&
-				l.prefixSplit === 0
+				l.startIndex === startIndex
 			);
 		});
 	}
@@ -290,12 +289,13 @@ export class PeptideStackVis {
 			//for each startIndex, check if there exists a splitLine with same stackPosition.
 			//if yes, increment startIndex by the length of splitLine
 			let existingLines = this.getSplitLinesAtStackPos(
-				indexLines,
+				lines,
 				stackPos,
 				startIndex
 			);
 			let indexIncrement = 1;
 			if (existingLines.length === 0) {
+				// if(true) {
 				let line = indexLines.pop();
 
 				if (!line) {
@@ -320,7 +320,7 @@ export class PeptideStackVis {
 					});
 				}
 
-				indexIncrement = line!.length -1;
+				indexIncrement = line!.length - 1;
 				stacked++;
 			} else {
 				indexIncrement = existingLines[0].length - 1;
