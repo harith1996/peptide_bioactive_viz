@@ -247,8 +247,7 @@ export class PeptideStackVis {
 			(p) => p.startIndex === startIndex
 		);
 		peptides = peptides.sort((pA, pB) => {
-			 
-				return pA.length - pB.length;
+			return pA.length - pB.length;
 		});
 		return peptides;
 	}
@@ -281,16 +280,16 @@ export class PeptideStackVis {
 	}
 
 	//first pop all split lines, then all non-split lines
-	popStack(stack:PeptideLine[]){
-		let split = stack.filter(l=>l.prefixSplit === 0);
-		if(split.length > 0) {
+	popStack(stack: PeptideLine[]) {
+		let split = stack.filter((l) => l.prefixSplit === 0);
+		if (split.length > 0) {
 			let out = split.pop();
-			let index = stack.findIndex(l=>l.isEqual(out!));
-			if(index !== -1)
-			{stack.splice(index,1)
-			}return out;
-		}
-		else {
+			let index = stack.findIndex((l) => l.isEqual(out!));
+			if (index !== -1) {
+				stack.splice(index, 1);
+			}
+			return out;
+		} else {
 			return stack.pop();
 		}
 	}
@@ -332,8 +331,7 @@ export class PeptideStackVis {
 							l.setStack(stackPos);
 						}
 					});
-				}
-				else {
+				} else {
 					console.log("line is pre-stacked");
 				}
 
