@@ -246,7 +246,10 @@ export class PeptideStackVis {
 		let peptides = sequencedPeptides.filter(
 			(p) => p.startIndex === startIndex
 		);
-		peptides = peptides.sort((pA, pB) => pA.length - pB.length);
+		peptides = peptides.sort((pA, pB) => {
+			 
+				return pA.length - pB.length;
+		});
 		return peptides;
 	}
 
@@ -311,7 +314,7 @@ export class PeptideStackVis {
 			);
 			let indexIncrement = 1;
 			if (existingLines.length === 0) {
-				let line = indexLines.pop()
+				let line = indexLines.pop();
 
 				if (!line) {
 					indexIncrement = 1;

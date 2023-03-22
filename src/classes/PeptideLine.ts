@@ -72,6 +72,6 @@ export class PeptideLine {
 	}
 
 	isEqual(line:PeptideLine){
-		return this.peptideSeq === line.peptideSeq && this.startIndex === line.startIndex && this.bioFunction.toLowerCase() === line.bioFunction.toLowerCase() && !line.isSplit && !this.isSplit;
+		return this.peptideSeq === line.peptideSeq && this.startIndex === line.startIndex && this.bioFunction.toLowerCase() === line.bioFunction.toLowerCase() && this.isSplit === line.isSplit
 	}
 }
