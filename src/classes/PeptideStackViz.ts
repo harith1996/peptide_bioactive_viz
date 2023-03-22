@@ -271,9 +271,25 @@ export class PeptideStackVis {
 		return lines.filter((l) => {
 			return (
 				l.stackPosition === stackPos &&
-				l.startIndex === startIndex
+				l.startIndex === startIndex &&
+				l.isSplit
 			);
 		});
+	}
+
+	//first pop all split lines, then all non-split lines
+	popStack(stack:PeptideLine[]){
+		let split = stack.filter(l=>l.prefixSplit === 0);
+		if(split.length > 0) {
+			let out = split.pop();
+			let index = stack.findIndex(l=>l.isEqual(out!));
+			if(index !== -1)
+			{stack.splice(index,1)
+			}return out;
+		}
+		else {
+			return stack.pop();
+		}
 	}
 
 	//update the stack positions of all PeptideLines
@@ -295,7 +311,7 @@ export class PeptideStackVis {
 			);
 			let indexIncrement = 1;
 			if (existingLines.length === 0) {
-				let line = indexLines.pop();
+				let line = indexLines.pop()
 
 				if (!line) {
 					indexIncrement = 1;
@@ -309,18 +325,26 @@ export class PeptideStackVis {
 					line.setStack(stackPos);
 					// eslint-disable-next-line no-loop-func
 					line.splitLines.forEach((l) => {
-						l.setStack(stackPos);
+						if (!l.stacked) {
+							l.setStack(stackPos);
+						}
 					});
+				}
+				else {
+					console.log("line is pre-stacked");
 				}
 
 				indexIncrement = line!.length - 1;
 				stacked++;
 			} else {
 				indexIncrement = existingLines[0].length - 1;
-				let stack = this.indexStack[existingLines[0].startIndex].peptideLines;
-				let i = stack.findIndex(l => l.isEqual(existingLines[0]));
-				stack.splice(i, 1);
-				stacked++;
+				let stack =
+					this.indexStack[existingLines[0].startIndex].peptideLines;
+				let i = stack.findIndex((l) => l.isEqual(existingLines[0]));
+				if (i !== -1) {
+					stack.splice(i, 1);
+					stacked++;
+				}
 			}
 			cumulativeStartIndex += indexIncrement;
 			stackPos = Math.floor(cumulativeStartIndex / proteinSeq!.length);
@@ -421,7 +445,8 @@ export class PeptideStackVis {
 					);
 				axisGroup
 					.append("g")
-					.style("font", "14px courier")
+					.style("font", "22px courier")
+					.style("font-weight", "bold")
 					.call(labelAxis)
 					.attr("transform", `translate(${this.tickGap / 2},0)`);
 
@@ -580,7 +605,7 @@ export class PeptideStackVis {
 						.attr("y", y)
 						.attr("fill", "darkgray")
 						.attr("transform", `rotate(-90 ${x} ${y})`)
-						.style("font", "15px")
+						.style("font-size", "19px")
 						.text(parseInt(value) + 1);
 				}
 			});
@@ -653,6 +678,9 @@ export class PeptideStackVis {
 
 		console.log("overlapping lines", this.getOverlappingLines(lines));
 
-		console.log("unstacked lines", lines.filter(l=>l.stackPosition===-1));
+		console.log(
+			"unstacked lines",
+			lines.filter((l) => !l.stacked)
+		);
 	}
 }
