@@ -247,6 +247,9 @@ export class PeptideStackVis {
 			(p) => p.startIndex === startIndex
 		);
 		peptides = peptides.sort((pA, pB) => {
+			if(pA.length - pB.length === 0) {
+				return pA.bioFunction.localeCompare(pB.bioFunction);
+			}
 			return pA.length - pB.length;
 		});
 		return peptides;
@@ -579,8 +582,9 @@ export class PeptideStackVis {
 						.attr("x2", x)
 						.attr("y1", y1)
 						.attr("y2", y2)
-						.attr("stroke", "darkgray")
-						.attr("stroke-dasharray", "3 16");
+						.attr("stroke", "lightgray")
+						.attr("stroke-dasharray", "8 16")
+						.attr("stroke-width", "2px");
 				}
 			});
 		});
@@ -607,6 +611,7 @@ export class PeptideStackVis {
 						.attr("fill", "darkgray")
 						.attr("transform", `rotate(-90 ${x} ${y})`)
 						.style("font-size", "19px")
+						.style("font-weight", "bolder")
 						.text(parseInt(value) + 1);
 				}
 			});

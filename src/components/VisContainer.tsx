@@ -52,41 +52,39 @@ export default function VisContainer(props: Datasets) {
 		<div>
 			<div id="vis-controls">
 				{proteinEntry !== "" ? (
-					<div>
-						<label htmlFor="signal_pep_length">
-							Length of signal peptide{" "}
-						</label>
-						<input
-							name="signal_pep_length"
-							min="0"
-							type="number"
-							width={10}
-							value={sigPepLength}
-							onChange={handleSigPepLengthChange}
-						></input>
-					</div>
-				) : (
-					""
-				)}
-				{proteinEntry !== "" ? (
-					<div>
-						<label htmlFor="max_axis_length">
-							Maximum axis length{" "}
-						</label>
-						<input
-							name="signal_pep_length"
-							min="0"
-							type="number"
-							width={10}
-							value={maxAxisLength}
-							onChange={handleMaxAxisLengthChange}
-						></input>
+					<div id="active-controls">
+						<div>
+							<label htmlFor="signal_pep_length">
+								Length of signal peptide{" "}
+							</label>
+							<input
+								name="signal_pep_length"
+								min="0"
+								type="number"
+								width={10}
+								value={sigPepLength}
+								onChange={handleSigPepLengthChange}
+							></input>
+						</div>
+						<div>
+							<label htmlFor="max_axis_length">
+								Maximum axis length{" "}
+							</label>
+							<input
+								name="signal_pep_length"
+								min="0"
+								type="number"
+								width={10}
+								value={maxAxisLength}
+								onChange={handleMaxAxisLengthChange}
+							></input>
+						</div>
 					</div>
 				) : (
 					""
 				)}
 				{proteinList.length > 0 ? (
-					<div>
+					<div id="static-controls">
 						<label htmlFor="protein_selector">
 							Choose a protein{" "}
 						</label>
