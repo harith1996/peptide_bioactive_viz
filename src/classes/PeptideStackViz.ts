@@ -279,20 +279,20 @@ export class PeptideStackVis {
 		});
 	}
 
-	//first pop all split lines, then all non-split lines
-	popStack(stack: PeptideLine[]) {
-		let split = stack.filter((l) => l.prefixSplit === 0);
-		if (split.length > 0) {
-			let out = split.pop();
-			let index = stack.findIndex((l) => l.isEqual(out!));
-			if (index !== -1) {
-				stack.splice(index, 1);
-			}
-			return out;
-		} else {
-			return stack.pop();
-		}
-	}
+	// //first pop all split lines, then all non-split lines
+	// popStack(stack: PeptideLine[]) {
+	// 	let split = stack.filter((l) => l.prefixSplit === 0);
+	// 	if (split.length > 0) {
+	// 		let out = split.pop();
+	// 		let index = stack.findIndex((l) => l.isEqual(out!));
+	// 		if (index !== -1) {
+	// 			stack.splice(index, 1);
+	// 		}
+	// 		return out;
+	// 	} else {
+	// 		return stack.pop();
+	// 	}
+	// }
 
 	//update the stack positions of all PeptideLines
 	updateStackPos(lines: PeptideLine[], proteinID: string) {
