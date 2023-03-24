@@ -247,7 +247,7 @@ export class PeptideStackVis {
 			(p) => p.startIndex === startIndex
 		);
 		peptides = peptides.sort((pA, pB) => {
-			if(pA.length - pB.length === 0) {
+			if (pA.length - pB.length === 0) {
 				return pA.bioFunction.localeCompare(pB.bioFunction);
 			}
 			return pA.length - pB.length;
@@ -504,13 +504,14 @@ export class PeptideStackVis {
 		}
 	}
 
+	renderLegend() {
+		let legend = Swatches(this.colorScale);
+		let node = document.querySelector("#legend");
+		node?.firstChild?.remove();
+		node?.appendChild(legend);
+	}
+
 	renderLines(lines: PeptideLine[]) {
-		if (lines.length > 0) {
-			let legend = Swatches(this.colorScale);
-			let node = document.querySelector("#legend");
-			node?.firstChild?.remove();
-			node?.appendChild(legend);
-		}
 
 		//add groups for wrapping lines and split arrows
 		let lineGroups = this.mainSvg
@@ -669,6 +670,10 @@ export class PeptideStackVis {
 
 		//process the lines for splits
 		lines = this.getProcessedLines(lines);
+
+		if (lines.length > 0) {
+			this.renderLegend();
+		}
 
 		this.buildPeptideStack(lines, proteinId);
 
