@@ -488,7 +488,7 @@ export class PeptideStackVis {
 				.forEach((v, axisNum) => {
 					let axis = this.axes[axisNum];
 					let axisGap = this.getAxisHeight(axisNum, lines);
-					axis.height = height + axisGap;
+					axis.height = height + axisGap + 10;
 					axis.axisNode.attr(
 						"transform",
 						`translate(${this.padding},${axis.height})`
