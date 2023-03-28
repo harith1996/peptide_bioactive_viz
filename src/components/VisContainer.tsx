@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { PeptideStackVis } from "../classes/PeptideStackViz";
 import { Protein, Peptide } from "../common/types";
+import jsPDF from "jspdf";
+import { Canvg } from "canvg";
+import { RenderingContext2D } from "canvg/dist/types";
 
 interface Datasets {
 	proteins: Array<Protein>;
@@ -48,6 +51,65 @@ export default function VisContainer(props: Datasets) {
 		setMaxAxisLength(parseInt(e.currentTarget.value));
 	};
 
+	function download(href: string, name: string) {
+		var a = document.createElement("a");
+
+		a.download = name;
+		a.href = href;
+
+		document.body.appendChild(a);
+		a.click();
+		document.body.removeChild(a);
+	}
+
+	const saveAsPdf = () => {
+		// // var svg = document.querySelector("#vis-container")!.outerHTML;
+		// var svgString = new XMLSerializer().serializeToString(
+		// 	document.querySelector("#vis-container")!
+		// );
+		// var canvas = document.createElement("canvas")!;
+		// var ctx = canvas.getContext("2d")!;
+		// // eslint-disable-next-line no-restricted-globals
+		// var DOMURL = self.URL || self.webkitURL || self;
+		// var img = new Image();
+		// var svg = new Blob([svgString], {
+		// 	type: "image/svg+xml;charset=utf-8",
+		// });
+		// var url = DOMURL.createObjectURL(svg);
+		// img.onload = function () {
+		// 	ctx.drawImage(img, 0, 0);
+		// 	var png = canvas.toDataURL("image/png");
+		// 	document.querySelector("#png-container")!.innerHTML =
+		// 		'<img src="' + png + '"/>';
+		// 	DOMURL.revokeObjectURL(png);
+		// };
+		// img.src = url;
+
+		var svg = document.querySelector("#vis-container")!;
+
+		var vancas2 : HTMLCanvasElement = document.querySelector('#canvas')!;
+
+		// get svg data
+		var xml = new XMLSerializer().serializeToString(svg);
+
+		// make it base64
+		var svg64 = btoa(xml);
+		var b64Start = 'data:image/svg+xml;base64,';
+
+		// prepend a "header"
+		var image64 = b64Start + svg64;
+
+		// set it as the source of the img element
+		var img = new Image();
+		img.onload = function() {
+			// draw the image onto the canvas
+			vancas2.getContext('2d')!.drawImage(img, 0, 0);
+		}
+		img.src = image64;
+		document.body.appendChild(img);
+		//you can download svg file by right click menu.
+	};
+
 	return (
 		<div>
 			<div id="vis-controls">
@@ -78,6 +140,9 @@ export default function VisContainer(props: Datasets) {
 								value={maxAxisLength}
 								onChange={handleMaxAxisLengthChange}
 							></input>
+						</div>
+						<div>
+							<button onClick={saveAsPdf}>Save as PDF</button>
 						</div>
 					</div>
 				) : (
@@ -122,6 +187,7 @@ export default function VisContainer(props: Datasets) {
 			)}
 
 			<svg id="vis-container"></svg>
+			<div id="png-container"></div>
 		</div>
 	);
 }

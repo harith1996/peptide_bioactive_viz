@@ -3,7 +3,6 @@ import { BaseType } from "d3";
 import { PeptideLine } from "./PeptideLine";
 import { Protein, Peptide } from "../common/types";
 import { Swatches } from "./Swatches";
-
 type PeptideStack = {
 	peptideLines: PeptideLine[];
 };
@@ -449,7 +448,7 @@ export class PeptideStackVis {
 					);
 				axisGroup
 					.append("g")
-					.style("font", "22px courier")
+					.style("font-size", "18px")
 					.style("font-weight", "bold")
 					.call(labelAxis)
 					.attr("transform", `translate(${this.tickGap / 2},0)`);
