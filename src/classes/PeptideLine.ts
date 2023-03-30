@@ -38,7 +38,7 @@ export class PeptideLine {
 		this.prefixSplit = -1;
 		this.suffixSplit = -1;
 		this.stackPosition = stackPos;
-		this.thickness = 13;
+		this.thickness = 14;
 		this.startAxisNumber = startAxisNumber;
 		this.x1 = this.x2 = this.y = 0;
 		this.axisOffset = 0;

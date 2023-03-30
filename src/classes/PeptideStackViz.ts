@@ -78,7 +78,7 @@ export class PeptideStackVis {
 		this.padding = 3 * this.tickGap; //multiple of tickGap
 		this.axisGap = 500;
 		this.axisThickness = 30;
-		this.stackGap = 1;
+		this.stackGap = 2;
 		this.maxAxisLength =
 			maxAxisLength ||
 			Math.ceil((this.svgWidth - 2 * this.padding) / this.tickGap);
@@ -336,7 +336,6 @@ export class PeptideStackVis {
 				} else {
 					console.log("line is pre-stacked");
 				}
-
 				indexIncrement = line!.length - 1;
 				stacked++;
 			} else {
@@ -463,13 +462,15 @@ export class PeptideStackVis {
 		}
 	}
 
-	getStackHeight(lines: PeptideLine[], axisNum: number) {
+	getStackHeight(axisNum: number, lines: PeptideLine[]) {
 		let axisLines = lines.filter((l) => l.startAxisNumber === axisNum);
-		return d3.max(axisLines.map((l) => l.stackPosition));
+		return axisLines.length > 0
+			? Math.max(...axisLines.map((l) => l.stackPosition))
+			: 0;
 	}
 
 	getAxisHeight(axisNum: number, lines: PeptideLine[]) {
-		let stackHeight = this.getStackHeight(lines, axisNum - 1) || 0;
+		let stackHeight = this.getStackHeight(axisNum - 1, lines) || 0;
 		return (
 			(axisNum > 0 ? 1 : 0) *
 				(stackHeight + 5) *
@@ -497,8 +498,10 @@ export class PeptideStackVis {
 					);
 					axisLines.forEach((l) => this.stageLineForRender(l));
 					height += axisGap;
-					this.svgHeight = height + axisGap;
 				});
+			this.svgHeight =
+				height +
+				this.getAxisHeight(this.axes.length, lines);
 			this.mainSvg.attr("height", this.svgHeight);
 		}
 	}
@@ -511,7 +514,6 @@ export class PeptideStackVis {
 	}
 
 	renderLines(lines: PeptideLine[]) {
-
 		//add groups for wrapping lines and split arrows
 		let lineGroups = this.mainSvg
 			.append("g")
@@ -528,7 +530,7 @@ export class PeptideStackVis {
 			.attr("width", (d) => d.x2 - d.x1)
 			.attr("height", (d) => d.thickness)
 			.attr("fill", (d) => d.stroke)
-			.attr("stroke-width", "2px")
+			.attr("stroke-width", "3px")
 			.attr("stroke", "rgba(255,255,255,1)");
 
 		//add split arrows

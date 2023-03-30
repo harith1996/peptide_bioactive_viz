@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { PeptideStackVis } from "../classes/PeptideStackViz";
 import { Protein, Peptide } from "../common/types";
-import jsPDF from "jspdf";
 import { Canvg } from "canvg";
 import { RenderingContext2D } from "canvg/dist/types";
 
@@ -63,31 +62,10 @@ export default function VisContainer(props: Datasets) {
 	}
 
 	const saveAsPdf = () => {
-		// // var svg = document.querySelector("#vis-container")!.outerHTML;
-		// var svgString = new XMLSerializer().serializeToString(
-		// 	document.querySelector("#vis-container")!
-		// );
-		// var canvas = document.createElement("canvas")!;
-		// var ctx = canvas.getContext("2d")!;
-		// // eslint-disable-next-line no-restricted-globals
-		// var DOMURL = self.URL || self.webkitURL || self;
-		// var img = new Image();
-		// var svg = new Blob([svgString], {
-		// 	type: "image/svg+xml;charset=utf-8",
-		// });
-		// var url = DOMURL.createObjectURL(svg);
-		// img.onload = function () {
-		// 	ctx.drawImage(img, 0, 0);
-		// 	var png = canvas.toDataURL("image/png");
-		// 	document.querySelector("#png-container")!.innerHTML =
-		// 		'<img src="' + png + '"/>';
-		// 	DOMURL.revokeObjectURL(png);
-		// };
-		// img.src = url;
 
 		var svg = document.querySelector("#vis-container")!;
 
-		var vancas2 : HTMLCanvasElement = document.querySelector('#canvas')!;
+		var vancas2 : HTMLCanvasElement = document.createElement('canvas')!;
 
 		// get svg data
 		var xml = new XMLSerializer().serializeToString(svg);
@@ -106,7 +84,7 @@ export default function VisContainer(props: Datasets) {
 			vancas2.getContext('2d')!.drawImage(img, 0, 0);
 		}
 		img.src = image64;
-		document.body.appendChild(img);
+		download(image64, proteinEntry + ".svg");
 		//you can download svg file by right click menu.
 	};
 
