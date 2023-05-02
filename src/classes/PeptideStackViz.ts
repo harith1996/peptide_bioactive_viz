@@ -32,7 +32,7 @@ const customColorScheme = [
 	"#999933",
 	"#44AA99",
 	"#AA4499",
-	"#DDDDDD",
+	"#BBBBBB",
 ];
 
 const arrowPathD = `M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z`;
@@ -447,8 +447,9 @@ export class PeptideStackVis {
 					);
 				axisGroup
 					.append("g")
-					.style("font-size", "18px")
+					.style("font-size", "23px")
 					.style("font-weight", "bold")
+					.style("font-family", "Courier New")
 					.call(labelAxis)
 					.attr("transform", `translate(${this.tickGap / 2},0)`);
 
@@ -584,7 +585,7 @@ export class PeptideStackVis {
 						.attr("x2", x)
 						.attr("y1", y1)
 						.attr("y2", y2)
-						.attr("stroke", "lightgray")
+						.attr("stroke", "#BBBBBB")
 						.attr("stroke-dasharray", "8 16")
 						.attr("stroke-width", "2px");
 				}
