@@ -62,27 +62,26 @@ export default function VisContainer(props: Datasets) {
 	}
 
 	const saveAsPdf = () => {
-
 		var svg = document.querySelector("#vis-container")!;
 
-		var vancas2 : HTMLCanvasElement = document.createElement('canvas')!;
+		var vancas2: HTMLCanvasElement = document.createElement("canvas")!;
 
 		// get svg data
 		var xml = new XMLSerializer().serializeToString(svg);
 
 		// make it base64
 		var svg64 = btoa(xml);
-		var b64Start = 'data:image/svg+xml;base64,';
+		var b64Start = "data:image/svg+xml;base64,";
 
 		// prepend a "header"
 		var image64 = b64Start + svg64;
 
 		// set it as the source of the img element
 		var img = new Image();
-		img.onload = function() {
+		img.onload = function () {
 			// draw the image onto the canvas
-			vancas2.getContext('2d')!.drawImage(img, 0, 0);
-		}
+			vancas2.getContext("2d")!.drawImage(img, 0, 0);
+		};
 		img.src = image64;
 		download(image64, proteinEntry + ".svg");
 		//you can download svg file by right click menu.
@@ -91,6 +90,29 @@ export default function VisContainer(props: Datasets) {
 	return (
 		<div>
 			<div id="vis-controls">
+			{proteinList.length > 0 ? (
+					<div id="static-controls">
+						<label htmlFor="protein_selector">
+							Choose a protein{" "}
+						</label>
+						<select
+							name="protein_selector"
+							value={proteinEntry}
+							onChange={handleProteinChange}
+						>
+							{proteinList.map((p, i) => {
+								return (
+									<option key={i} value={p}>
+										{p}
+									</option>
+								);
+							})}
+							;
+						</select>
+					</div>
+				) : (
+					""
+				)}
 				{proteinEntry !== "" ? (
 					<div id="active-controls">
 						<div>
@@ -120,35 +142,15 @@ export default function VisContainer(props: Datasets) {
 							></input>
 						</div>
 						<div>
-							<button onClick={saveAsPdf}>Save as PDF</button>
+							<div>Export Options</div>
+							<button onClick={saveAsPdf}>Save as SVG</button>
 						</div>
 					</div>
+						
 				) : (
 					""
 				)}
-				{proteinList.length > 0 ? (
-					<div id="static-controls">
-						<label htmlFor="protein_selector">
-							Choose a protein{" "}
-						</label>
-						<select
-							name="protein_selector"
-							value={proteinEntry}
-							onChange={handleProteinChange}
-						>
-							{proteinList.map((p, i) => {
-								return (
-									<option key={i} value={p}>
-										{p}
-									</option>
-								);
-							})}
-							;
-						</select>
-					</div>
-				) : (
-					""
-				)}
+				
 			</div>
 			{proteinEntry !== "" ? (
 				<div>
