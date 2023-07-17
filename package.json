@@ -6,6 +6,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@electron-forge/maker-dmg": "^6.2.1",
+    "@electron-forge/maker-wix": "^6.2.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -18,6 +20,7 @@
     "@types/react-dom": "^18.0.10",
     "canvg": "^4.0.1",
     "d3": "^7.8.2",
+    "electron-squirrel-startup": "^1.0.0",
     "htl": "^0.3.1",
     "jspdf": "^2.5.1",
     "papaparse": "^5.3.2",
@@ -33,13 +36,14 @@
   },
   "scripts": {
     "build-electron-unix": "mkdir build/src && cp -r electron/. build/electron",
-    "build-electron-windows": "mkdir build/src && robocopy electron build/electron /S & robocopy src/shared build/src/shared /S",
-    "start-electron": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
-    "start": "set BROWSER=none && react-scripts start",
+    "build-electron-windows": "mkdir build/src & robocopy electron build/electron /S & robocopy src/shared build/src/shared /S",
+    "start-electron": "npm run build && electron ./electron/main.js",
+    "start": "electron-forge start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "package": "electron-builder build --win -c.extraMetadata.main=build/electron/main.js --publish never"
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "eslintConfig": {
     "extends": [
@@ -60,10 +64,15 @@
     ]
   },
   "devDependencies": {
+    "@electron-forge/cli": "^6.2.1",
+    "@electron-forge/maker-deb": "^6.2.1",
+    "@electron-forge/maker-rpm": "^6.2.1",
+    "@electron-forge/maker-squirrel": "^6.2.1",
+    "@electron-forge/maker-zip": "^6.2.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.2.1",
     "@types/svg-to-pdfkit": "^0.1.0",
     "@types/wkhtmltopdf": "^0.3.4",
-    "electron": "^23.2.0",
-    "electron-builder": "^23.6.0"
+    "electron": "^23.2.0"
   },
   "build": {
     "files": [
