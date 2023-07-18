@@ -8,29 +8,14 @@ module.exports = {
     //   name: '@electron-forge/maker-squirrel',
     //   config: {},
     // },
-    // {
-    //   name: '@electron-forge/maker-deb',
-    //   config: {
-    //     options: {
-    //       maintainer: 'Joe Bloggs',
-    //       homepage: 'https://example.com'
-    //     }
-    //   }
-    // },
     {
-      name: '@electron-forge/maker-dmg',
+      name: '@electron-forge/maker-squirrel',
       config: {
-        background: './assets/dmg-background.png',
-        format: 'ULFO'
-      }
+        authors: 'Harith Rathish',
+        name: `Protein_sequence_coverage_map`,
+        description: 'Protein sequence coverage map',
+      },
     },
-    {
-      name: '@electron-forge/maker-wix',
-      config: {
-        language: 1033,
-        manufacturer: 'My Awesome Company'
-      }
-    }
   ],
   plugins: [
     {
