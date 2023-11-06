@@ -18,8 +18,6 @@ function FileUploadSingle(props: UploadHandler) {
 	return (
 		<div>
 			<input type="file" accept={props.fileExtension} onChange={handleFileChange} />
-
-			<div>{file && `${file.name} - ${file.type}`}</div>
 		</div>
 	);
 }

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { PeptideStackVis } from "../classes/PeptideStackViz";
 import { Protein, Peptide } from "../common/types";
+import { Canvg } from "canvg";
+import { RenderingContext2D } from "canvg/dist/types";
 
 interface Datasets {
 	proteins: Array<Protein>;
@@ -48,45 +50,48 @@ export default function VisContainer(props: Datasets) {
 		setMaxAxisLength(parseInt(e.currentTarget.value));
 	};
 
+	function download(href: string, name: string) {
+		var a = document.createElement("a");
+
+		a.download = name;
+		a.href = href;
+
+		document.body.appendChild(a);
+		a.click();
+		document.body.removeChild(a);
+	}
+
+	const saveAsPdf = () => {
+		var svg = document.querySelector("#vis-container")!;
+
+		var vancas2: HTMLCanvasElement = document.createElement("canvas")!;
+
+		// get svg data
+		var xml = new XMLSerializer().serializeToString(svg);
+
+		// make it base64
+		var svg64 = btoa(xml);
+		var b64Start = "data:image/svg+xml;base64,";
+
+		// prepend a "header"
+		var image64 = b64Start + svg64;
+
+		// set it as the source of the img element
+		var img = new Image();
+		img.onload = function () {
+			// draw the image onto the canvas
+			vancas2.getContext("2d")!.drawImage(img, 0, 0);
+		};
+		img.src = image64;
+		download(image64, proteinEntry + ".svg");
+		//you can download svg file by right click menu.
+	};
+
 	return (
 		<div>
 			<div id="vis-controls">
-				{proteinEntry !== "" ? (
-					<div>
-						<label htmlFor="signal_pep_length">
-							Length of signal peptide{" "}
-						</label>
-						<input
-							name="signal_pep_length"
-							min="0"
-							type="number"
-							width={10}
-							value={sigPepLength}
-							onChange={handleSigPepLengthChange}
-						></input>
-					</div>
-				) : (
-					""
-				)}
-				{proteinEntry !== "" ? (
-					<div>
-						<label htmlFor="max_axis_length">
-							Maximum axis length{" "}
-						</label>
-						<input
-							name="signal_pep_length"
-							min="0"
-							type="number"
-							width={10}
-							value={maxAxisLength}
-							onChange={handleMaxAxisLengthChange}
-						></input>
-					</div>
-				) : (
-					""
-				)}
-				{proteinList.length > 0 ? (
-					<div>
+			{proteinList.length > 0 ? (
+					<div id="static-controls">
 						<label htmlFor="protein_selector">
 							Choose a protein{" "}
 						</label>
@@ -108,6 +113,44 @@ export default function VisContainer(props: Datasets) {
 				) : (
 					""
 				)}
+				{proteinEntry !== "" ? (
+					<div id="active-controls">
+						<div>
+							<label htmlFor="signal_pep_length">
+								Length of signal peptide{" "}
+							</label>
+							<input
+								name="signal_pep_length"
+								min="0"
+								type="number"
+								width={10}
+								value={sigPepLength}
+								onChange={handleSigPepLengthChange}
+							></input>
+						</div>
+						<div>
+							<label htmlFor="max_axis_length">
+								Maximum axis length{" "}
+							</label>
+							<input
+								name="signal_pep_length"
+								min="0"
+								type="number"
+								width={10}
+								value={maxAxisLength}
+								onChange={handleMaxAxisLengthChange}
+							></input>
+						</div>
+						<div>
+							<div>Export Options</div>
+							<button onClick={saveAsPdf}>Save as SVG</button>
+						</div>
+					</div>
+						
+				) : (
+					""
+				)}
+				
 			</div>
 			{proteinEntry !== "" ? (
 				<div>
@@ -124,6 +167,7 @@ export default function VisContainer(props: Datasets) {
 			)}
 
 			<svg id="vis-container"></svg>
+			<div id="png-container"></div>
 		</div>
 	);
 }

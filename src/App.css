@@ -39,6 +39,7 @@
 #legend div {
   width: 100%;
   justify-content: center;
+  font-size: large;
 }
 
 .loader {
@@ -53,7 +54,13 @@
   align-items: center;
 }
 
-#vis-controls div{
+#active-controls div{
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+#static-controls{
   display: flex;
   width: 400px;
   justify-content: space-between;

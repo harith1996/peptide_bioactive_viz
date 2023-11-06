@@ -8,7 +8,7 @@ export function Swatches(color, {
     columns = null,
     format,
     unknown: formatUnknown,
-    swatchSize = 15,
+    swatchSize = 26,
     swatchWidth = swatchSize,
     swatchHeight = swatchSize,
     marginLeft = 0
